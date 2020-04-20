@@ -1,0 +1,590 @@
+a:-webkit-any-link{
+text-decoration:none !important;
+}
+
+.titleLarge, .titleLargeProject, .titleLargeWallpaper, .titleLargeHandwritten	{
+	float: left;
+	width: 100%;
+	font-family: titling-gothic-fb-narrow, sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	font-style: normal;
+	margin-top: 0;
+}
+
+#largeText	{
+	float: left;
+	font-size: 160px;
+	line-height: 170px;
+	margin-top: 5px;
+}
+
+#introTextRow	{
+	margin-bottom: 20px;
+	padding-top: 120px; 
+}
+
+.titleLargeWallpaper	{
+	position: relative;
+	z-index: 1;
+	font-size: 160px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 170px;
+	margin: 0 auto;
+	display: table;
+	max-width: 1300px;
+	width: calc(100% - 200px);
+	padding: 100px 100px 0 100px;
+	margin-bottom: -10000px;
+}
+
+.titleLargeHandwritten	{
+	font-family: gooddog-new, sans-serif;
+}
+
+.titleSmallText	{
+	float: left;
+	font-family: calibri, sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+}
+
+.textNormal, .textNormalLink, .textNormalProject	{
+	float: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 26px;
+}
+
+.textNormalWord, .textNormalWordSmall	{
+	width: auto;
+	padding: 4px 14px 6px 14px;
+	border-radius: 100px;
+	border: 1px solid #c7c7c7;
+	font-size: 22px;
+	margin: 0 4px 12px 4px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+	/* box-shadow: 5px 5px 20px #d9d9d9; */
+	display: inline-block;
+	font-weight: 400;
+	font-family: calibri, sans-serif;
+}
+
+.textNormalWordSmall	{
+	font-size: 18px;
+	padding: 2px 10px 4px 10px;
+}
+
+.textNormalLink, .textNormalLinkDark	{
+	width: auto; 
+	margin: 2px 0 10px 15px; 
+	color: #000000;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	border-bottom: 3px solid #dbdbdb;
+	padding-bottom: 6px;
+	
+	text-decoration: none;
+}
+
+.textNormalLinkDark	{
+	color: #e0e0e0;
+	border-bottom: 3px solid #383838;
+}
+
+#largeTextSection	{
+	padding-top: 25px;
+	max-width: 900px;
+	color: #555555;
+	font-weight: 600;
+	font-size: 32px;
+	width: 100%;
+}
+
+.linkArrow	{
+	float: left;
+	height: 14px;
+	margin-top: 8px;
+	margin-left: 6px;
+}
+
+.socialMediaIcon	{
+	float: left;
+	height: 45px;
+}
+
+.socialMediaAnchor	{
+	float: left; 
+}
+
+.socialMediaAnchor:hover .textNormalLink	{
+	border-bottom: 3px solid #bdbdbd;
+}
+
+.socialMediaAnchor:hover .textNormalLinkDark	{
+	border-bottom: 3px solid #858585;
+}
+
+.textNormalTitle	{
+	float: left;
+	font-family: titling-gothic-fb-narrow, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	font-style: normal;
+}
+
+.image	{
+	float: left;
+	width: 450px;
+	margin-left: -55px;
+}
+
+#welcomeImg	{
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	height: 100vh;
+}
+
+.arrowDown	{
+	float: left;
+	width: 80px;
+}
+
+#topSocialMediaRow	{
+	float: left;
+}
+
+/* Projects */
+
+.projectLogo, .projectLogoStacked	{
+	float: left;
+	height: 75px;
+}
+
+.projectLogoStacked	{
+	padding: 0 50px 40px 0;
+	height: 190px;
+}
+
+.projectTitle	{
+	float: left;
+	width: 100%;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	font-family: 'inter', sans-serif;
+	color: #000000;
+}
+
+.titleLargeProject	{
+	font-size: 30px;
+	margin-top: 12px;
+	width: 100%;
+	font-family: calibri, sans-serif;
+	font-weight: 700;
+}
+
+.textNormalProject	{
+	width: 100%;
+	color: #555555;
+}
+
+#rowStackSocialProject	{
+	padding: 0;
+}
+
+#topIphoneIpad	{
+	width: calc(100% + 25px);
+	overflow-x: hidden;
+}
+
+.iphoneIpadSection	{
+	padding-left: 5vw;
+	width: 1800px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+
+.iphoneSection	{
+	float: left;
+	margin-top: 510px;
+	margin-left: -10px;
+	width: 350px;
+}
+
+.iphone	{
+	float: left;
+	width: 350px;
+	pointer-events: none;
+	position: relative;
+	z-index: 100;
+}
+
+.iphoneContentParent	{
+	width: 307px;
+	height: 632px;
+	margin: 52px 0 0 -327px;
+	border-radius: 0 0 27px 27px;
+	float: left;
+	overflow: hidden;
+}
+
+.iphoneContentParentHidden	{
+	float: left;
+	width: calc(100% + 50px);
+	height: 100%;
+	overflow: scroll;
+}
+
+.iphoneContent	{
+	float: left;
+	border: 0;
+	position: relative;
+	z-index: 10;
+	width: calc(100% - 50px);
+}
+
+.ipadSection	{
+	float: left;
+}
+
+.ipad	{
+	float: left;
+	width: 1400px;
+	pointer-events: none;
+}
+
+.ipadContent	{
+	float: left;
+	margin: 89px 0 0 -1311px;
+	width: 1222px;
+	border: 0;
+	border-radius: 16px;
+	height: 916px;
+	background-color: #ffffff;
+}
+
+.ipadContentPortrait	{
+	margin: 89px 0 0 -1311px;
+	height: 1222px;
+	width: 916px;
+}
+
+#mediumSizeIphoneSection	{
+	display: none;
+}
+
+#broadwired	{
+	margin-top: -250px;
+}
+
+.projectImage	{
+	border: 2px solid #EFEFEF;
+	margin-left: 25px;
+    margin-left: 50px;
+}
+
+.rowProjectContentParent, .rowProjectContentParentSmall	{
+	height: 750px;
+    width:calc(100% - 20px);
+    text-align:left;
+    white-space: nowrap;
+    overflow-y:hidden;
+	margin: 50px 0 50px 0;
+}
+
+.rowProjectContentParentSmall	{
+	height: 625px;
+}
+
+.rowProjectContent	{
+	width: auto;
+    height: auto;
+    display: inline-block;
+    overflow:hidden;
+    display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox; 
+	display: -webkit-flex;
+	display: flex; 
+}
+
+#swipe	{
+	display: none;
+}
+
+@media screen and (min-width: 1650px)	{	
+	.rowProjectContent	{
+		margin-left: calc(((50% - 800px) / 2) + (400px - 325px + 25));
+	}
+}
+
+.rowProjectImage	{
+	position: relative;
+	height: 100%;
+	width: auto;
+	vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+/* Mobile */
+
+	#topIphoneIpadMobile	{
+		display: none;
+		float: left;
+		width: 100%;
+	}
+
+/* Logotypes */
+
+#logotypeSection	{
+	max-width: 1500px;
+	width: 100%;
+}
+
+#introTextRowLogotypes	{
+	position: relative;
+	z-index: 1000;
+	max-width: 1310px;
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+	float: none;
+	padding: 0 65px;
+}
+
+#penImage	{
+	top: 70px;
+}
+
+#penRulerRow	{
+	position: relative;
+	z-index: 10000;
+	width: calc(100% + 50px);
+	margin-left: -25px;
+}
+
+/* Scaling */
+
+@media screen and (max-width: 1600px)	{
+	#swipe	{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1400px)	{
+	.rowHalf	{
+		width: 100%;
+		margin: 50px 0;
+	}
+	
+	#broadwired	{
+		margin-top: 75px;
+	}
+	
+	#penRulerRow	{
+		display: none; 
+	}
+}
+
+@media screen and (max-width: 1150px)	{
+	#topIphoneIpad	{
+		display: none;
+	}
+	
+	#mediumSizeIphoneSection	{
+		display: block;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 950px)	{
+	.smallContentSectionSmallest	{
+		padding: 0 50px;
+		width: calc(100% - 100px);
+	}
+}
+
+/* @media screen and (max-width: 606px)	{
+	#topSocialMediaRow	{
+		float: left;
+		width: 100%;
+		display: block;
+	}
+	
+	.rowStackSocial	{
+		float: left;
+		margin: 0;
+		width: calc(100% - 4px);
+		padding: 0;
+		border: 2px solid #DADCE0;
+		border-radius: 10px;
+		text-align: center;
+		background-color: #fcfcfc;
+	}
+	
+	.socialMediaAnchor	{
+		width: 100%;
+		padding-top: 35px;
+		padding-bottom: 20px;
+	}
+	
+	.socialMediaIcon	{
+		height: 50px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	
+	.textNormalLink	{
+		margin-left: 0;
+		border-bottom: 2px solid #c7c7c7;
+		font-size: 34px;
+	}
+	
+	.socialMediaAnchor:hover .textNormalLink	{
+		border-bottom: 2px solid #c7c7c7;
+	}
+	
+	.centeredRowStackSocial	{
+		margin: 0 auto;
+		display: table;
+	}
+	
+	#introTextRow	{
+		padding-top: 11vh;
+	}
+	
+	#largeText	{
+		margin-top: -20px;
+		font-size: 120px;
+		line-height: 134px;
+	}
+	
+	#topText	{
+		padding-top: 12px;
+	}
+	
+	
+	
+	
+	.arrowDown, .textHandwritten, .textHandwrittenLarge	{
+		display: none;
+	}
+	
+	.textNormal	{
+		font-size: 28px;
+	}
+	
+	.textNormalProject	{
+		font-size: 26px;
+	}
+	
+	.textNormalWord, .textNormalWordSmall	{
+		font-size: 26px;
+		float: none;
+		margin: 6px 5px 6px 5px;
+	}
+	
+	.textNormalWord	{
+		font-size: 28px;
+		margin: 8px 5px 8px 5px;
+	}
+	
+		
+		
+			#topIphoneIpad	{
+				display: none;
+			}
+			
+			#topIphoneIpadMobile	{
+				display: block;
+			}
+		
+			.projectLogo	{
+				float: none;
+				margin: 0 auto;
+				display: table;
+				height: 100px;
+				margin-top: 10px;
+			}
+			
+			.projectTitle	{
+				float: left;
+				width: 100%;
+				text-align: center;
+			}
+			
+			#textNormalWordSmallRowStack	{
+				float: none;
+				margin: 0 auto;
+				display: table;
+				text-align: center;
+				padding: 0;
+			}
+			
+			.textNormalProject	{
+				text-align: center;
+				width: 100%;
+			}
+			
+	
+		
+		
+		#logotypeSection	{
+			width: calc(100% - 50px);
+			margin-left: -25px;
+			padding: 25px;
+		}
+		
+		#penImage	{
+			top: -50px;
+		}
+		
+		
+		
+		#desktopWallpaper	{
+			display: none;
+		}
+		
+		#mobileWallpaper	{
+			display: block;
+		}
+		
+		.titleLargeWallpaper	{
+			width: 60vw;
+			font-size: 19vw;
+			margin-left: 9%;
+			padding-top: 100px;
+			line-height: 20vw;
+		}
+}
+
+@media screen and (max-width: 750px)	{
+
+	
+	#desktopWallpaper	{
+		display: none;
+	}
+	
+	#mobileWallpaper	{
+		display: block;
+	}
+	
+	.titleLargeWallpaper	{
+		width: 60vw;
+		font-size: 19vw;
+		margin-left: 9%;
+		padding-top: 100px;
+		line-height: 20vw;
+	}
+} */
+
+
