@@ -449,6 +449,7 @@ text-decoration:none !important;
 	#broadwiredSmall	{
 		display: block;
 		margin-bottom: 20px;
+		height: 1050px;
 	}
 	
 	.smallContentSectionSmallest	{
@@ -496,6 +497,10 @@ text-decoration:none !important;
 @media screen and (max-width: 750px)	{
 	#ipadMedium	{
 		width: 900px;
+	}
+	
+	#broadwiredSmall	{
+		height: 725px;
 	}
 	
 	.textNormalProject	{
