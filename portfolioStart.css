@@ -345,6 +345,10 @@ text-decoration:none !important;
 	display: none;
 }
 
+#scrollMedium	{
+	display: none;
+}
+
 @media screen and (min-width: 1650px)	{	
 	.rowProjectContent	{
 		margin-left: calc(((50% - 800px) / 2) + (400px - 325px + 25));
@@ -418,6 +422,14 @@ text-decoration:none !important;
 	#penRulerRow	{
 		display: none; 
 	}
+	
+	.iphoneSection	{
+		margin-top: 263px;
+	}
+	
+	#tempoBroadwiredSection	{
+		margin-top: 50px;
+	}
 }
 
 @media screen and (max-width: 1150px)	{
@@ -429,42 +441,51 @@ text-decoration:none !important;
 		margin-top: 0;
 	}
 	
-	#mediumSizeIphoneSection	{
-		display: block;
-		margin-top: 0;
-	}
-	
-	#tempo	{
-		width: calc(100% - 375px);
-		float: left;
-		
-		position: relative;
-		height: 790px;
-	}
-	
-	#tempoText	{
-		width: calc(100% - 75px);
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		padding: 0 25px 0 50px;
-	}
-	
 	#broadwired	{
-		margin-top: 0;
+		margin-top: 15px;
+		margin-bottom: 0;
 	}
 	
 	#broadwiredSmall	{
 		display: block;
+		margin-bottom: 20px;
 	}
 	
 	.smallContentSectionSmallest	{
 		padding: 0 50px;
 		width: calc(100% - 100px);
 	}
+	
+	
 }
 
-@media screen and (max-width: 950px)	{
+@media screen and (min-width: 980px) and (max-width: 1150px)	{
+	#scrollMedium	{
+		display: block;
+	}
+	
+	#tempo	{
+		width: calc(100% - 500px);
+		float: left;
+		margin: 0 0 0 50px;
+		position: relative;
+		height: 700px;
+	}
+	
+	#tempoText	{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0px;
+	}
+	
+	#mediumSizeIphoneSection	{
+		display: block;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 980px)	{
 	
 }
 
