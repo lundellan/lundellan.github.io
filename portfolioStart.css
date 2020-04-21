@@ -280,11 +280,32 @@ text-decoration:none !important;
 }
 
 #mediumSizeIphoneSection	{
+	float: left;
+	width: auto;
 	display: none;
+	padding-bottom: 100px;
+}
+
+#smallIphonePositioning	{
+	float: left;
+	margin-left: 35px;
+	width: 350px;
+}
+
+
+/* Projects */
+
+#tempoBroadwiredSection	{
+	padding-bottom: 100px;
+	margin-top: 90px;
 }
 
 #broadwired	{
 	margin-top: -250px;
+}
+
+#broadwiredSmall	{
+	display: none;
 }
 
 .projectImage	{
@@ -404,9 +425,24 @@ text-decoration:none !important;
 		display: none;
 	}
 	
+	#tempoBroadwiredSection	{
+		margin-top: 0;
+	}
+	
 	#mediumSizeIphoneSection	{
 		display: block;
 		margin-top: 0;
+	}
+	
+	#tempo	{
+		width: calc(100% - 450px);
+		float: left;
+		padding: 0 25px 0 50px;
+		margin-top: 500px;
+	}
+	
+	#broadwiredSmall	{
+		display: block;
 	}
 }
 
