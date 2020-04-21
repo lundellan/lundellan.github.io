@@ -119,6 +119,7 @@ text-decoration:none !important;
 
 .socialMediaAnchor	{
 	float: left; 
+	text-decoration: none!important;
 }
 
 .socialMediaAnchor:hover .textNormalLink	{
