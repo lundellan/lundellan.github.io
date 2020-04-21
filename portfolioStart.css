@@ -456,6 +456,10 @@ text-decoration:none !important;
 		width: calc(100% - 100px);
 	}
 	
+	#ipadMedium	{
+		width: 1300px;
+	}
+	
 	
 }
 
@@ -487,6 +491,16 @@ text-decoration:none !important;
 
 @media screen and (max-width: 980px)	{
 	
+}
+
+@media screen and (max-width: 750px)	{
+	#ipadMedium	{
+		width: 900px;
+	}
+	
+	.textNormalProject	{
+		font-size: 32px;
+	}
 }
 
 /* @media screen and (max-width: 606px)	{
