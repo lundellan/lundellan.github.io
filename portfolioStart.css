@@ -332,7 +332,7 @@ text-decoration:none !important;
 	height: 625px;
 }
 
-.rowProjectContent	{
+.rowProjectContent, .rowProjectContentSmall	{
 	width: auto;
     height: auto;
     display: inline-block;
@@ -343,6 +343,10 @@ text-decoration:none !important;
 	display: -webkit-flex;
 	display: flex; 
 	padding: 25px 75px 25px 25px;
+}
+
+.rowProjectContentSmall	{
+	padding: 0 25px;
 }
 
 #swipe	{
@@ -531,6 +535,18 @@ text-decoration:none !important;
 	.titleScaling2	{
 		transform: scale(0.75);
 		margin: -125px 0 -125px -50px;
+	}
+	
+	.projectImage, .projectImageDark	{
+		margin: 0 12px;
+	}
+	
+	.rowProjectContent	{
+		padding: 25px 0 25px 12px;
+	}
+	
+	.rowProjectContentSmall	{
+		padding: 0 0 0 12px;
 	}
 }
 
