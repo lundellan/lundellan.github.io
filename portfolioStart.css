@@ -520,13 +520,13 @@ text-decoration:none !important;
 	.titleScaling1, .titleScaling2	{
 		transform: scale(0.65);
 		float: left;
-		width: auto;
-		margin: -75px 0 -85px -75px;
+		width: 420px;
+		margin: -110px 0 -110px -75px;
 	}
 	
 	.titleScaling2	{
 		transform: scale(0.75);
-		margin: -125px 0 -110px -70px;
+		margin: -125px 0 -125px -50px;
 	}
 }
 
