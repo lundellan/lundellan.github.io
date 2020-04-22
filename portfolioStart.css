@@ -503,8 +503,30 @@ text-decoration:none !important;
 		height: 725px;
 	}
 	
-	.textNormalProject	{
-		font-size: 32px;
+	.rowHalfContent	{
+		padding: 0;
+		width: 100%;
+	}
+	
+	.smallContentSectionSmallest	{
+		padding: 0 25px;
+		width: calc(100% - 50px);
+	}
+	
+	#largeTextSection	{
+		font-size: 26px;
+	}
+	
+	.titleScaling1, .titleScaling2	{
+		transform: scale(0.65);
+		float: left;
+		width: auto;
+		margin: -75px 0 -85px -75px;
+	}
+	
+	.titleScaling2	{
+		transform: scale(0.75);
+		margin: -125px 0 -110px -70px;
 	}
 }
 
