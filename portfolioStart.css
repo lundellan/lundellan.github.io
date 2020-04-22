@@ -308,16 +308,19 @@ text-decoration:none !important;
 	display: none;
 }
 
-.projectImage	{
-	border: 2px solid #EFEFEF;
-	margin-left: 25px;
-    margin-left: 50px;
+.projectImage, .projectImageDark	{
+	margin: 0 25px;
+    box-shadow: #c8c8c8 0 0 20px;
+}
+
+.projectImageDark	{
+	box-shadow: none;
 }
 
 .rowProjectContentParent, .rowProjectContentParentSmall	{
-	height: 750px;
-    width:calc(100% - 20px);
-    text-align:left;
+	height: 800px;
+    width: 100%;
+    text-align: left;
     white-space: nowrap;
     overflow-y:hidden;
     overflow-x: scroll;
@@ -339,6 +342,7 @@ text-decoration:none !important;
 	display: -ms-flexbox; 
 	display: -webkit-flex;
 	display: flex; 
+	padding: 25px 75px 25px 25px;
 }
 
 #swipe	{
