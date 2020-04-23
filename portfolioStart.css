@@ -57,27 +57,6 @@ text-decoration:none !important;
 	font-size: 26px;
 }
 
-.textNormalWord, .textNormalWordSmall	{
-	width: auto;
-	padding: 4px 14px 6px 14px;
-	border-radius: 100px;
-	border: 1px solid #c7c7c7;
-	font-size: 22px;
-	margin: 0 4px 12px 4px;
-	color: #000000;
-	text-decoration: none;
-	background-color: #ffffff;
-	/* box-shadow: 5px 5px 20px #d9d9d9; */
-	display: inline-block;
-	font-weight: 400;
-	font-family: calibri, sans-serif;
-}
-
-.textNormalWordSmall	{
-	font-size: 18px;
-	padding: 2px 10px 4px 10px;
-}
-
 .textNormalLink, .textNormalLinkDark	{
 	width: auto; 
 	margin: 2px 0 10px 15px; 
@@ -144,22 +123,13 @@ text-decoration:none !important;
 	margin-left: -55px;
 }
 
-#welcomeImg	{
-	float: right;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: -1;
-	height: 100vh;
-}
-
 .arrowDown	{
 	float: left;
 	width: 80px;
 }
 
-#topSocialMediaRow	{
-	float: left;
+#socialRowTop	{
+	margin-top: 40px;
 }
 
 /* Projects */
@@ -302,6 +272,11 @@ text-decoration:none !important;
 
 #broadwired	{
 	margin-top: -250px;
+}
+
+#broadwiredLink	{
+	margin-top: 70px;
+	margin-left: 0px;
 }
 
 #broadwiredSmall	{
@@ -528,15 +503,15 @@ text-decoration:none !important;
 	}
 	
 	.titleScaling1, .titleScaling2	{
-		transform: scale(0.65);
+		transform: scale(0.75);
 		float: left;
-		width: 420px;
-		margin: -110px 0 -110px -75px;
+		width: 500px;
+		margin: -80px 0 -85px -55px;
 	}
 	
 	.titleScaling2	{
 		transform: scale(0.75);
-		margin: -125px 0 -125px -50px;
+		margin: -125px 0 -110px -60px;
 	}
 	
 	.projectImage, .projectImageDark	{
@@ -550,6 +525,45 @@ text-decoration:none !important;
 	.rowProjectContentSmall	{
 		padding: 0 0 0 12px;
 	}
+	
+	/* Links */
+	
+		#socialRowTop	{
+			margin-top: 25px;
+		}
+		
+		#broadwiredLink	{
+			display: none;
+		}
+	
+		.rowStackSocial	{
+			border: 2px solid #dddddd;
+			padding: 0;
+			border-radius: 10px;
+			background-color: #ffffff;
+			margin-bottom: 25px;
+		}
+		
+		.socialMediaAnchor	{
+			padding: 19px 18px 10px 18px;
+		}
+		
+		.textNormalLink, .textNormalLinkDark	{
+			border: 0;
+			margin-top: 5px;
+		}
+		
+		.socialMediaAnchor:hover	{
+			background-color: #f5f5f5;
+		}
+		
+		.socialMediaAnchor:hover .textNormalLink	{
+			border-bottom: 0;
+		}
+		
+		.socialMediaAnchor:hover .textNormalLinkDark	{
+			border-bottom: 0;
+		}
 }
 
 /* @media screen and (max-width: 606px)	{
