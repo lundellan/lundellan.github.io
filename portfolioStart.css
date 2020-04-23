@@ -270,6 +270,10 @@ text-decoration:none !important;
 	margin-top: 90px;
 }
 
+#tempoPreview	{
+	display: none;
+}
+
 #broadwired	{
 	margin-top: -250px;
 }
@@ -525,6 +529,15 @@ text-decoration:none !important;
 	.rowProjectContentSmall	{
 		padding: 0 0 0 12px;
 	}
+	
+	/* App Preview */
+	
+		#tempoPreview	{
+			float: left;
+			display: block;
+			width: 400px;
+			margin-bottom: 75px;
+		}
 	
 	/* Links */
 	
