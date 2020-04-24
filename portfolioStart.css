@@ -262,16 +262,16 @@ text-decoration:none !important;
 	width: 350px;
 }
 
+#phoneSmall	{
+	display: none;
+}
+
 
 /* Projects */
 
 #tempoBroadwiredSection	{
 	padding-bottom: 100px;
 	margin-top: 90px;
-}
-
-#tempoPreview	{
-	display: none;
 }
 
 #broadwired	{
@@ -449,10 +449,43 @@ text-decoration:none !important;
 		margin-left: -20px;
 	}
 	
+	#tempo	{
+		margin-bottom: 10px;
+	}
 	
+	#mobileScaling	{
+		margin-top: 50px;
+	}
+	
+	/* App Preview */
+	
+		#phoneSmall	{
+			display: block;
+			background-color: #ffffff;
+			width: calc(100% + 50px);
+			margin: -50px -25px 75px -25px;
+			padding-top: 150px;
+			background-image: url(running.jpg);
+			background-position: center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			
+		}
+	
+		#tempoPreview	{
+			float: left;
+			width: 500px;
+			margin-left: 50px;
+		}
+		
+		#contentTransition	{
+			background-image: linear-gradient(#ffffff, #ffffff);
+		}
 }
 
-@media screen and (min-width: 980px) and (max-width: 1150px)	{
+/* @media screen and (min-width: 980px) and (max-width: 1150px)	{
 	#scrollMedium	{
 		display: block;
 	}
@@ -476,13 +509,14 @@ text-decoration:none !important;
 		display: block;
 		margin-top: 0;
 	}
-}
-
-@media screen and (max-width: 980px)	{
-	
-}
+} */
 
 @media screen and (max-width: 750px)	{
+	#tempoPreview	{
+		width: 400px;
+		margin-left: 25px;
+	}
+	
 	#ipadMedium	{
 		width: 900px;
 		margin-left: -30px;
@@ -529,15 +563,6 @@ text-decoration:none !important;
 	.rowProjectContentSmall	{
 		padding: 0 0 0 12px;
 	}
-	
-	/* App Preview */
-	
-		#tempoPreview	{
-			float: left;
-			display: block;
-			width: 400px;
-			margin-bottom: 75px;
-		}
 	
 	/* Links */
 	

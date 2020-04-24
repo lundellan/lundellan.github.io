@@ -62,15 +62,11 @@ img	{
 }
 
 #contentTransition	{
-	float: left;
-	width: 100%;
-	height: 300px;
-	background: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0));
-	background: -moz-linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0));
-	background: -webkit-linear-gradient(-90deg, #ffffff, rgba(255, 255, 255, 0));
-	background: -ms-linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0));
+	background-image: linear-gradient(#ffffff, #F5F5F5);
+	margin-top: -70px;
+	z-index: -1;
 	position: relative;
-	z-index: 100;
+	height: 100px;
 }
 
 .row	{

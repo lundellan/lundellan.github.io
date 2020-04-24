@@ -5,25 +5,613 @@
 		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=3.0, minimum-scale=0.75">	
 		<meta charset="utf-8">
 		
+		<link rel='stylesheet' type='text/css' href='tempo.css'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		
 		<style>
 			
-			#feed	{
-				margin: 0 auto;
-				display: table;
-				width: 100%;
-				max-width: 700px;
+			#phone	{
+				float: left;
+			}
+			
+			.iphone	{
+				float: left;
+				width: 350px;
+				pointer-events: none;
+				position: relative;
+				z-index: 100;
+				display: none;
+			}
+			
+			.iphoneContentParent	{
+				width: 307px;
+				height: 632px;
+				margin: 52px 0 0 -327px;
+				border-radius: 0 0 27px 27px;
+				float: left;
+				overflow: hidden;
+			}
+			
+			.iphoneContentParentHidden	{
+				float: left;
+				width: calc(100% + 50px);
+				height: 100%;
+				overflow: scroll;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			.iphoneContent	{
+				float: left;
+				border: 0;
+				position: relative;
+				z-index: 10;
+				width: calc(100% - 50px);
+			}
+			
+			@media screen and (min-width: 700px)	{
+				#contentSpace	{
+					display: none;
+				}
+				
+				#phone	{
+					display: block;
+				}
 			}
 			
 			body	{
 				margin: 0;
 				padding: 0;
-				-webkit-overflow-scrolling: touch;
 				background-color: #eaeaea;
 			}
 			
 		</style>
 	</head>
 	<body>
-		<img id='feed' src='tempoApp.png'>
+		
+		<div id='phone'>
+			<img class='iphone' src='../iphoneLargeNotifications.png'>
+			<div class='iphoneContentParent'>
+				<div class='iphoneContentParentHidden'>
+					<img class='iphoneContent' src='tempoApp.png'>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<!-- Content Space -->
+				
+			<div id="contentSpace">
+			
+			
+				<!-- Content -->
+				
+					<!-- Today's progress -->
+					
+					
+					<div id="todayProgress">
+						
+						
+						<div id="titleSection">
+						<h2 style="color: #000000; font-size: 1.3em; float: left; text-align: left; margin-bottom: 5px; margin-top: -10px;">Summary</h2>
+						</div>
+						
+						<!-- <div id="dailyStats">
+						
+							<div id="row" style="margin: -.15em 0 .75em 0">
+								
+							</div>
+						
+							<div id="circleStat" style="width: 50%">
+								<div id="progressCircle" style="height: 3.25em; width: 3.25em;"></div>
+								
+								<h7>Time Active</h7>
+							</div>
+							
+							<div id="circleStat" style="width: 50%">
+								<div id="progressCircle" style="height: 3.25em; width: 3.25em;"></div>
+									
+								<h7>Burned Cals</h7>
+							</div>
+							
+						</div> -->
+						
+
+						<div id="generalProgressSection">
+							<!-- <div id="row">
+								<h5 style="margin: .5em 0 .25em 0"><b>Activities</b></h5>
+							</div> -->
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #ff5d5b; height: 80%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #ff5d5b; float: left;">W</a>
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #A452FF; height: 50%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #A452FF; float: left;">R</a>
+								
+								
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #6B81FF; height: 0%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #6B81FF; float: left;">C</a>
+								
+								
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #55d9b3; height: 70%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #55d9b3; float: left;">E</a>
+								
+								
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #ffbe4a"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #ffbe4a; float: left;">S</a>
+								
+								
+							</div>
+						
+							<!-- <a class="more" style="text-align: center;" href="#">More</a> -->
+							
+						</div>
+						
+						
+						<!-- <div id="generalProgressSection">
+							<div id="row">
+								<h5 style="margin: 1.5em 0 .25em 0"><b>Lifestyle</b></h5>
+							</div>
+							
+							<div id="progressStat" style="margin: .45em 0 0 0">
+								<a class="activityIcon" style="background-color: #ff9500; float: left;">F</a>
+								
+								<div id="progressBar">
+									<div id="progress" style="background-color: #ff9500"></div>
+								</div>
+							</div>
+							
+							<div id="progressStat" style="margin: .75em 0 0 0">
+								<a class="activityIcon" style="background-color: #42C0FB; float: left;">W</a>
+								
+								<div id="progressBar">
+									<div id="progress" style="background-color: #42C0FB"></div>
+								</div>
+							</div>
+							
+							<div id="progressStat" style="margin: .75em 0 0 0">
+								<a class="activityIcon" style="background-color: #1d3d61; float: left;">S</a>
+								
+								<div id="progressBar">
+									<div id="progress" style="background-color: #1d3d61"></div>
+								</div>
+							</div>
+						
+							<a class="more" style="text-align: center;" href="#">More</a>
+							
+						</div> -->
+						
+					</div>
+					
+					<div id="cardSectionSeparator" style="margin-top: .65em"></div>
+						
+					
+					<!-- Walking stats -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #ff5d5b">W</a>
+							<h2 style="color: #ff5d5b">Walking</h2>
+							
+						</div>
+						
+						<div id="dailyStats">
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%; margin-bottom: -5px;">
+								<h7 style="font-size: 2.5em;"><b>11 768</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 0 0;">
+									<h7>Steps</h7>
+								</div>
+									
+							</div>
+						</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5></h5>
+							</div>
+							
+							<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>1 Week Marathon</h5>
+								<h6 style="margin: 0;">3 days left</h6>
+							</div>
+							
+							<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Yesterday</b></h5>
+								<h6>14 288</h6>
+							</div>
+							<div id="row">
+								<h5><b>Sunday</b></h5>
+								<h6>13 613</h6>
+							</div>
+							<div id="row">
+								<h5><b>Saturday</b></h5>
+								<h6>5 192</h6>
+							</div>
+						
+							<a class="startActivityWide" style="background-color: #ff5d5b" href="#">Continue Session</a>
+							
+							<a class="moreLarge" style="background-color: #ff5d5b" href="#">More</a>
+							
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Running stats -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #a463e4">R</a>
+							<h2 style="color: #a463e4">Running</h2>
+							
+						</div>
+						
+						<div id="dailyStats">
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%;">
+								<h7 style="font-size: 2.5em;"><b>3.2 km</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 0 0;">
+									<h7>Distance</h7>
+								</div>
+									
+							</div>
+						</div>
+							
+							<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>1 Week Marathon</h5>
+								<h6 style="margin: 0;">2 days left</h6>
+							</div>
+							
+							<div id="row">
+								<h5><b>Yesterday</b></h5>
+								<h6>4.9 km</h6>
+							</div>
+							<div id="row">
+								<h5><b>Sunday</b></h5>
+								<h6>3.2 km</h6>
+							</div>
+							<div id="row">
+								<h5><b>Saturday</b></h5>
+								<h6>6.4 km</h6>
+							</div>
+						
+							<a class="startActivityWide" style="background-color: #a463e4" href="#">Continue Session</a>
+							
+							<a class="moreLarge" style="background-color: #a463e4" href="#">More</a>
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Biking stats -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #536dfe">C</a>
+							<h2 style="color: #536dfe">Cycling</h2>
+							
+						</div>
+						
+						<div id="dailyStats">
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%;">
+								<h7 style="font-size: 2.5em;"><b>0 m</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 0 0;">
+									<h7>Distance</h7>
+								</div>
+									
+							</div>
+							
+						</div>
+							
+							<div id="row" style='margin-top: .25em;'>
+								<h5><b>Yesterday</b></h5>
+								<h6>0 m</h6>
+							</div>
+							<div id="row">
+								<h5><b>Sunday</b></h5>
+								<h6>7.3 km</h6>
+							</div>
+							<div id="row">
+								<h5><b>Saturday</b></h5>
+								<h6>0 m</h6>
+							</div>
+						
+							<a class="startActivityWide" style="background-color: #6B81FF" href="#">Start Session</a>
+
+							<a class="moreLarge" style="background-color: #6B81FF" href="#">More</a>
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Remaining exercises -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #55d9b3">E</a>
+							<h2 style="color: #55d9b3">Exercises</h2>
+							
+						</div>
+						
+						<div id="dailyStats">	
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>3</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Finished</h7>
+								</div>
+									
+							</div>
+							
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>4</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Remaining</h7>
+								</div>
+									
+							</div>
+						</div>
+						
+							
+						<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>The Rock's Workout</h5>
+								<h6 style="margin: 0;">1 week left</h6>
+							</div>
+							
+							
+						<div id="row">
+							<h5><b>Remaining<b></h5>
+						</div>		
+							
+						<div id="row">
+							<h5>Squats</h5>
+							<h6>10 reps &mdash; 3 sets</h6>
+						</div>
+						<div id="row">
+							<h5>Arm Curls</h5>
+							<h6>10 reps &mdash; 3 sets</h6>
+						</div>
+						<div id="row">
+							<h5>Crunches</h5>
+							<h6>10 reps &mdash; 3 sets</h6>
+						</div>	
+						<div id="row">
+							<h5>Plank</h5>
+							<h6>1 min &mdash; 2 times</h6>
+						</div>
+						
+						<a class="startActivityWide" style="background-color: #55d9b3" href="#">Check Off</a>
+						
+						<a class="moreLarge" style="background-color: #55d9b3" href="#">More</a>
+						
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Remaining gym activities -->
+					
+					<!-- <div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #55d9b3">Gym</h2>
+							<a class="activityIcon" style="background-color: #55d9b3">G</a>
+						</div>
+						
+						<div id="dailyStats">	
+						
+							<div id="row" style="margin: -.15em 0 .25em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>3</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Finished</h7>
+								</div>
+									
+							</div>
+							
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>7</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Remaining</h7>
+								</div>
+									
+							</div>
+						</div>
+							
+							
+						<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>Exampel</h5>
+								<h6 style="margin: 0;">3 days left</h6>
+							</div>
+							
+							
+						<div id="row">
+							<h5><b>Remaining exercises<b></h5>
+						</div>	
+							
+						<div id="row">
+							<h5>Example</h5>
+							<h6>10 reps (3 sets)</h6>
+						</div>
+						<div id="row">
+							<h5>Example</h5>
+							<h6>10 reps (3 sets)</h6>
+						</div>
+						<div id="row">
+							<h5>Example</h5>
+							<h6>10 reps (3 sets)</h6>
+						</div>
+						
+						<a class="startActivityWide" style="background-color: #55d9b3" href="#">Check Off</a>
+						
+						<a class="moreLarge" style="background-color: #55d9b3" href="#">More</a>
+						
+					</div>
+					
+					<div id="cardSectionSeparator"></div> -->
+					
+					
+					<!-- Remaining stretching -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #fbc224">S</a>
+							<h2 style="color: #fbc224">Stretching</h2>
+							
+						</div>
+						
+						<div id="dailyStats">	
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%; margin-bottom: 10px;">
+								<h7 style="font-size: 2.5em;"><b>Done</b></h7>
+									
+							</div>
+						</div>
+					
+						
+						
+						
+						<a class="moreLarge" style="background-color: #fbc224; margin: 0 auto; float: none; display: table; margin-bottom: 25px;" href="#">More</a>
+						
+					</div>
+					
+					<!-- <div id="cardSectionSeparator"></div> -->
+					
+					
+					<!-- Food Section -->
+					
+					<!-- <div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #ff9500">Food</h2>
+							<a class="activityIcon" style="background-color: #ff9500">F</a>
+						</div>
+							
+							
+							
+						<a class="startActivityWide" style="background-color: #ff9500" href="#">Update Plan</a>
+						
+						<a class="moreLarge" style="background-color: #ff9500" href="#">More</a>
+							
+					</div>
+						
+					<div id="cardSectionSeparator"></div>
+						
+					
+					
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #42C0FB">Water</h2>
+							<a class="activityIcon" style="background-color: #42C0FB">W</a>
+						</div>
+							
+							
+							
+						<a class="startActivityWide" style="background-color: #42C0FB" href="#">Check Off</a>
+						
+						<a class="moreLarge" style="background-color: #42C0FB" href="#">More</a>	
+							
+					</div>
+						
+					<div id="cardSectionSeparator"></div>
+						
+						
+					
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #1d3d61">Sleep</h2>
+							<a class="activityIcon" style="background-color: #1d3d61">S</a>
+						</div>
+							
+							
+							
+						<a class="startActivityWide" style="background-color: #1d3d61" href="#">Register</a>
+						
+						<a class="moreLarge" style="background-color: #1d3d61" href="#">More</a>
+							
+					</div>
+						
+					<div id="cardSectionSeparator"></div> -->
+			
+			</div>
+		
 	</body>
 </html>
