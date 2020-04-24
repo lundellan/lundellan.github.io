@@ -435,8 +435,9 @@ text-decoration:none !important;
 	
 	#broadwiredSmall	{
 		display: block;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		height: 1050px;
+		
 	}
 	
 	.smallContentSectionSmallest	{
@@ -463,13 +464,13 @@ text-decoration:none !important;
 			display: block;
 			background-color: #ffffff;
 			width: calc(100% + 50px);
-			margin: -50px -25px 75px -25px;
-			padding-top: 100px;
+			margin: -50px -25px 110px -25px;
 			position: relative;
 			overflow: hidden;
+			padding-top: 10px;
 		}
 		
-		#phoneSmallBg	{
+		/* #phoneSmallBg	{
 			position: absolute;
 			left: -25px;
 			top: -25px;
@@ -484,7 +485,7 @@ text-decoration:none !important;
 			background-size: cover;
 			filter: blur(5px);
 			-webkit-filter: blur(5px);
-		}
+		} */
 	
 		#tempoPreview	{
 			float: left;
@@ -558,7 +559,7 @@ text-decoration:none !important;
 		transform: scale(0.75);
 		float: left;
 		width: 500px;
-		margin: -80px 0 -85px -55px;
+		margin: -80px 0 -85px -63px;
 	}
 	
 	.titleScaling2	{
@@ -596,18 +597,17 @@ text-decoration:none !important;
 			margin-bottom: 25px;
 			margin-right: 25px;
 			transform: scale(0.65);
-			margin-left: -37px;
-			margin-right: -25px;
+			margin: -5px -57px -5px -67px;
 		}
 		
 		.socialMediaAnchor	{
-			padding: 19px 18px 10px 18px;
+			padding: 19px 18px 4px 18px;
 		}
 		
 		.textNormalLink, .textNormalLinkDark	{
 			border: 0;
-			margin-top: 5px;
-			font-size: 32px;
+			margin-top: -1px;
+			font-size: 36px;
 		}
 		
 		.socialMediaAnchor:hover	{
