@@ -2,9 +2,10 @@
 					
 						#contentSpace	{
 							float: left;
-							width: 14em;
+							width: 100%;
 							background-color: #FFFFFF;
 							padding: 1em 0 .9em 0;
+							min-width: 220px;
 						}
 				
 					/* Notification bar and Activity label */
@@ -283,8 +284,8 @@
 						body	{
 							margin: 0;
 							background-color: #E3E3E3;
-							zoom: 2.2; 
-						    -moz-transform: scale(2.2); 
+							zoom: 2.23; 
+						    -moz-transform: scale(2.23); 
 						    -moz-transform-origin: 0 0;
 						    
 						}

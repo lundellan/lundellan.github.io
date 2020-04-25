@@ -11,7 +11,12 @@
 		<style>
 			
 			#phone	{
-				float: left;
+				margin: 0 auto;
+				display: none;
+				width: 350px; 
+				margin-top: -50px;
+				transform: scale(0.65);
+				
 			}
 			
 			.iphone	{
@@ -20,7 +25,6 @@
 				pointer-events: none;
 				position: relative;
 				z-index: 100;
-				display: none;
 			}
 			
 			.iphoneContentParent	{
@@ -48,13 +52,13 @@
 				width: calc(100% - 50px);
 			}
 			
-			@media screen and (min-width: 700px)	{
+			@media screen and (min-width: 600px)	{
 				#contentSpace	{
 					display: none;
 				}
 				
 				#phone	{
-					display: block;
+					display: table;
 				}
 			}
 			
