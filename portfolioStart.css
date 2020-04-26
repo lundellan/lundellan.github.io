@@ -275,7 +275,7 @@ text-decoration:none !important;
 
 #toppingSection	{
 	padding-top: 120px;
-	padding-bottom: 140px;
+	padding-bottom: 150px;
 }
 
 #logoSectionParent	{
@@ -498,11 +498,6 @@ text-decoration:none !important;
 	
 	#mobileScaling	{
 		margin-top: 50px;
-	}
-	
-	#toppingSection	{
-		padding-top: 110px;
-		padding-bottom: 150px;
 	}
 	
 	#logoSection	{
