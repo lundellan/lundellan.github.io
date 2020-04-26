@@ -21,7 +21,10 @@ text-decoration:none !important;
 
 #introTextRow	{
 	margin-bottom: 20px;
-	padding-top: 120px; 
+	margin-top: 100px; 
+	padding-top: calc(17vh - 100px);
+	max-width: 500px;
+	margin-right: calc(100% - 500px);
 }
 
 .titleLargeWallpaper	{
@@ -268,6 +271,22 @@ text-decoration:none !important;
 	display: none;
 }
 
+/* Sections */
+
+#toppingSection	{
+	padding-top: 120px;
+	padding-bottom: 140px;
+}
+
+#logoSectionParent	{
+	padding-top: 25px;
+	padding-bottom: 40px;
+}
+
+#darkSection	{
+	padding-top: 25px;
+	padding-bottom: 150px;
+}
 
 /* Projects */
 
@@ -396,6 +415,10 @@ text-decoration:none !important;
 	#swipe	{
 		display: block;
 	}
+	
+	#logoSectionParent	{
+		padding-bottom: 100px;
+	}
 }
 
 @media screen and (max-width: 1400px)	{
@@ -417,7 +440,8 @@ text-decoration:none !important;
 	}
 	
 	#tempoBroadwiredSection	{
-		margin-top: 50px;
+		margin-top: 25px;
+		padding-bottom: 90px;
 	}
 	
 	.textNormal, .textNormalProject	{
@@ -426,6 +450,10 @@ text-decoration:none !important;
 	
 	.rowHalfContent	{
 		max-width: 800px;
+	}
+	
+	#logoSectionTasteflow	{
+		margin-top: 10px;
 	}
 }
 
@@ -436,18 +464,22 @@ text-decoration:none !important;
 	
 	#tempoBroadwiredSection	{
 		margin-top: 0;
+		padding-bottom: 20px;
 	}
 	
 	#broadwired	{
-		margin-top: 15px;
+		margin-top: 40px;
 		margin-bottom: 0;
 	}
 	
 	#broadwiredSmall	{
 		display: block;
-		margin-bottom: 40px;
 		height: 1050px;
 		
+	}
+	
+	#broadwiredLink	{
+		margin-bottom: 100px;
 	}
 	
 	.smallContentSectionSmallest	{
@@ -468,16 +500,25 @@ text-decoration:none !important;
 		margin-top: 50px;
 	}
 	
+	#toppingSection	{
+		padding-top: 100px;
+		padding-bottom: 120px;
+	}
+	
+	#logoSection	{
+		margin-top: 125px;
+	}
+	
 	/* App Preview */
 	
 		#phoneSmall	{
 			display: block;
 			background-color: #ffffff;
 			width: calc(100% + 50px);
-			margin: -50px -25px 110px -25px;
+			margin: -50px -25px 60px -25px;
 			position: relative;
 			overflow: hidden;
-			padding-top: 10px;
+			padding-top: 40px;
 		}
 		
 		/* #phoneSmallBg	{
@@ -514,10 +555,6 @@ text-decoration:none !important;
 			.rowHalfContent	{
 				float: left;
 				max-width: 735px;
-			}
-			
-			#largeTextSection	{
-				max-width: 750px;
 			}
 }
 
