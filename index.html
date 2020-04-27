@@ -13,9 +13,9 @@
 		</script>
 		
 		
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
 		<meta name="msapplication-TileColor" content="#da532c">
@@ -107,7 +107,7 @@
 								<div class='titleLargeHandwritten' style='color: #ababab; font-size: 36px; font-weight: 400; margin-left: -25px; margin-top: 5px;'>
 									Try scrolling
 									
-									<img class='arrowDown' style='margin-top: -20px; width: 40px; margin-left: 185px; margin-bottom: 5px; opacity: .31;' src='arrowsmall.svg'/>
+									<img class='arrowDown' style='margin-top: -20px; width: 37px; margin-left: 183px; margin-bottom: 10px; opacity: .31;' src='arrowsmall.svg'/>
 								</div>
 							</div>
 							
@@ -167,6 +167,20 @@
 								
 								With those problems in mind I designed Tempo to be a scaled down and easy to use alternative where all your exercise and health related tracking can be digested. --> <!-- The result is a single page with a simple dashboard that 
 								gives an overview of all the items you track at the top. As you scroll down relevant information is displayed for each item and you can start new sessions or check off what you've already done. -->
+								
+								<div class='row' id='tempoLink' style='margin-top: 55px; margin-bottom: -25px;'>
+									<div class='rowStackSocial' id='rowStackSocialProject'>
+										<a href='Projects/tempoPreview.html' target='_blank' class='socialMediaAnchor'>
+											<span class='textNormalLink' style='margin-left: 30px;'>View Tempo</span>
+										</a>
+										
+										<img src='circle.svg' style='opacity: 0.2; margin: -35px 0 0 -170px; width: 215px; pointer-events: none;'>
+										
+										<div class='titleLargeHandwritten' style='color: #ababab; font-size: 40px; font-weight: 400; margin-left: 120px; margin-top: 5px;'>
+											Try the demo!
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -194,12 +208,13 @@
 										<a href='Projects/Broadwired/WorldwideBroadwired.html' target='_blank' class='socialMediaAnchor'>
 											<span class='textNormalLink' style='margin-left: 0;'>View Broadwired</span>
 										</a>
-										
-										<img src='circle.svg' style='opacity: 0.2; margin: -45px 0 0 -215px; width: 250px; pointer-events: none;'>
-										
-										<div class='titleLargeHandwritten' style='color: #ababab; font-size: 36px; font-weight: 400; margin-left: 120px; margin-top: 10px;'>
-											Check this out
-										</div>
+										<span id='broadwiredLinkCircle'>
+											<img src='circleThick.svg' style='opacity: 0.2; margin: -45px 0 0 -215px; width: 250px; pointer-events: none;'>
+											
+											<div class='titleLargeHandwritten' style='color: #ababab; font-size: 54px; font-weight: 400; margin-left: 120px; margin-top: 10px;'>
+												Check it out!
+											</div>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -211,7 +226,7 @@
 			</div>
 			
 			
-			<div class='smallContentSectionSmallest' id='toppingSection' style='margin-top: 100px;'>
+			<div class='smallContentSectionSmallest' id='toppingSection'>
 				
 				<div class='titleScaling2'>
 					<div class='row'>
@@ -294,10 +309,10 @@
 						<div class='rowHalf' id='logoSectionTasteflow'>
 							<div class='rowHalfContent'>
 								<div class='row'>
-									<div class='titleLargeHandwritten' style='color: #ababab; font-size: 36px; font-weight: 400; float: right; width: auto; margin-right: 0px;'>
-										Off the record my<br> personal favorite<br>
+									<div class='titleLargeHandwritten' style='color: #ababab; font-size: 36px; font-weight: 400; float: right; width: auto; margin-right: 40px;'>
+										I love these fonts<br>
 										
-										<img class='arrowDown' style='margin-top: -20px; width: 40px; -webkit-transform: scaleX(-1); transform: scaleX(-1); margin-bottom: 15px; opacity: .31; margin-left: -53px;' src='arrowsmall.svg'/>
+										<img class='arrowDown' style='margin-top: -22px; width: 37px; -webkit-transform: scaleX(-1); transform: scaleX(-1); margin-bottom: 15px; opacity: .31; margin-left: -50px;' src='arrowsmall.svg'/>
 									</div>
 								</div>
 								
@@ -356,7 +371,7 @@
 				<div class='row' style='position: relative; z-index: 10000; height: 900px; width: calc(100% + 50px); max-width: 1750px; display: table; margin: 0 auto; float: none;'>
 				<div class='row' style='overflow-x: hidden; overflow-y: hidden; height: 800px; position: absolute; left: -25px; width: calc(100% + 50px);'>
 				<div class='rowProjectContentParent'>
-					<div class='rowProjectContent' style='width: 1697px;'>
+					<div class='rowProjectContent' id='contentBritkit'>
 						<div class='rowProjectImage'>
 							<img class='projectImage' src='Recept.png' style='width: 500px;'>
 						</div>
@@ -380,10 +395,12 @@
 				<div class='smallContentSection' id='swipe'>
 					
 					<div class='row' style='margin: 0 auto; display: table; margin-top: -60px; float: left; width: 313px;'>
-						<div class='titleLargeHandwritten' style='color: #ababab; font-size: 36px; font-weight: 400; float: left; width: auto; margin-left: 30px;'>
+						<img class='arrowDown' style='float: left; width: 42px; -webkit-transform: scaleX(-1) scaleY(-1); transform: scaleX(-1) scaleY(-1); opacity: .31; margin: 6px 10px 0 30px;' src='arrowsmallStraight.svg'/>
+						
+						<div class='titleLargeHandwritten' style='color: #ababab; font-size: 36px; font-weight: 400; float: left; width: auto;'>
 						Swipe
 						
-						<img class='arrowDown' style='float: right; width: 45px; -webkit-transform: scaleY(-1); transform: scaleY(-1); opacity: .31; margin: 5px 15px 0 10px;' src='arrowsmallStraight.svg'/>
+						<img class='arrowDown' style='float: right; width: 42px; -webkit-transform: scaleY(-1); transform: scaleY(-1); opacity: .31; margin: 6px 15px 0 10px;' src='arrowsmallStraight.svg'/>
 					</div>
 					</div>
 				</div>
@@ -423,7 +440,7 @@
 								<div class='titleLargeHandwritten' style='color: #545454; font-size: 36px; font-weight: 400; float: left; width: auto; margin-top: 20px;'>
 									Cover photos<br> I made for them
 								</div>
-								<img class='arrowDown' style='width: 40px; margin-bottom: 15px; opacity: .31; margin: 72px 15px 0 12px; float: left;' src='arrowSmallWhite.svg'/>
+								<img class='arrowDown' style='width: 37px; margin-bottom: 15px; opacity: .31; margin: 72px 15px 0 12px; float: left;' src='arrowSmallWhite.svg'/>
 							</div>
 						</div>
 					</div>
@@ -440,7 +457,7 @@
 					<div class='row' style='position: relative; z-index: 10000; height: 525px; overflow-y: hidden; width: calc(100% + 50px); max-width: 1750px; display: table; margin: 0 auto; float: none;'>
 					<div class='row' style='overflow-x: hidden; overflow-y: hidden; height: 525px; position: absolute; left: -25px; width: calc(100% + 50px);'>
 					<div class='rowProjectContentParentSmall'>
-						<div class='rowProjectContentSmall' style='width: 1625px;'>
+						<div class='rowProjectContentSmall' id='contentLoudpastel'>
 							<img class='projectImageDark' style='border: 0; width: 475px; height: 475px;' src='Projects/Loudpastel/cover3.JPG'>
 							<img class='projectImageDark' style='border: 0; width: 475px; height: 475px;' src='Projects/Loudpastel/cover5.JPG'>
 							<img class='projectImageDark' style='border: 0; width: 475px; height: 475px; margin-right: 25px;' src='Projects/Loudpastel/cover6.JPG'>
@@ -452,11 +469,13 @@
 					
 					<div class='smallContentSection' id='swipe'>
 					
-						<div class='row' style='margin-top: 50px; float: left; width: 313px;'>
-							<div class='titleLargeHandwritten' style='color: #4F4F4F; font-size: 36px; font-weight: 400; float: left; width: auto; margin-left: 30px;'>
+						<div class='row' style='margin-top: 50px; float: left; width: 290px;'>
+							<img class='arrowDown' style='float: left; width: 42px; -webkit-transform: scaleX(-1) scaleY(-1); transform: scaleX(-1) scaleY(-1); opacity: .31; margin: 6px 10px 0 30px;' src='arrowsmallStraightWhite.svg'/>
+							
+							<div class='titleLargeHandwritten' style='color: #4F4F4F; font-size: 36px; font-weight: 400; float: left; width: auto;'>
 							Swipe
 							
-							<img class='arrowDown' style='float: right; width: 45px; -webkit-transform: scaleY(-1); transform: scaleY(-1); opacity: .31; margin: 5px 15px 0 10px;' src='arrowsmallStraightWhite.svg'/>
+							<img class='arrowDown' style='float: right; width: 42px; -webkit-transform: scaleY(-1); transform: scaleY(-1); opacity: .31; margin: 6px 15px 0 10px;' src='arrowsmallStraightWhite.svg'/>
 						</div>
 						</div>
 					</div>
