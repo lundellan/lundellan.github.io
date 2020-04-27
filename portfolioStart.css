@@ -598,7 +598,7 @@ text-decoration:none !important;
 	}
 	
 	#broadwiredSmall	{
-		height: 725px;
+		height: 740px;
 	}
 	
 	.rowHalfContent	{
@@ -679,6 +679,24 @@ text-decoration:none !important;
 	
 	.textNormal, .textNormalProject	{
 		font-size: 26px;
+	}
+	
+	/* Logos */
+	
+	.projectLogo, .projectLogoStacked	{
+		transform: scale(0.8);
+	}
+	
+	#toppingScaling	{
+		transform: scale(1);
+	}
+	
+	#tempoScaling	{
+		margin: -15px 0 -25px -15px;
+	}
+	
+	#broadwiredScaling	{
+		margin: -15px 0 -20px -45px;
 	}
 	
 }
