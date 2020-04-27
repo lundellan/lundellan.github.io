@@ -580,7 +580,15 @@ text-decoration:none !important;
 
 @media screen and (max-width: 750px)	{
 	#tempoBroadwiredSection	{
-		padding-bottom: 110px;
+		padding-bottom: 40px;
+	}
+	
+	#tempo	{
+		margin-bottom: -40px;
+	}
+	
+	#phoneSmall	{
+		margin-top: -75px;
 	}
 	
 	#toppingSection	{
@@ -692,11 +700,11 @@ text-decoration:none !important;
 	}
 	
 	#tempoScaling	{
-		margin: -15px 0 -25px -15px;
+		margin: -30px 0 -25px -15px;
 	}
 	
 	#broadwiredScaling	{
-		margin: -15px 0 -20px -45px;
+		margin: -15px 0 -15px -45px;
 	}
 	
 }
