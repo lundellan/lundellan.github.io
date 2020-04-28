@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Tempo</title>
-		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=3.0, minimum-scale=0.75">	
+			
 		<meta charset="utf-8">
 		
 		<link rel='stylesheet' type='text/css' href='tempo.css'>
@@ -41,6 +41,7 @@
 				width: calc(100% + 50px);
 				height: 100%;
 				overflow: scroll;
+				overflow-x: hidden;
 				-webkit-overflow-scrolling: touch;
 			}
 			
@@ -49,7 +50,8 @@
 				border: 0;
 				position: relative;
 				z-index: 10;
-				width: calc(100% - 50px);
+				width: 306px;
+				padding-right: 50px;
 			}
 			
 			@media screen and (min-width: 600px)	{

@@ -226,7 +226,7 @@ text-decoration:none !important;
 	border: 0;
 	position: relative;
 	z-index: 10;
-	width: calc(100% - 50px);
+	width: 305px;
 	padding-right: 50px;
 }
 
