@@ -53,13 +53,17 @@
 				-webkit-overflow-scrolling: touch;
 			}
 			
-			.iphoneContent	{
+			.iphoneContent, .iphoneContentMain	{
 				float: left;
 				border: 0;
 				position: relative;
 				z-index: 10;
 				width: 306px;
 				padding-right: 50px;
+			}
+			
+			.iphoneContentMain	{
+				width: 100%;
 			}
 			
 			@media screen and (min-width: 600px)	{
@@ -92,11 +96,7 @@
 		</div>
 		
 		<div id='contentSpace'>
-			<div class='iphoneContentParent'>
-				<div class='iphoneContentParentHidden'>
-					<img class='iphoneContent' src='tempoApp.png'>
-				</div>
-			</div>
+			<img class='iphoneContentMain' src='tempoApp.png'>
 		</div>
 		
 		
