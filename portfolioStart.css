@@ -375,6 +375,11 @@ text-decoration:none !important;
 	display: none;
 }
 
+#loudpastelScaling	{
+	margin-bottom: 45px;
+	height: 110px;
+}
+
 @media screen and (min-width: 1650px)	{	
 	.rowProjectContent	{
 		margin-left: calc(((50% - 800px) / 2) + (400px - 325px + 25));
@@ -582,7 +587,11 @@ text-decoration:none !important;
 
 @media screen and (max-width: 750px)	{
 	#tempoBroadwiredSection	{
-		padding-bottom: 75px;
+		padding-bottom: 100px;
+	}
+	
+	#broadwired	{
+		margin-top: 40px;
 	}
 	
 	#tempo	{
@@ -594,8 +603,8 @@ text-decoration:none !important;
 	}
 	
 	#toppingSection	{
-		padding-bottom: 75px;
-		padding-top: 105px;
+		padding-bottom: 100px;
+		padding-top: 125px;
 	}
 	
 	#tempoPreview	{
@@ -643,8 +652,8 @@ text-decoration:none !important;
 	}
 	
 	#logoSection	{
-		margin-top: 25px;
-		margin-bottom: 25px;
+		margin-top: 50px;
+		margin-bottom: 0;
 	}
 	
 	#logoSectionTasteflow	{
@@ -717,7 +726,7 @@ text-decoration:none !important;
 	}
 	
 	#logoSectionTasteflow	{
-		margin-top: 25px;
+		margin-top: 50px;
 	}
 	
 	#tasteflowScaling	{
@@ -726,6 +735,19 @@ text-decoration:none !important;
 	
 	#britkitScaling	{
 		margin: -10px 0 -25px -30px;
+	}
+	
+	#loudpastelScaling	{
+		margin: 10px 0 20px -50px;
+		width: 525px;
+	}
+	
+	#logoSectionParent	{
+		padding-bottom: 50px;
+	}
+	
+	#darkSection	{
+		padding-bottom: 75px;
 	}
 	
 }
