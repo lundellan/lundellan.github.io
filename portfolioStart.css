@@ -217,6 +217,7 @@ text-decoration:none !important;
 	width: calc(100% + 50px);
 	height: 100%;
 	overflow: scroll;
+	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -226,6 +227,7 @@ text-decoration:none !important;
 	position: relative;
 	z-index: 10;
 	width: calc(100% - 50px);
+	padding-right: 50px;
 }
 
 .ipadSection	{
@@ -580,7 +582,7 @@ text-decoration:none !important;
 
 @media screen and (max-width: 750px)	{
 	#tempoBroadwiredSection	{
-		padding-bottom: 40px;
+		padding-bottom: 75px;
 	}
 	
 	#tempo	{
@@ -592,7 +594,8 @@ text-decoration:none !important;
 	}
 	
 	#toppingSection	{
-		padding-bottom: 100px;
+		padding-bottom: 75px;
+		padding-top: 105px;
 	}
 	
 	#tempoPreview	{
@@ -636,11 +639,12 @@ text-decoration:none !important;
 	
 	.titleScaling2	{
 		transform: scale(0.75);
-		margin: -125px 0 -95px -60px;
+		margin: -125px 0 -85px -60px;
 	}
 	
 	#logoSection	{
-		margin-top: 75px;
+		margin-top: 25px;
+		margin-bottom: 25px;
 	}
 	
 	#logoSectionTasteflow	{
@@ -705,6 +709,23 @@ text-decoration:none !important;
 	
 	#broadwiredScaling	{
 		margin: -15px 0 -15px -45px;
+	}
+	
+	
+	#baggedScaling	{
+		margin: 0px 0 -25px -40px;
+	}
+	
+	#logoSectionTasteflow	{
+		margin-top: 25px;
+	}
+	
+	#tasteflowScaling	{
+		margin: -30px 0 -25px -50px;
+	}
+	
+	#britkitScaling	{
+		margin: -10px 0 -25px -30px;
 	}
 	
 }
