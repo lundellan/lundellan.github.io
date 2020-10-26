@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tempo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=3.0, minimum-scale=0.75">	
+		<meta charset="utf-8">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		
+		<style>
+			
+			#contentSpace	{
+				float: left;
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			#phone	{
+				margin: 0 auto;
+				display: none;
+				width: 350px; 
+				margin-top: 100px;
+			}
+			
+			.iphone	{
+				float: left;
+				width: 350px;
+				pointer-events: none;
+				position: relative;
+				z-index: 100;
+			}
+			
+			.iphoneContentParent	{
+				width: 307px;
+				height: 632px;
+				margin: 52px 0 0 -327px;
+				border-radius: 0 0 27px 27px;
+				float: left;
+				overflow: hidden;
+			}
+			
+			.iphoneContentParentHidden	{
+				float: left;
+				width: calc(100% + 50px);
+				height: 100%;
+				overflow: scroll;
+				overflow-x: hidden;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			.iphoneContent, .iphoneContentMain	{
+				float: left;
+				border: 0;
+				position: relative;
+				z-index: 10;
+				width: 306px;
+				padding-right: 50px;
+			}
+			
+			.iphoneContentMain	{
+				width: 100%;
+			}
+			
+			@media screen and (min-width: 600px)	{
+				#contentSpace	{
+					display: none;
+				}
+				
+				#phone	{
+					display: table;
+				}
+			}
+			
+			body	{
+				margin: 0;
+				padding: 0;
+				background-color: #eaeaea;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div id='phone'>
+			<img class='iphone' src='../iphoneLargeNotifications.png'>
+			<div class='iphoneContentParent'>
+				<div class='iphoneContentParentHidden'>
+					<img class='iphoneContent' src='tempoApp.png'>
+				</div>
+			</div>
+		</div>
+		
+		<div id='contentSpace'>
+			<img class='iphoneContentMain' src='tempoApp.png'>
+		</div>
+		
+		
+	</body>
+</html>

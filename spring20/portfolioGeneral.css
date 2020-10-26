@@ -1,0 +1,123 @@
+body	{
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	overflow-x: hidden;
+}
+
+html	{
+	overflow-x: hidden;
+}
+
+img	{
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+#contentSection	{
+	float: left;
+	width: 100%;
+}
+
+.fullContentSection	{
+	float: left;
+	width: calc(100% - 50px);
+	padding: 0 25px;
+}
+
+.fullContentSectionBg	{
+	float: left;
+	width: 100%;
+}
+
+.smallContentSection, .smallContentSectionSmallest	{
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+.smallContentSectionSmallest	{
+	max-width: 1300px;
+	width: calc(100% - 200px);
+	padding: 0 100px;
+}
+
+.smallContentSectionContent	{
+	max-width: 900px;
+	width: 100%;
+	float: left;
+	margin-left: calc((50% - 600px) / 2);
+}
+
+.smallContentSectionBg	{
+	float: left;
+	width: calc(100% - 50px);
+	padding: 0 25px;
+}
+
+#contentTransition	{
+	background-image: linear-gradient(#ffffff, #F5F5F5);
+	margin-top: -70px;
+	z-index: -1;
+	position: relative;
+	height: 100px;
+}
+
+.row	{
+	float: left;
+	width: 100%;
+}
+
+.rowHalf	{
+	float: left;
+	width: 50%;
+}
+
+#logoSection	{
+	margin-top: 125px;
+}
+
+#logoSectionTasteflow	{
+	margin-top: 94px;
+}
+
+.rowHalfContent	{
+	float: none;
+	margin: 0 auto;
+	display: table;
+	max-width: 650px;
+	width: calc(100% - 50px);
+	padding: 0 25px;
+	
+}
+
+.rowStack, .rowStackSocial	{
+	float: left;
+	width: auto;
+	margin-bottom: 10px;
+	padding: 0 25px;
+}
+
+.wallpaper	{
+	float: left;
+	width: 100%;
+	z-index: -1;
+	position: relative;
+}
+
+#desktopWallpaper	{
+	display: block;
+}
+
+#mobileWallpaper	{
+	display: none;
+}
+
+/* Scaling */
+

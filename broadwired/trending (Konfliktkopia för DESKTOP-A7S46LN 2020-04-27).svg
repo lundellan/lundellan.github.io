@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Triangle-3" fill="#FF5C00" transform="translate(115.653762, 34.653762) rotate(45.000000) translate(-115.653762, -34.653762) " points="115.653762 -12.6652415 178.153762 81.9727658 53.1537622 81.9727658"></polygon>
+        <rect id="Rectangle-13" fill="#FF5C00" transform="translate(60.422596, 89.422596) rotate(-45.000000) translate(-60.422596, -89.422596) " x="0.22715998" y="64.1675776" width="120.390873" height="50.5100378"></rect>
+        <path d="M309.682085,166.376059 L274.999539,147.935022 L160.04409,228.427694 L141.993918,202.649378 L272.859948,111.015997 L272.933775,110.877148 L273.004522,110.914765 L273.058245,110.877148 L273.132072,110.982584 L309.854653,130.508327 L353.399415,102.230027 L369.820782,127.516715 L310.564067,165.998476 L310.21316,166.658436 L309.847338,166.463925 L309.771239,166.513344 L309.682085,166.376059 Z" id="Combined-Shape" fill="#FF5C00" transform="translate(255.907350, 165.328861) rotate(-25.000000) translate(-255.907350, -165.328861) "></path>
+    </g>
+</svg>

@@ -1,0 +1,394 @@
+body	{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+#intro	{
+	margin: 0 auto;
+	display: table;
+	width: 1350px;
+	margin-top: 100px;
+	pointer-events: none;
+}
+
+.smallScaling	{
+	zoom: .8;
+}
+
+.mediumScaling	{
+	zoom: .9;
+}
+
+img	{
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	object-fit: cover;
+	object-position: center;
+	pointer-events: none;
+}
+
+.row	{
+	float: left;
+	width: 100%;
+}
+
+.contentParent	{
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p	{
+	margin: 0;
+	padding: 0;
+}
+
+.mediumTitle, .largeTitle, .smallTitle	{
+	float: left;
+	font-family: 'Inter', sans-serif;
+	font-size: 52px;
+	line-height: 66px;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 600;
+	
+	/* Desktop */
+	max-width: 600px;
+	padding-right: 300px;
+	width: 100%;
+}
+
+.largeTitle	{
+	font-size: 100px;
+	line-height: 121px;
+}
+
+.smallTitle	{
+	color: #999999;
+	border-bottom: 5px solid #999999;
+	font-size: 36px;
+	line-height: 44px;
+	padding: 0;
+	padding-bottom: 7px;
+	margin-top: 60px;
+	width: auto;
+	margin-bottom: 5px;
+}
+
+.introMediumTitle	{
+	position: absolute;
+	padding-right: 0;
+	float: none;
+	width: auto;
+}
+
+.linkMediumTitle	{
+	font-size: 36px;
+	line-height: 48px;
+	margin-top: 60px;
+}
+
+.contentMediumTitle	{
+	margin-top: 30px;
+}
+
+.introLink	{
+	text-decoration: none;
+	padding-bottom: 4px;
+}
+
+.descriptionParent	{
+	float: left;
+	width: 100%;
+	margin-top: 2px;
+}
+
+.description	{
+	float: left;
+	margin-top: 30px;
+	max-width: 600px;
+	width: 100%;
+	font-family: 'Inter', sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	color: #696969;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 500;
+}
+
+.descriptionTitle	{
+	width: 100%;
+	font-weight: 600;
+	color: #000000;
+	line-height: 44px;
+}
+
+.homepalSection	{
+	margin-top: 250px;
+}
+
+.projectSection	{
+	margin-top: 350px;
+}
+
+.freelanceProjectSection	{
+	margin-top: 200px;
+}
+
+.newBackground	{
+	padding-bottom: 350px;
+}
+
+.contentSection	{
+	margin-top: 140px;
+}
+
+.pageParent	{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #123456;
+}
+
+.filesSection	{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.file	{
+	width: 550px;
+	margin: 0 25px;
+	float: left;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.marginFile	{
+	margin-bottom: 50px !important;
+}
+
+
+
+.descriptionIcon	{
+	height: 210px;
+	margin-bottom: 15px;
+}
+
+.descriptionWordmark	{
+	height: 125px;
+	margin-bottom: 15px;
+}
+
+.phoneSection	{
+	width: 1190px;
+	margin: 0 auto;
+}
+
+.phone	{
+	width: calc((1190px / 3) - 40px);
+	margin: 0 20px;
+	float: left;
+}
+
+.smallTitleDark	{
+	color: #666666;
+	border-bottom: 4px solid #666666;
+}
+
+.descriptionDark	{
+	color: #969696;
+}
+
+.largeTitleDark, .descriptionTitleDark, .mediumTitleDark	{
+	color: #eeeeee;
+}
+
+.coverSection	{
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+.cover	{
+	width: 425px;
+	margin: 0 25px;
+	float: left;
+}
+
+
+
+.description a, .mediumTitle a	{
+	text-decoration: none;
+	color: #004dc9;
+	font-weight: 600;
+}
+
+.description a:hover, .mediumTitle a:hover	{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/* Specific Elements */
+
+.segmentParentTop	{
+	margin-top: 110px;
+}
+
+.segmentParentMiddle	{
+	margin-top: 125px;
+}
+
+.segmentParentInteractive	{
+	margin-top: 200px;
+}
+
+.segmentParentBottom	{
+	margin-top: 125px;
+	margin-bottom: 110px;
+}
+
+.segmentParentBanner	{
+	margin-top: 100px;
+}
+
+.logo	{
+	height: 200px;
+}
+
+.logoLarge	{
+	height: 275px;
+}
+
+.wordmark	{
+	width: 650px;
+	margin-bottom: 125px;
+}
+
+.branding	{
+	width: 675px;
+}
+
+.ipad, .wallpaper	{
+	width: 1150px;
+	margin: 0 auto;
+	display: table;
+}
+
+.toppingLogo	{
+	height: 260px;
+	margin-bottom: -5px;
+}
+
+.medaljelele	{
+	height: 425px;
+}
+
+.tempoLogo	{
+	height: 225px;
+}
+
+.wideBanner	{
+	width: 1150px;
+	margin: 0 auto;
+	display: table;
+	pointer-events: none;
+}
+
+#welcomeBack	{
+	display: none;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+#tabletMobileIntro	{
+	margin: 0 auto;
+	width: 900px;
+	display: table;
+	margin-top: 100px;
+	pointer-events: none;
+}
+
+.tabletIntroLinks	{
+	max-width: 700px;
+	width: calc(100% - 200px);
+}
+
+.tempoFrameImage	{
+	width: 615px;
+	margin-bottom: -354px;
+	pointer-events: none;
+}
+
+.iphoneContentParent	{
+	width: 350px;
+	height: 753px;
+	margin: 22px 0 0 113px;
+	border-radius: 0 0 35px 35px;
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.iphoneContentParentHidden	{
+	float: left;
+	width: calc(100% + 50px);
+	height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.iphoneContent	{
+	float: left;
+	border: 0;
+	position: relative;
+	z-index: 10;
+	width: 350px;
+	padding-right: 50px;
+	pointer-events: all;
+}
+
+
+
+
+.websitePreviewParent	{
+	width: 5000px;
+	margin-left: calc(-2500px + (50vw / .9));
+	height: 2100px;
+}
+
+.websitePreview	{
+	height: 2100px;
+	margin: 0 auto;
+	display: table;
+}
+
+@media screen and (max-width: 1190px) {
+	body	{
+		overflow: hidden;
+	}
+	
+	#welcomeBack	{
+		display: block;
+		height: 100vh;
+		width: 100vw;
+		background-color: #ffffff;
+		z-index: 1000;
+		position: fixed;
+		top: 0;
+	}
+	
+}

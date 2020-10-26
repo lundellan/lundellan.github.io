@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Worldwide News - Broadwired</title>
+		
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900|Montserrat:400,500,600,700,900|Playfair+Display:400,600,700,800,900&display=swap" rel="stylesheet">
+
+			<link rel="stylesheet" href="https://use.typekit.net/odj4qtz.css">
+
+			<meta charset="utf-8">
+		
+				<style type="text/css">
+				
+					/* Navigations */
+									
+									/* Top Logo */
+									
+										#topLogoSection	{
+											float: left;
+											width: 13em;
+										}
+										
+										#topLogo	{
+											float: left;
+											height: 1.5em;
+											margin: 1.2em 0 1.5em -0.1em;
+										}
+										
+										.topLogoLink	{
+											float: left;
+											margin-left: 15px;
+										}
+										
+										.topLogoLink:hover	{
+											opacity: .7;
+											cursor: pointer;
+										}
+									
+									/* Sign In Section */
+									
+										#signInSection	{
+											float: right;
+											width: 12.75em;
+											margin: 0 0 0 0;
+										}
+										
+										.signIn	{
+											float: left;
+											width: 13em;
+											text-align: center;
+											padding: 1.15em 0;
+											margin: .95em 0;
+											color: #ffffff;
+											font-weight: 700;
+											font-family: sans-serif;
+											font-size: .9em;
+											background-color: #FF5F55;
+											border-radius: .25em;
+										}
+										
+										.signIn:hover	{
+											opacity: .8;
+										}
+									
+									/* Search Bar */
+						
+										#searchBar	{
+											float: left;
+											width: calc(100% - 2.3em);
+											text-align: left;
+											border-radius: .25em;
+											padding: 1.1em 1.15em;
+											margin: 1.1em 0 0 0;
+											background-color: #ffffff;
+											-o-transition: .25s;
+											-ms-transition: .25s;
+											-moz-transition: .25s;
+											-webkit-transition: .25s;
+											transition: .25s;
+											box-shadow: .125em .125em .25em #E8E8E8;
+											border: .1em solid #D6D6D6;
+										}
+										
+										#searchBar:hover	{
+											box-shadow: .125em .125em .4em #CCCCCC;
+										}
+										
+										#searchBar:focus	{
+											outline-width: 0;
+											box-shadow: .125em .125em .4em #CCCCCC;
+											text-align: left;
+										}
+										
+									/* Search Bar Placeholder */
+
+										::-webkit-input-placeholder {
+											color: #101010;
+											font-weight: 400;
+											font-family: neue-haas-unica, sans-serif;
+											font-size: 1.2em;
+										}
+
+										:-moz-placeholder { 
+											color: #101010;
+											font-weight: 400;
+											font-family: neue-haas-unica, sans-serif;
+											font-size: 1em;						
+										}
+
+										::-moz-placeholder { 
+											color: #101010;
+											font-weight: 400;
+											font-family: neue-haas-unica, sans-serif;
+											font-size: 1em;
+										}
+
+										:-ms-input-placeholder {  
+											color: #101010;
+											font-weight: 400;
+											font-family: neue-haas-unica, sans-serif;
+											font-size: 1em;
+										}
+										
+									/* Focused Search Bar Placeholder */
+										
+										input:focus::-webkit-input-placeholder	{
+											color: transparent; 
+										}
+										
+										input:focus:-moz-placeholder	{ 
+											color: transparent; 
+										}
+										
+										input:focus::-moz-placeholder	{ 
+											color: transparent; 
+										}
+										
+										input:focus:-ms-input-placeholder	{
+											color: transparent; 
+										}
+									
+								/* Side Navigation */
+								
+									#sideNavCategories	{
+										float: left;
+										position: fixed;
+										width: 11em;
+										margin: 0 0 0 0;
+										padding: 1em 0;
+									}
+
+									.navTitleRow	{
+										float: left;
+										width: 100%;
+									}
+									
+									.navTitle	{
+										float: left;
+										font-size: .9em;
+										font-family: sans-serif;
+										font-weight: 700;
+										color: #000000;
+										margin: .7em 0 .7em 0;
+									}
+							
+									.navRow	{
+										float: left;
+										width: 100%;
+										padding: .4em 0;
+									}
+									
+									.sideNavLink, .sideNavLinkLarge, .sideNavLinkViewAll, .weatherText	{
+										float: left;
+										font-size: 16px;
+										font-family: neue-haas-unica, sans-serif;
+										font-weight: 500;
+										color: #606060;
+										margin: 2px 0 0 0;
+										
+									}
+									
+									.sideNavLinkLarge	{
+										font-size: 24px;
+										line-height: 26px;
+									}
+									
+									.sideNavLinkViewAll	{
+										background-color: #ffffff;
+										border: 1px solid #d6d6d6;
+										padding: 4px 8px 6px 8px;
+										border-radius: 6px;
+										margin-top: 12px;
+										font-weight: 400;
+									}
+									
+									.sideNavLinkViewAll:hover	{
+										text-decoration: underline;
+									}
+									
+									.sideNavLink:hover, .sideNavLinkLarge:hover	{
+										color: #353535;
+									}
+									
+									.sideNavIcon	{
+										float: left;
+										height: 30px;
+										margin-right: 10px;
+										cursor: pointer;
+									}
+									
+					/* Content */
+					
+								/* Content Section */
+								
+									#contentSection	{
+										width: calc(100% - 4em);
+										max-width: 90em;
+										margin: 0 auto;
+									}
+									
+								/* Columns and Rows */
+								
+									#centerColumnContent	{
+										float: left;
+										width: calc(100% - 13em - 300px);
+										margin: 1em 0 1em 12em;
+									}
+									
+									#rightColumnContent	{
+										float: right;
+										width: 300px;
+										margin: 5.2em 0 0 0;
+									}
+									
+					/* News Articles */
+					
+								/* Article Text */
+								
+									.categoryIcon	{
+										float: left;
+										font-size: .6em;
+										font-weight: bold;
+										height: 2em;
+										width: 2.7em;
+										text-align: center;
+										color: #FFFFFF;
+										font-family: 'Roboto', sans-serif;
+										padding: .8em 0 0 .05em;
+										border-radius: 500em;
+									}
+									
+									.categoryIcon:hover	{
+										opacity: .8;
+									}
+								
+									.categoryTitle	{
+										float: left;
+										font-size: .9em;
+										font-family: sans-serif;
+										font-weight: 700;
+										color: #919191; 
+										margin: .45em 0 0 .8em;
+									}
+									
+									.categoryTitle:hover	{
+										color: #000000;
+									}
+								
+									.title, .titleSmall, .titleTiny	{
+										float: left;
+										font-family: benton-modern-display, serif;
+										font-size: 28px;
+										font-weight: 400;
+										color: #000000;
+										margin: .4em 0 0 0;
+										line-height: 1.3em;
+									}
+									
+									.title:hover, .titleSmall:hover, .titleTiny:hover	{
+										text-decoration: underline;
+									}
+									
+									.titleSmall	{
+										margin-top: .5em;
+										font-size: 22px;
+										font-weight: 600;
+									}
+									
+									.titleTiny	{
+										font-size: 22px;
+										font-weight: 600;
+										max-height: 84px;
+										overflow: hidden;
+									}
+									
+									.bodyText	{
+										float: left;
+										font-family: 'Roboto', sans-serif;
+										font-size: .7em;
+										font-weight: 400;
+										color: #595959;
+										margin: .75em 0 0 0;
+									}
+									
+									.newsSourceName	{
+										float: left;
+										font-size: .75em;
+										font-family: neue-haas-unica, sans-serif;
+										font-weight: 400;
+										color: #919191;
+										margin: .75em 0 0 0;
+									}
+									
+									.newsSourceName:hover	{
+										text-decoration: underline;
+									}
+					
+								/* XL News Article */
+								
+									.xlNewsArticle	{
+										float: left;
+										width: 100%;
+									}
+									
+									.xlNewsImg	{
+										float: left;
+										width: 100%;
+										border-radius: .25em;
+										max-height: 500px;
+										object-fit: cover;
+										object-position: center;
+										margin-top: 1em;
+									}
+									
+									.xlNewsTextSection	{
+										float: left;
+										width: 16em;
+										margin: 2em 0 0 1em;
+										padding: 1.5em;
+										background-color: #FFFFFF;
+										position: absolute;
+										border-radius: .25em;
+										border: 1px solid #D6D6D6;
+									}
+									
+								/* Medium News Article */
+								
+									.mNewsArticle, .mNewsArticleRight	{
+										float: left;
+										width: calc(100% - 2px);
+										margin: 1em 0 0 0;
+										background-color: #ffffff;
+										border-radius: .5em;
+										border: 1px solid #D6D6D6
+									}
+									
+									.mNewsArticle:hover, .mNewsArticleRight:hover	{
+										-o-transition: .25s;
+										-ms-transition: .25s;
+										-moz-transition: .25s;
+										-webkit-transition: .25s;
+										transition: .25s;
+										box-shadow: .125em .125em .25em #E8E8E8;
+									}
+									
+									.mNewsArticleRight	{
+										width: 100%;
+									}
+									
+									.mNewsImg	{
+										float: left;
+										width: 100%;
+										border-radius: .25em .25em 0 0;
+									}
+									
+									.mNewsCategory	{
+										float: left;
+										position: absolute;
+										padding: 9px 0 9px 10px;
+										background-color: #ffffff;
+										margin: 1em 0 0 1em;
+										border-radius: .2em;
+										border: 1px solid #D6D6D6;
+									}
+									
+									.mNewsTextSection	{
+										float: left;
+										width: calc(100% - 2em);
+										margin: .25em 1em 1em 1em;
+									}
+									
+								/* In Focus Sections */
+								
+									/* In Focus Today */
+									
+										#inFocusToday	{
+											float: left;
+											width: calc(100% - 2px);
+											margin: 1em 0 0 0;
+											background-color: #ffffff;
+											border-radius: .25em;
+											padding: .5em 0 1.75em 0;
+											border: 1px solid #D6D6D6;
+											overflow: hidden;
+										}
+										
+										.inFocusTitle	{
+											float: left;
+											font-size: .8em;
+											font-family: 'Roboto', sans-serif;
+											font-weight: 700;
+											color: #FF5F55;
+											margin: 1.5em 0 0 1.8em;
+										}
+										
+										.inFocusTitle:hover	{
+											opacity: .7;
+										}
+										
+										.inFocusRow	{
+											float: left;
+											width: calc(100% - 1.25em);
+											margin: 1em 0 0 1.25em;
+										}
+										
+										.inFocusArticle	{
+											float: left;
+											width: calc(100% - 1.25em);
+											padding-right: 1.25em;
+											padding-bottom: 0;
+											
+										}
+										
+										.inFocusNumber	{
+											float: left;
+											width: 37px;
+											font-size: 50px;
+											font-family: benton-modern-display, serif;
+											font-style: italic;
+											font-weight: 400;
+											margin-top: 2px;
+											margin-left: 3px;
+											color: #bababa;
+											
+										}
+									
+					/* Advertisments */
+					
+								/* Right Column Ads */
+								
+									#wideAd	{
+										float: left;
+										width: 728px;
+										height: 90px;
+										background-color: #dedede;
+									}
+								
+									#smallAd	{
+										float: left;
+										width: 300px;
+										height: 600px;
+										background-color: #dedede;
+										margin-top: 1em;
+									}
+
+					/* Other Sections */
+					
+								/* Right Column Information */
+								
+									/* Broadwired Promotion */
+									
+										#showcase	{
+											float: left;
+											width: calc(100% - 2px);
+											margin: 0 0 0 0;
+											background-color: #f5f5f5;
+											border-radius: .25em;
+											border: 1px solid #D6D6D6;
+											padding-bottom: 25px;
+										}
+										
+										.promoText	{
+											float: left;
+											font-size: 1.8em;
+											font-family: 'Roboto', sans-serif;
+											font-weight: 900;
+											color: #ffffff;
+											line-height: 1.3em;
+											letter-spacing: .03em;
+											margin: 1em;
+										}
+										
+								/* Bottom Navigation */
+								
+									#bottomNav	{
+										float: left;
+										width: 100%;
+										height: 15em;
+										background-color: #123456;
+										border-top: .1em solid #F5F5F5;
+									}
+									
+					/* General Assets */
+					
+								/* Rows and Margins */
+								
+									.row	{
+										float: left;
+										width: 100%;
+									}
+									
+									.halfRow	{
+										float: left;
+										width: calc(50% - .5em);
+									}
+									
+									.sectionTitle	{
+										float: left;
+										font-size: .8em;
+										font-family: 'Roboto', sans-serif;
+										font-weight: 700;
+										color: #000000;
+										margin: .7em 0 .7em 0;
+									}
+									
+					/* HTML Styles */
+					
+								/* Tag Styles */
+								
+									body	{
+										margin: 0;
+										background-color: rgba(243, 223, 192, 0.5);
+										min-width:1170px;        /* Suppose you want minimum width of 1000px */
+									    width: auto !important;  /* Firefox will set width as auto */
+									    width: 1170px;
+									    overflow-x: hidden;
+									}
+									
+									a	{
+										text-decoration: none;
+									}
+									
+					/* Scaling */
+					
+						@media (min-width: 1350px)	{
+							#centerColumnContent	{
+								width: calc(100% - 13em - 325px);
+							}
+						
+							#rightColumnContent	{
+								margin: 5.2em 0 0 25px;
+							}
+						}
+				
+				</style>
+	</head>
+	
+	<body>
+		
+		<!-- Content Section -->
+	
+			<div id="contentSection">
+			
+				<!-- Side Navigation -->
+				
+					<div id="sideNavCategories">
+						
+						<!-- Current Page Sections -->
+						
+							<div id="topLogoSection">
+								<img id="topLogo" href="#" src="BroadwiredLogo.svg">
+							</div>
+						
+							<div class="navRow">
+								<a class="sideNavLinkLarge" style="color: #000000;" href="#">Worldwide</a>
+							</div>
+							
+							<div class="navRow">
+								<a class="sideNavLinkLarge" href="#">Local</a>
+							</div>
+							
+							<div class="navRow">
+								<a class="sideNavLinkLarge" href="#">Videos</a>
+							</div>
+						
+						<!-- Categories -->
+							
+							<div class="navRow" style='margin-top: 15px;'>
+								<img class='sideNavIcon' src='innovationIcon.svg'>
+								<a class="sideNavLink" href="#">Innovation</a>
+							</div>
+							
+							<div class="navRow">
+								<img class='sideNavIcon' src='fameIcon.png'>
+								<a class="sideNavLink" href="#">Celebrities</a>
+							</div>
+							
+							<div class="navRow">
+								<img class='sideNavIcon' src='scienceIcon.svg'>
+								<a class="sideNavLink" href="#">Science</a>
+							</div>
+							
+							<div class="navRow">
+								<img class='sideNavIcon' src='economyIcon.svg'>
+								<a class="sideNavLink" href="#">Economy</a>
+							</div>
+							
+							<!-- <div class="navRow">
+								<a class="categoryIcon" style="background-color: #0088ff;" href="#">P</a>
+								<a class="sideNavLink" href="#">Politics</a>
+							</div> -->
+							
+							<!-- <div class="navRow">
+								<a class="categoryIcon" style="background-color: #6c56cd;" href="#">E</a>
+								<a class="sideNavLink" href="#">Entertainment</a>
+							</div> -->
+							
+							<div class="navRow">
+								<img class='sideNavIcon' src='sportsIcon.svg'>
+								<a class="sideNavLink" href="#">Sports</a>
+							</div>
+							
+							
+								
+							<a class="sideNavLinkViewAll" href="#">View all</a>
+							
+					</div>
+
+					
+				<!-- Center Column Content -->
+				
+					<div id="centerColumnContent">
+
+						<!-- Main News Article (XL) -->
+						
+							<input type="text" id="searchBar" name="search" placeholder="Search news, topics and categories">
+						
+							<div class="xlNewsArticle">
+								<img class="xlNewsImg" src="https://s3.amazonaws.com/architecture-org/files/modules/federal-reserve-eric-allix-rogers-02.jpg">
+								
+								<div class="xlNewsTextSection">	
+										
+									<img class='sideNavIcon' src='economyIcon.svg'>
+									<a class="sideNavLink" href="#">Economy</a>
+									
+									<a class="title" style='font-weight: 600;' href="https://www.wsj.com/articles/regulators-adjust-u-s-bank-capital-requirements-to-encourage-lending-11585328274">Regulators Adjust U.S. Bank Capital Requirements to Encourage Lending</a>
+								
+									<a class="newsSourceName" href="https://www.wsj.com/">The Wall Street Journal</a>
+								</div>
+							</div>
+							
+						<!-- Second Row of Articles (Medium) -->
+						
+						<div class='halfRow' style='margin-right: 1em;'>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://i.guim.co.uk/img/media/7ea31c2a324484604c9fdcf56f4a1f84ce86d3eb/100_85_1396_838/master/1396.jpg?width=1920&quality=85&auto=format&fit=max&s=59099841910dc6f83911c717eb022351">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='fameIcon.png'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://www.theguardian.com/uk-news/2020/mar/30/harry-and-meghan-start-new-life-focus-on-family-charities">Harry and Meghan to start new life with focus on family and charities</a>
+									<a class="newsSourceName" href="https://www.theguardian.com/">The Guardian</a>
+								</div>
+							</div>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://www.idg.se/editorial/980/path/1.705106.1532607015!imageUploader/1416006792.jpg">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='innovationIcon.svg'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://edition.cnn.com/2020/01/31/tech/zuckerberg-facebook-speech-utah/index.html">Zuckerberg says Facebook's new approach 'is going to piss off a lot of people'</a>
+									<a class="newsSourceName" href="https://cnn.com/">CNN</a>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class='halfRow'>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/02/12/gettyimages-458748878.jpg?w660">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='sportsIconWhite.svg'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://www.independent.co.uk/sport/football/international/fifa-world-cup-history-brazil-germany-france-spain-italy-a9442321.html">Brazil, Germany, England and more: Who would win the most World Cup of World Cups?</a>
+									<a class="newsSourceName" href="https://independent.co.uk/">Independent</a>
+								</div>
+							</div>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://cdn.theatlantic.com/thumbor/vefh6IXRD_QcRZ2uKe9BFLizhgE=/1920x960/media/img/posts/2017/04/WEL_Useem_Pricing_Web_Opener/original.jpg">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='economyIcon.svg'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://www.theatlantic.com/magazine/archive/2017/05/how-online-shopping-makes-suckers-of-us-all/521448/">How Online Shopping Makes Suckers of Us All</a>
+									<a class="newsSourceName" href="htttps://theatlantic.com/">The Atlantic</a>
+								</div>
+							</div>
+							
+						</div>
+							
+								<div class="xlNewsArticle">
+								<img class="xlNewsImg" src="https://techcrunch.com/wp-content/uploads/2019/09/tim-cook-apple.png?w=1390&crop=1">
+								
+								<div class="xlNewsTextSection">	
+										
+									<img class='sideNavIcon' src='innovationIcon.svg'>
+									<a class="sideNavLink" href="#">Innovation</a>
+									
+									<a class="title" style='font-weight: 600;' href="https://www.theverge.com/2020/4/7/21212245/apple-instructions-face-shields-ppe-fitting">Apple publishes instructions and fitting guide 
+										for its new face shields</a>
+								
+									<a class="newsSourceName" href="https://www.theverge.com/">The Verge</a>
+								</div>
+							</div>
+							
+						<!-- Second Row of Articles (Medium) -->
+						
+						<div class='halfRow' style='margin-right: 1em;'>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://i.guim.co.uk/img/media/7ea31c2a324484604c9fdcf56f4a1f84ce86d3eb/100_85_1396_838/master/1396.jpg?width=1920&quality=85&auto=format&fit=max&s=59099841910dc6f83911c717eb022351">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='fameIcon.png'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://www.theguardian.com/uk-news/2020/mar/30/harry-and-meghan-start-new-life-focus-on-family-charities">Harry and Meghan to start new life with focus on family and charities</a>
+									<a class="newsSourceName" href="https://www.theguardian.com/">The Guardian</a>
+								</div>
+							</div>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://www.idg.se/editorial/980/path/1.705106.1532607015!imageUploader/1416006792.jpg">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='innovationIcon.svg'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://edition.cnn.com/2020/01/31/tech/zuckerberg-facebook-speech-utah/index.html">Zuckerberg says Facebook's new approach 'is going to piss off a lot of people'</a>
+									<a class="newsSourceName" href="https://cnn.com/">CNN</a>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class='halfRow'>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/02/12/gettyimages-458748878.jpg?w660">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='sportsIconWhite.svg'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://www.independent.co.uk/sport/football/international/fifa-world-cup-history-brazil-germany-france-spain-italy-a9442321.html">Brazil, Germany, England and more: Who would win the most World Cup of World Cups?</a>
+									<a class="newsSourceName" href="https://independent.co.uk/">Independent</a>
+								</div>
+							</div>
+							
+							<div class="mNewsArticle">
+								<img class="mNewsImg" src="https://cdn.theatlantic.com/thumbor/vefh6IXRD_QcRZ2uKe9BFLizhgE=/1920x960/media/img/posts/2017/04/WEL_Useem_Pricing_Web_Opener/original.jpg">
+								
+								<div class="mNewsCategory">
+									<img class='sideNavIcon' src='economyIcon.svg'>
+								</div>
+								
+								<div class="mNewsTextSection">
+									<a class="titleSmall"href="https://www.theatlantic.com/magazine/archive/2017/05/how-online-shopping-makes-suckers-of-us-all/521448/">How Online Shopping Makes Suckers of Us All</a>
+									<a class="newsSourceName" href="htttps://theatlantic.com/">The Atlantic</a>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				
+				
+				<!-- Right Column Content/Adverts -->
+				
+					<div id="rightColumnContent">
+						
+						<!-- Promotion Slogan -->
+						
+							<div id="showcase">
+								<div id="promotextSection">
+									<div style='width: 100%;'>
+									<img style='float: left; margin: 25px 0 0 25px; height: 100px;' src='sunIcon.svg'>
+									
+									<div class='inFocusNumber' style='font-style: normal; width: 100%; padding: 10px 25px 0 25px; color: #000000; margin-left: 0;'>
+										Sunny
+									</div>
+									
+									<div class="weatherText" style='width: 100%; margin-left: 25px; margin-top: 10px; margin-bottom: -8px;'>Today in Malmö, Sweden</div>
+									
+									</div>
+									
+									<a class="newsSourceName" style='margin-left: 25px;' href='https://www.smhi.se/q/Malm%C3%B6/2692969'>Weather from SMHI</a>
+									
+									<!-- <div style='width: calc(100% - 50px); float: left; margin: 10px 25px 0 25px;'>
+										<img style='float: left; margin: 0 0 0 0; height: 40px;' src='sunIcon.svg'>
+										<div class="weatherText" style='margin-left: 5px; margin-top: 7px;'>Tomorrow</div>
+									</div>
+									
+									<div style='width: calc(100% - 50px); float: left; margin: 10px 25px 0 25px;'>
+										<img style='float: left; margin: 0 0 0 0; height: 40px;' src='sunIcon.svg'>
+										<div class="weatherText" style='margin-left: 5px; margin-top: 7px;'>Monday</div>
+									</div> -->
+									
+								</div>
+							</div>
+						
+						<!-- Topics In Focus -->
+
+							<div id="inFocusToday">
+								<div style='float: left; width: 100%; background-color: #f5f5f5; margin-top: -10px; padding: 7px 0 25px 0; border-bottom: 1px solid #D6D6D6;'>
+									<div style='float: left; margin-top: 17px; margin-left: 20px; margin-bottom: -5px;'>
+										<img class='sideNavIcon' style='height: 30px; margin: -2px 9px 0 -5px;' src='editorsChoice.svg'>
+										<a class="sideNavLink" href="#" style='font-size: 20px; margin-top: -1px;'>Editor's Choice</a>
+									</div>
+								</div>
+								
+								<div class="inFocusRow">
+									
+									<!-- <div class='inFocusNumber'>
+										2
+									</div> -->
+									
+									<div class='inFocusArticle'>
+										<a class="titleTiny" href="https://edition.cnn.com/travel/article/lions-kruger-lockdown-scli-intl/index.html">With South Africa in lockdown, the lions are taking it very easy</a>
+										
+										<a class="newsSourceName" href="https://edition.cnn.com/">CNN</a>
+									</div>
+								</div>
+								
+								<div class="inFocusRow">
+									
+									<!--  <div class='inFocusNumber'>
+										3
+									</div> -->
+									
+									<div class='inFocusArticle'>
+										<a class="titleTiny" href="https://www.theatlantic.com/magazine/archive/2020/05/mcmaster-china-strategy/609088/">How China Sees the World</a>
+										
+										<a class="newsSourceName" href="https://www.theatlantic.com/">The Atlantic</a>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+								<div class="inFocusRow">
+									
+									<!-- <div class='inFocusNumber'>
+										1
+									</div> -->
+									
+									<div class='inFocusArticle'>
+										<a class="titleTiny" href="https://www.theguardian.com/sport/2020/mar/30/peace-and-dignity-journeys-ultramarathon-noe-alvarez">Spirit Journey: one man's role in a 6,000-mile run through North America</a>
+										
+										<a class="newsSourceName" href="https://www.theguardian.com">The Guardian</a>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+							</div>
+							
+							
+						<!-- 300x250 Ad -->
+						
+							<!-- <img id="smallAd" src='https://b6f69d1f1e6ecddb9187-258c069bef770a2c1526fa99cd27044d.ssl.cf2.rackcdn.com/384f7cfb82a85f20f8df926a37e8458e.gif'> -->
+							
+							
+							<div id="inFocusToday">
+								<div style='float: left; width: 100%; background-color: #f5f5f5; margin-top: -10px; padding: 7px 0 25px 0; border-bottom: 1px solid #D6D6D6;'>
+									<div style='float: left; margin-top: 17px; margin-left: 20px; margin-bottom: -5px;'>
+										<img class='sideNavIcon' style='height: 30px; margin: -2px 9px 0 -5px;' src='trending.svg'>
+										<a class="sideNavLink" href="#" style='font-size: 20px; margin-top: -1px;'>Trending This Week</a>
+									</div>
+								</div>
+								
+								<div class="inFocusRow">
+									
+									<!-- <div class='inFocusNumber'>
+										1
+									</div> -->
+									
+									<div class='inFocusArticle'>
+										<a class="titleTiny" href="https://www.theguardian.com/sport/2020/mar/30/peace-and-dignity-journeys-ultramarathon-noe-alvarez">Spirit Journey: one man's role in a 6,000-mile run through North America</a>
+										
+										<a class="newsSourceName" href="https://www.theguardian.com">The Guardian</a>
+									</div>
+								</div>
+								
+								<div class="inFocusRow">
+									
+									<!-- <div class='inFocusNumber'>
+										2
+									</div> -->
+									
+									<div class='inFocusArticle'>
+										<a class="titleTiny" href="https://www.theguardian.com/sport/2020/mar/30/peace-and-dignity-journeys-ultramarathon-noe-alvarez">Spirit Journey: one man's role in a 6,000-mile run through North America</a>
+										
+										<a class="newsSourceName" href="https://www.theguardian.com">The Guardian</a>
+									</div>
+								</div>
+								
+								<div class="inFocusRow">
+									
+									<!-- <div class='inFocusNumber'>
+										3
+									</div> -->
+									
+									<div class='inFocusArticle'>
+										<a class="titleTiny" href="https://www.theguardian.com/sport/2020/mar/30/peace-and-dignity-journeys-ultramarathon-noe-alvarez">Spirit Journey: one man's role in a 6,000-mile run through North America</a>
+										
+										<a class="newsSourceName" href="https://www.theguardian.com">The Guardian</a>
+									</div>
+								</div>
+								
+								
+								
+							</div>
+						
+							
+					</div>
+			
+			</div>
+	
+	</body>
+</html>
