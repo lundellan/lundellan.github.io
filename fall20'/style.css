@@ -278,21 +278,21 @@ mobileContent row	{
 	padding-bottom: 50px;
 }
 
-.information	{
+mobileContent information	{
 	width: calc(100% - 80px);
 	max-width: 295px;
 	margin: 0 auto;
 	display: table;
 }
 
-.information .mediumTitle	{
+mobileContent information .mediumTitle	{
 	width: 100%;
 	max-width: none;
 	padding-right: 0;
 	line-height: 40px;
 }
 
-.information p	{
+mobileContent information p	{
 	float: left;
 	font-size: 20px;
 	line-height: 30px;
