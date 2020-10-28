@@ -267,8 +267,39 @@ mobileContent .mediumTitle	{
 }
 
 mobileContent .tabletIntroLinks	{
-	width: calc(100% - 70px);
-	max-width: 375px;
+	width: calc(100% - 80px);
+	max-width: 295px;
+}
+
+mobileContent row	{
+	float: left;
+	width: 100%;
+	padding-top: 200px;
+	padding-bottom: 50px;
+}
+
+mobileContent information	{
+	width: calc(100% - 80px);
+	max-width: 295px;
+	margin: 0 auto;
+	display: table;
+}
+
+mobileContent information .mediumTitle	{
+	width: 100%;
+	max-width: none;
+	padding-right: 0;
+	line-height: 40px;
+}
+
+mobileContent information p	{
+	float: left;
+	font-size: 20px;
+	line-height: 30px;
+	color: #696969;
+	margin-top: 20px;
+	font-family: 'Inter', sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 
