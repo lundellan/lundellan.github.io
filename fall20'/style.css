@@ -4,11 +4,11 @@ body	{
 	width: 100vw;
 }
 
-desktopContent	{
+#desktopContent	{
 	display: block;
 }
 
-mobileContent	{
+#mobileContent	{
 	display: none;
 	zoom: 1 !important;
 }
@@ -34,11 +34,11 @@ mobileContent	{
 	margin-top: 50px;
 }
 
-smallScaling	{
+#smallScaling	{
 	zoom: .8;
 }
 
-mediumScaling	{
+#mediumScaling	{
 	zoom: .9;
 }
 
@@ -261,38 +261,31 @@ h1, h2, h3, h4, h5, h6, p	{
 
 /* Mobile Content */
 
-mobileContent .mediumTitle	{
+#mobileContent .mediumTitle	{
 	font-size: 28px;
 	line-height: 38px;
 }
 
-mobileContent .tabletIntroLinks	{
+#mobileContent .tabletIntroLinks	{
 	width: calc(100% - 80px);
 	max-width: 295px;
 }
 
-mobileContent row	{
-	float: left;
-	width: 100%;
-	padding-top: 200px;
-	padding-bottom: 50px;
-}
-
-mobileContent information	{
+#mobileContent .information	{
 	width: calc(100% - 80px);
 	max-width: 295px;
 	margin: 0 auto;
 	display: table;
 }
 
-information .mediumTitle	{
+.information .mediumTitle	{
 	width: 100%;
 	max-width: none;
 	padding-right: 0;
 	line-height: 40px;
 }
 
-information p	{
+.information p	{
 	float: left;
 	font-size: 20px;
 	line-height: 30px;
@@ -442,11 +435,11 @@ information p	{
 
 @media screen and (max-width: 1190px) {
 	
-	desktopContent	{
+	#desktopContent	{
 		display: none;
 	}
 	
-	mobileContent	{
+	#mobileContent	{
 		display: block;
 	}
 	
