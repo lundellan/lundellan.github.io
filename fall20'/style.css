@@ -22,6 +22,11 @@ body	{
 	height: 3633px;
 }
 
+#introParent	{
+	width: 2000px;
+    margin-left: calc(-1000px + (50vw / .8));
+}
+
 #mobileIntroParent	{
 	width: 1000px;
     margin-left: calc(-500px + 50vw);
@@ -434,6 +439,12 @@ h1, h2, h3, h4, h5, h6, p	{
 	display: table;
 }
 
+
+
+.hotmail	{
+	left: -100px;
+}
+
 @media screen and (max-width: 1190px) {
 	
 	#desktopContent	{
@@ -444,23 +455,21 @@ h1, h2, h3, h4, h5, h6, p	{
 		zoom: .6;
 	}
 	
-}
-
-@media screen and (max-width: 910px) {
-	
-	#smallScaling	{
-		zoom: .5;
+	#introParent	{
+		width: 2000px;
+	    margin-left: calc(-1000px + (50vw / .6));
 	}
 	
-}
-
-@media screen and (max-width: 767px) {
-	
-	#smallScaling	{
-		zoom: .35;
+	.hotmail	{
+		left: -50px;
 	}
 	
+	
+
 }
+
+
+
 
 @media screen and (max-width: 500px) {
 	
