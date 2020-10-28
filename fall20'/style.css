@@ -440,6 +440,34 @@ h1, h2, h3, h4, h5, h6, p	{
 		display: none;
 	}
 	
+	#smallScaling	{
+		zoom: .6;
+	}
+	
+}
+
+@media screen and (max-width: 910px) {
+	
+	#smallScaling	{
+		zoom: .5;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+	#smallScaling	{
+		zoom: .35;
+	}
+	
+}
+
+@media screen and (max-width: 500px) {
+	
+	#tabletContent	{
+		display: none;
+	}
+	
 	#mobileContent	{
 		display: block;
 	}
@@ -449,3 +477,5 @@ h1, h2, h3, h4, h5, h6, p	{
 	}
 	
 }
+
+
