@@ -285,14 +285,14 @@ mobileContent information	{
 	display: table;
 }
 
-mobileContent information .mediumTitle	{
+information .mediumTitle	{
 	width: 100%;
 	max-width: none;
 	padding-right: 0;
 	line-height: 40px;
 }
 
-mobileContent information p	{
+information p	{
 	float: left;
 	font-size: 20px;
 	line-height: 30px;
