@@ -4,13 +4,30 @@ body	{
 	width: 100vw;
 }
 
+#pageWrapper	{
+	float: left;
+	width: 100vw;
+	overflow-x: hidden;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
 #desktopContent	{
 	display: block;
 }
 
 #mobileContent	{
 	display: none;
-	zoom: 1 !important;
+	transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	-ms-transform: scale(1) !important;
+	-moz-transform: scale(1) !important;
+}
+
+#tabletContent	{
+	float: left;
+	width: 100%;
+	overflow: hidden;
 }
 
 #intro	{
@@ -23,8 +40,7 @@ body	{
 }
 
 #introParent	{
-	width: 2000px;
-    margin-left: calc(-1000px + (50vw / .8));
+	width: 100%;
 }
 
 #mobileIntroParent	{
@@ -36,15 +52,36 @@ body	{
 	width: 585px;
 	margin: 0 auto;
 	display: table;
-	margin-top: 50px;
+}
+
+#smallScalingParent, #mediumScalingParent	{
+	float: left;
+	width: 4000px;
+	margin-left: calc(-2000px + 50vw);
+	height: 1px;
+}
+
+#smallScalingParent	{
+	height: 3006px;
 }
 
 #smallScaling	{
-	zoom: .8;
+	transform: scale(.8);
+	-moz-transform: scale(.8);
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+}
+
+#mediumScalingHeight, #smallScalingHeight	{
+	float: left;
+	width: 100%;
 }
 
 #mediumScaling	{
-	zoom: .9;
+	transform: scale(.9);
+	-moz-transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
 }
 
 img	{
@@ -452,12 +489,10 @@ h1, h2, h3, h4, h5, h6, p	{
 	}
 	
 	#smallScaling	{
-		zoom: .6;
-	}
-	
-	#introParent	{
-		width: 2000px;
-	    margin-left: calc(-1000px + (50vw / .6));
+		transform: scale(.6);
+		-moz-transform: scale(.6);
+		-webkit-transform: scale(.6);
+	-ms-transform: scale(.6);
 	}
 	
 	.hotmail	{
