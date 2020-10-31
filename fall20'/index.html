@@ -4,7 +4,6 @@
 		<title>Portfolio | Jacob Lundell</title>
 		
 		<meta charset="UTF-8">
-		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=1">	
 		
 		<meta property="og:title" content="Portfolio | Jacob Lundell">
@@ -26,796 +25,708 @@
 		<link rel='stylesheet' href='style.css'>
 		<link rel='stylesheet' href='fonts.css'>
 		
+		<script src='elements.js'></script>
 		<script src='yall.min.js'></script>
 		
 		<script>
 			document.addEventListener("DOMContentLoaded", yall);
 		</script>
-		
 	</head>
-	<body>
-		
-		<div id='pageWrapper'>
-		
-		<div id='mobileContent'>
+	<body onresize='resize()' onload='load()'>
+		<p-page>
 			
-			<div class='row' style='overflow: hidden; padding-top: 50px;'>
-				<div id='mobileIntroParent'>
-					<img id='mobileIntro' src='introMobile.jpg'>
-				</div>
-			</div>
-			
-			<div class='row' style='position: absolute; top: 0;'>
-				<div class='contentParent tabletIntroLinks'>
-					<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 525px;'>
-						Connect with<br>me on 
-						<a href='https://www.linkedin.com/in/jacoblundell/' target='_blank' class='introLink' style='color: #0274B3; border-bottom: 4px solid #0274B3; text-decoration: none;'>Linkedin</a>
-					</h2>
-					
-					<h2 class='mediumTitle introMediumTitle' style='right: 0; top: 1080px;'>
-						Send any inquiry<br>to my 
-						<a href='mailto:jacoblundell@hotmail.se' target='_blank' class='introLink' style='color: #E29800; border-bottom: 4px solid #E29800; text-decoration: none;'>Hotmail</a>
-					</h2>
-					
-					<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 1585px;'>
-						Browse my taste<br>on 
-						<a href='https://www.pinterest.se/jacoblundell/aesthetic/' target='_blank' class='introLink' style='color: #E60022; border-bottom: 4px solid #E60022; text-decoration: none;'>Pinterest</a>
-					</h2>
-					
-					<h2 class='mediumTitle introMediumTitle' style='right: 0; top: 2160px;'>
-						Discover more<br>of my taste on<br> 
-						<a href='https://dribbble.com/jacoblundell/likes' target='_blank' class='introLink' style='color: #EA4C89; border-bottom: 4px solid #EA4C89; text-decoration: none;'>Dribbble</a>
-					</h2>
-					
-					<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 2885px;'>
-						Read my 
-						<a href='../cv' class='introLink' style='color: #999999; border-bottom: 4px solid #999999; text-decoration: none; padding-bottom: 3px;'>CV</a>
-					</h2>
-				</div>
-			</div>
-			
-			<div class='row' style='padding-top: 200px; padding-bottom: 50px;'>
-				<div class='information'>
-					<h2 class='mediumTitle'>
-						Hold up.<br>Where's the rest?
-					</h2>
-					
-					<p>This display is too small to view anything but this intro.</p>
-					<p>Return on a laptop or desktop and prepare for something very special.</p>
-				</div>
-			</div>
-			
-		</div>
-		
-		
-		
-		<div id='tabletContent'>
-			
-			<div id='smallScalingParent'>
-			<div id='smallScaling'>
-					
-				<div id='smallScalingHeight'>
+			<div id='mobileContent'>
 				
-				<div class='row' style='overflow: hidden;'>
-					<div id='introParent'>
-						<img id='intro' src='intro.jpg'>
+				<div class='row' style='overflow: hidden; padding-top: 50px;'>
+					<div id='mobileIntroParent'>
+						<img id='mobileIntro' src='introMobile.jpg'>
 					</div>
 				</div>
-					
-					<div class='row' style='position: absolute; top: 0;'>
-						<div class='contentParent'>
-							<h2 class='mediumTitle introMediumTitle' style='right: -50px; top: 440px;'>
-								Connect with<br>me on 
-								<a href='https://www.linkedin.com/in/jacoblundell/' target='_blank' class='introLink' style='color: #0274B3; border-bottom: 7px solid #0274B3; text-decoration: none;'>Linkedin</a>
-							</h2>
-							
-							<h2 class='mediumTitle introMediumTitle hotmail' style='top: 1025px;'>
-								Send any inquiry<br>to my 
-								<a href='mailto:jacoblundell@hotmail.se' target='_blank' class='introLink' style='color: #E29800; border-bottom: 7px solid #E29800; text-decoration: none;'>Hotmail</a>
-							</h2>
-							
-							<h2 class='mediumTitle introMediumTitle pinterest' style='right: -25px; top: 1875px;'>
-								Browse my taste<br>on 
-								<a href='https://www.pinterest.se/jacoblundell/aesthetic/' target='_blank' class='introLink' style='color: #E60022; border-bottom: 7px solid #E60022; text-decoration: none;'>Pinterest</a>
-							</h2>
-							
-							<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 2765px;'>
-								Discover more<br>of my taste on<br> 
-								<a href='https://dribbble.com/jacoblundell/likes' target='_blank' class='introLink' style='color: #EA4C89; border-bottom: 7px solid #EA4C89; text-decoration: none;'>Dribbble</a>
-							</h2>
-							
-							<h2 class='mediumTitle introMediumTitle' style='right: 0; top: 3450px;'>
-								Read my 
-								<a href='../cv' class='introLink' style='color: #999999; border-bottom: 7px solid #999999; text-decoration: none; padding-bottom: 3px;'>CV</a>
-							</h2>
-						</div>
-					</div>
 				
-				</div>
-				
-			</div>
-			</div>
-			
-		</div>
-			
-		<div id='desktopContent'>
-		
-			<div id='mediumScalingParent'>
-			<div id='mediumScaling'>
-				
-			<div id='mediumScalingHeight'>
-			
-			<div class='pageParent'>
-			
-				<div class='row homepalSection'>
-					<div class='contentParent'>
-						<h1 class='largeTitle'>Homepal Sverige</h1>
+				<div class='row' style='position: absolute; top: 0;'>
+					<div class='contentParent tabletIntroLinks'>
+						<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 525px;'>
+							Connect with<br>me on 
+							<a href='https://www.linkedin.com/in/jacoblundell/' target='_blank' class='introLink' style='color: #0274B3; border-bottom: 4px solid #0274B3; text-decoration: none;'>Linkedin</a>
+						</h2>
 						
-						<h4 class='smallTitle'>Position</h4>
-						<h2 class='mediumTitle contentMediumTitle'>Head of Design</h2>
+						<h2 class='mediumTitle introMediumTitle' style='right: 0; top: 1080px;'>
+							Send any inquiry<br>to my 
+							<a href='mailto:jacoblundell@hotmail.se' target='_blank' class='introLink' style='color: #E29800; border-bottom: 4px solid #E29800; text-decoration: none;'>Hotmail</a>
+						</h2>
 						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Homepal is a platform that handles all inventory related data for real estate companies.</p>
-							<p class='description'>A wide selection of third party applications are integrable through a single click.</p>
-							<p class='description'>Our customers seem to never have experienced something like it.</p>
-						</div>
+						<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 1585px;'>
+							Browse my taste<br>on 
+							<a href='https://www.pinterest.se/jacoblundell/aesthetic/' target='_blank' class='introLink' style='color: #E60022; border-bottom: 4px solid #E60022; text-decoration: none;'>Pinterest</a>
+						</h2>
 						
-						<h4 class='smallTitle'>Assignments</h4>
-						<div class='descriptionParent'>
-							<p class='description'><span class='descriptionTitle'>Brand Identity</span><br>Redesigned the logo and introduced a new brand identity.</p>
-							<p class='description'><span class='descriptionTitle'>Product Portfolio</span><br>Strategised and designed the entirety of the SaaS product portfolio.</p>
-							<p class='description'><span class='descriptionTitle'>Store Platform</span><br>Strategised and designed an intuitive store platform for third party integrations.</p>
-							<p class='description'><span class='descriptionTitle'>Design Language</span><br>Created an extensive design language for the product portfolio and designed the associated icons and UI components.</p>
-							<!-- <p class='description'><span class='descriptionTitle'>Iconography</span><br>Designed a set of coherent icons for usage across the product portfolio, website and marketing material.</p>
-							
-							<p class='description'><span class='descriptionTitle'>Web Presence</span><br>Designed and developed a completely new website and all associated webpages such as product, support and marketing pages from the ground up.</p> -->
-							<p class='description'><span class='descriptionTitle'>Sales Material</span><br>Designed new sales material for the sales team and captured complementing photos.</p>
-						</div>
+						<h2 class='mediumTitle introMediumTitle' style='right: 0; top: 2160px;'>
+							Discover more<br>of my taste on<br> 
+							<a href='https://dribbble.com/jacoblundell/likes' target='_blank' class='introLink' style='color: #EA4C89; border-bottom: 4px solid #EA4C89; text-decoration: none;'>Dribbble</a>
+						</h2>
 						
-						<!-- <h4 class='smallTitle'>Website</h4>
-						<h2 class='mediumTitle contentMediumTitle'><a href='https://homepalsverige.se/'>homepalsverige.se</a></h2> -->
+						<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 2885px;'>
+							Read my 
+							<a href='../cv' class='introLink' style='color: #999999; border-bottom: 4px solid #999999; text-decoration: none; padding-bottom: 3px;'>CV</a>
+						</h2>
 					</div>
 				</div>
 				
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Brand Identity</h4>
-						<div class='descriptionParent'>
-							<p class='description'>An irresistible company like Homepal deserves a brand identity to match. </p>
-						</div>
-						<div class='row segmentParentTop'>
-							<img class='logo lazy' data-src='homepalLogo.jpg'>
-						</div>
-						<div class='row segmentParentTop'>
-							<img class='branding lazy' data-src='homepalBranding.jpg'>
-						</div>
-					</div>
-				</div>
-				
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Product Portfolio</h4>
-						<div class='descriptionParent'>
-							<p class='description'>The product portfolio consists of a set of apps simple enough for anyone to use.</p>
-							<p class='description'>Previously all data management in the real estate business had to be conducted by specifically educated IT teams.</p>
-							<p class='description'>That is all about to change.</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class='row segmentParentTop'>
-					<img class='ipad lazy' data-src='homepalHem.jpg'>
-					
-					<!-- <div class='contentParent'>
-						<div class='descriptionParent'>
-							<p class='description' style='max-width: 900px;'><a href='href='#' target='_blank''><- -></a>.</p>
-						</div>
-					</div> -->
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='homepalUtforska.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='homepalKarta.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='homepalLäggTill.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='homepalÖverför.jpg'>
-				</div>
-			</div>
-			
-			<div class='row segmentParentMiddle'>
-				<div class='filesSection'>
-					<img class='file lazy' data-src='homepalRapport.jpg'>
-					<img class='file lazy' data-src='homepalRapport2.jpg'>
-				</div>
-			</div>
-			
-			<div class='pageParent'>
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Store Platform</h4>
-						<div class='descriptionParent'>
-							<p class='description'>The idea of a store with an extensive supply of third party integrations was born while strategising the product portfolio.</p>
-							<p class='description'>Our customers keep telling us one thing.</p>
-							<p class='description'>Never have they experienced real estate integrations this convenient before.</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class='row segmentParentTop'>
-					<img class='ipad lazy' data-src='homepalIntegrationsbutik.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='homepalIntegration.jpg'>
-				</div>
-			</div>
-			
-			
-			
-			<div class='pageParent'>
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Design Language</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Optimally, while using a product like this it should never even occur to the user that managing data is what they are doing.</p>
-							<p class='description'>This is were the design language of the product portfolio comes into play.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class='row segmentParentBanner' style='background-color: #f0f0f0;'>
-				<img class='wideBanner lazy' data-src='homepalDesignLanguage.jpg'>
-			</div>
-			
-			
-			<div class='pageParent'>
-				<!-- <div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Web Presence</h4>
-						<div class='descriptionParent'>
-							<p class='description'>For a business of this kind web presence is a crucial form of communication between the company and the rest of the world.</p>
-							<p class='description'>Interesting marketing, useful product showcasing and helpful customer services all had to be part of the new website.</p>
-							<p class='description'>I present to you the result below and over at <a href='href='https://homepalsverige.se' target='_blank''>homepalsverige.se</a>.</p>
-						</div>
-					</div>
-				</div> -->
-			</div>
-			
-			<!-- <div class='row segmentParentBanner' style='background-color: #f0f0f0; height: 1200px;'>
-				
-			</div> -->
-			
-			<div class='pageParent'>
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Sales Material</h4>
-						<div class='descriptionParent'>
-							<p class='description'>The new branding, product portfolio, store platform, design language and website brought vast changes to the company.</p>
-							<p class='description'>A new set of sales material was created to  support the sales team in their mission of communicating the new company profile.</p>
-							<p class='description'>Below are a couple of photos from the sales material.</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class='row segmentParentTop'>
-					<img class='wallpaper lazy' data-src='homepalWallpaper.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='wallpaper lazy' data-src='homepalWallpaper2.jpg'>
-				</div>
-				
-				
-				
-				
-				
-				<div class='row projectSection'>
-					<div class='contentParent'>
-						<h1 class='largeTitle'>Stiftelsen Falsterbo Strand</h1>
+				<div class='row' style='padding-top: 200px; padding-bottom: 50px;'>
+					<div class='information'>
+						<h2 class='mediumTitle'>
+							Hold up.<br>Where's the rest?
+						</h2>
 						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Stiftelsen Falsterbo Strand is a foundation which manages a strip of land along the beach in Falsterbo in the south of Sweden.</p>
-							<p class='description'>Falsterbo is famous for its rich history and is still today a popular destination for people from all of Sweden during summertime.</p>
-							<p class='description'>The mission of the foundation is to put the valuable land to use by lending it to locals.</p>
-						</div>
-						
-						<h4 class='smallTitle'>Assignments</h4>
-						<div class='descriptionParent'>
-							<p class='description'><span class='descriptionTitle'>Website</span><br>Designed and developed a website for the foundation from scratch.</p>
-							<!-- <p class='description'><span class='descriptionTitle'>Accessibility</span><br>Heavily emphasised accessibility in the design of the website with regard to its conceived user base.</p> -->
-							<p class='description'><span class='descriptionTitle'>Photos</span><br>Captured photos of the area and used them for the website.</p>
-						</div>
-						
-						<h4 class='smallTitle'>Website</h4>
-						<h2 class='mediumTitle contentMediumTitle'><a href='https://stiftelsenfalsterbostrand.se/' target='_blank'>falsterbostrand.se</a></h2>
+						<p>This display is too small to view anything but this intro.</p>
+						<p>Return on a laptop or desktop and prepare for something very special.</p>
 					</div>
 				</div>
-				
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Website</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Photos, a news feed, rules for borrowers, information about the foundation and a contact form are all gathered in one place.</p>
-							<p class='description'>Check it out over at <a href='https://stiftelsenfalsterbostrand.se' target='_blank'>falsterbostrand.se</a>.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class='row segmentParentBanner' style='overflow: hidden; background-color: #f0f0f0; padding: 110px 0;'>
-				<div class='websitePreviewParent'>
-					<img class='websitePreview lazy' data-src='stiftelsenHemsida.jpg'>
-				</div>
-			</div>
-			
-			<!-- <div class='pageParent'>
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Accessibility</h4>
-						<div class='descriptionParent'>
-							<p class='description'>From the evident menu to the consistently labeled titles on each page the navigation of the website is easy for anyone to use.</p>
-							<p class='description'>An interactive map, well sized text, clear layouts, action tips and conventional links all help make the content accessible as well.</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class='row segmentParentTop'>
-					<img class='wallpaper lazy' data-src='stiftelsenAccessibility.jpg'>
-				</div>
-			</div> -->
-			
-			
-			
-			
-			
-			<div class='pageParent'>
-				<div class='row contentSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle'>Photos</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Conveying the beautiful characteristics of the area to all visitors of the website was one of the most important goals.</p>
-							<p class='description'>Subsequently a set of photos showcasing some of the most memorable places in the area were captured.</p>
-							<p class='description'>All photos are displayed <a href='stiftelsenPhotos.html'>here</a>.</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class='row segmentParentTop'>
-					<img class='wallpaper lazy' data-src='stiftelsenWallpaper2.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='wallpaper lazy' data-src='stiftelsenWallpaper3.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='wallpaper lazy' data-src='stiftelsenWallpaper.jpg'>
-				</div>
-				
-				<div class='row projectSection'>
-					
-					<div class='contentParent'>
-						<div class='row'>
-						<img class='descriptionIcon toppingLogo lazy' data-src='toppingLogo.png'>
-						</div>
-						
-						<h4 class='smallTitle'>Project</h4>
-						<h2 class='mediumTitle contentMediumTitle'>Topping</h2>
-						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>This project has been my main focus for little over a year now and it is by far my most interesting piece of work yet.</p>
-							<p class='description'>Prepare for something special, after several product iterations and polishing it is soon going to launch.</p>
-						</div>
-						<!-- 
-						<h4 class='smallTitle'>Website</h4>
-						<h2 class='mediumTitle contentMediumTitle'><a href='https://topping.app/' target='_blank'>topping.app</a></h2> -->
-					</div>
-				</div>
-				
-				<div class='row segmentParentTop'>
-					<div class='phoneSection'>
-						<img class='phone lazy' data-src='toppingMobileTeaser.jpg'>
-						<img class='phone lazy' data-src='toppingMobileTeaser2.jpg'>
-						<img class='phone lazy' data-src='toppingMobileTeaser3.jpg'>
-					</div>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='toppingTeaser.jpg'>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='toppingTeaser2.jpg'>
-				</div>
-				
-				<div class='row projectSection'>
-					<div class='contentParent'>
-						<div class='row'>
-						<img class='descriptionIcon tempoLogo lazy' data-src='tempoLogoNew.jpg'>
-						</div>
-						
-						<h4 class='smallTitle'>Project</h4>
-						<h2 class='mediumTitle contentMediumTitle'>Tempo</h2>
-						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Tempo is a health app where you can plan and track all of your exercising in an incredibly simple feed.</p>
-							<p class='description'>I designed it as a concept for users who want their entire need of exercise tracking collected in one place.</p>
-							<!-- <p class='description'>Try interacting with it below.</p> -->
-						</div>
-					</div>
-				</div>
-				
-				<div class='row segmentParentMiddle'>
-					<div class='phoneSection' style='padding-bottom: 125px;'>
-						<img class='phone lazy' data-src='tempoMockup.jpg'>
-						<img class='phone lazy' data-src='tempoMockup2.jpg'>
-						<img class='phone lazy' data-src='tempoMockup3.jpg'>
-					</div>
-				</div>
-					
-				<!-- <div class='row segmentParentInteractive'> -->
-				<!-- <div style='position: relative;'>
-					<div class='row segmentParentTop'>
-						<div class='contentParent'>
-							<div class='iphoneContentParent'>
-								<div class='iphoneContentParentHidden'>
-									<img class='iphoneContent' src='tempoApp.png'>
-								</div>
-							</div>
-							
-							<img class='tempoFrameImage lazy' data-src='tempoFrame.png'>
-						</div>
-					</div>
-				</div> -->
 				
 			</div>
 			
 			
-			<div class='row projectSection newBackground' style='background-color: #000000;'>
-			
-				<div class='pageParent'>
-					<div class='row projectSection'>
-						<div class='contentParent'>
-							<h1 class='largeTitle largeTitleDark'>loudpastel</h1>
-							
-							<h4 class='smallTitle smallTitleDark'>Description</h4>
-							<div class='descriptionParent'>
-								<p class='description descriptionDark'>The result of my designs for the emerging indie rock band loudpastel.</p>
-								<p class='description descriptionDark'>Listening to them I knew that the design should evoke a contemporary yet timelessly respectable feel.</p>
-							</div>
-							
-							<h4 class='smallTitle smallTitleDark'>Assignments</h4>
-							<div class='descriptionParent'>
-								<p class='description descriptionDark'><span class='descriptionTitle descriptionTitleDark'>Logo</span><br>Designed a memorable wordmark in three different color variations.</p>
-								<p class='description descriptionDark'><span class='descriptionTitle descriptionTitleDark'>Website</span><br>Designed and developed a simple website meant to support their presence on social media.</p>
-								<p class='description descriptionDark'><span class='descriptionTitle descriptionTitleDark'>Cover Art</span><br>Created three album covers with photos that I captured and edited.</p>
-							</div>
-							
-							<!-- <h4 class='smallTitle smallTitleDark'>Website</h4>
-							<h2 class='mediumTitle contentMediumTitle'><a href='http://loudpastel.com/' target='_blank' style='color: #ffffff;'>loudpastel.com</a></h2> -->
-						</div>
-					</div>
-					
-					<div class='row contentSection'>
-						<div class='contentParent'>
-							<h4 class='smallTitle smallTitleDark'>Logo</h4>
-							<div class='descriptionParent'>
-								<p class='description descriptionDark'>The foundation of the logos consists of a visually balanced yet daring white wordmark in a contemporary font.</p>
-								<p class='description descriptionDark'>Two more variations were created for marketing purposes, one in a shaded metal and the other in all of the rainbows colors.</p>
-							</div>
-							<div class='row segmentParentTop'>
-								<img class='wordmark lazy' data-src='loudpastelLogo.jpg'>
-								<img class='wordmark lazy' data-src='loudpastelLogo3.jpg'>
-								<img class='wordmark lazy' style='margin-bottom: 0;' data-src='loudpastelLogo2.jpg'>
-							</div>
-						</div>
-					</div>
-					
-					
-					
-					<div class='row contentSection'>
-						<div class='contentParent'>
-							<h4 class='smallTitle smallTitleDark'>Website</h4>
-							<div class='descriptionParent'>
-								<p class='description descriptionDark'>A simple website to complement the bands sociala media presence, visit it <a href='loudpastel/HTML/loudpastelHome.html' style='color: #ffffff;' target='_blank'>here</a>.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class='pageParent'>
-						<div class='row segmentParentTop'>
-							<div class='phoneSection'>
-								<img class='phone lazy' data-src='loudpastelWebsite.png'>
-								<img class='phone lazy' data-src='loudpastelWebsite2.png'>
-								<img class='phone lazy' data-src='loudpastelWebsite3.png'>
-							</div>
-						</div>
-					</div>
-				
-				
-				
-				<div class='pageParent'>
-					<div class='row contentSection'>
-						<div class='contentParent'>
-							<h4 class='smallTitle smallTitleDark'>Cover Art</h4>
-							<div class='descriptionParent'>
-								<p class='description descriptionDark'>Captured a large set of photos in the bands studio and processed them to achieve these covers. </p>
-								<p class='description descriptionDark'>From the six selected photos three final album covers were created. </p>
-							</div>
-						</div>
-					</div>
-					
-					<div class='row segmentParentTop'>
-						<img class='wallpaper lazy' data-src='loudpastelCovers.jpg'>
-					</div>
-				</div>
-				
-				<!-- <div class='row projectSection'>
-					<div class='contentParent'>
-						<h1 class='largeTitle largeTitleDark'>Tasteflow</h1>
-						
-						<h4 class='smallTitle smallTitleDark'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description descriptionDark'>Lägg till.</p>
-						</div>
-						
-						<h4 class='smallTitle smallTitleDark'>Assignments</h4>
-						<div class='descriptionParent'>
-							<p class='description descriptionDark'><span class='descriptionTitle descriptionTitleDark'>Logo System</span><br>Lägg till.</p>
-							<p class='description descriptionDark'><span class='descriptionTitle descriptionTitleDark'>Product Design</span><br>Lägg till.</p>
-						</div>
-					</div>
-					
-					<div class='row contentSection'>
-						<div class='contentParent'>
-							<h4 class='smallTitle smallTitleDark'>Logo System</h4>
-							<div class='descriptionParent'>
-								<p class='description descriptionDark'>Lägg till.</p>
-							</div>
-							
-							<div class='row segmentParentTop'>
-								<img class='wordmark lazy' style='width: 550px;' data-src='tasteflowWordmark.jpg'>
-								<div class='row'>
-									<img class='wordmark lazy' style='height: 365px; width: auto !important; margin-bottom: 0;' data-src='tasteflowWordmarkTall.jpg'>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class='row contentSection'>
-						<div class='contentParent'>
-							<h4 class='smallTitle smallTitleDark'>Product Design</h4>
-							<div class='descriptionParent'>
-								<p class='description descriptionDark'>Lägg till.</p>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				
-				<div class='row segmentParentTop' style='background-color: #0f0f0f; padding-bottom: 100px;'>
-					
-					<div class='pageParent'>
-						<div class='row segmentParentMiddle'>
-							<img class='ipad lazy' data-src='emptyIpad.png'>
-						</div>
-						
-						<div class='row segmentParentMiddle'>
-							<img class='ipad lazy' data-src='emptyIpad.png'>
-						</div>
-						
-						<div class='row segmentParentMiddle'>
-							<img class='ipad lazy' data-src='emptyIpad.png'>
-						</div>
-						
-						<div class='row segmentParentMiddle'>
-							<img class='ipad lazy' data-src='emptyIpad.png'>
-						</div>
-					</div>
-					
-				</div>
-				
-				-->
-				
-				<div class='row freelanceProjectSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle smallTitleDark' style='margin-top: 0;'>Client</h4>
-						<h2 class='mediumTitle contentMediumTitle mediumTitleDark'>The Mountain</h2>
-						
-						<h4 class='smallTitle smallTitleDark'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description descriptionDark'>The Mountain is an arcade game for mobile currently in early development in which you play as a mountain climber.</p>
-							<p class='description descriptionDark'>I was asked to make a logo that would complement the modern lightweight visuals of the game.</p>
-						</div>
-						
-						<div class='row segmentParentTop'>
-							<img class='logoLarge lazy' style='height: 290px;' data-src='theMountain.jpg'>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class='pageParent'>
-				
-				<div class='row projectSection'>
-					<div class='contentParent'>
-						<div class='row'>
-						<img class='descriptionIcon lazy' data-src='broadwiredLogo.png'>
-						</div>
-						
-						<h4 class='smallTitle'>Project</h4>
-						<h2 class='mediumTitle contentMediumTitle'>Broadwired</h2>
-						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Broadwired is a concept that compiles the most relevant news articles from across the web into a lightweight feed.</p>
-							<p class='description'>My goal was to invite users to this new way of news consumption by wrapping it with a familiar feeling aesthetic.</p>
-							<!-- <p class='description'>Check out the <a href='broadwired/WorldwideBroadwired.html' target='_blank'> prototype</a>.</p> -->
-						</div>
-					</div>
-				</div>
-				
-				<div class='row segmentParentTop'>
-					<img class='ipad lazy' data-src='broadwiredForYou.jpg'>
-				</div>
-				
-				<!-- <div class='row segmentParentMiddle'>
-					<img class='ipad lazy' data-src='emptyIpad.png'>
-				</div> -->
-			</div>
-			
-			
-			
-			<div class='pageParent'>
-				<div class='row freelanceProjectSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle' style='margin-top: 0;'>Client</h4>
-						<h2 class='mediumTitle contentMediumTitle'>Johan Lundell</h2>
-						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Designed and helped plan a CV.</p>
-							<p class='description'>Complemented the design with a series of photos, one of which was chosen as the cover image for the front.</p>
-							<p class='description'>View the full CV <a href='CV.pdf' target='_blank'>here</a>.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-				
-			<div class='row segmentParentTop'>
-				<div class='filesSection'>
-					<img class='file marginFile lazy' data-src='pappa.jpg'>
-					<img class='file marginFile lazy' data-src='pappa2.jpg'>
-					<img class='file marginFile lazy' data-src='pappa3.jpg'>
-					<img class='file marginFile lazy' data-src='pappa4.jpg'>
-					<img class='file marginFile lazy' data-src='pappa5.jpg'>
-					<img class='file marginFile lazy' data-src='pappa6.jpg'>
-					<img class='file lazy' data-src='pappa7.jpg'>
-					<img class='file lazy' data-src='pappa8.jpg'>
-				</div>
-			</div>
-				
-				
-			<div class='pageParent'>
-				<div class='row freelanceProjectSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle' style='margin-top: 0;'>Client</h4>
-						<h2 class='mediumTitle contentMediumTitle'>Bagged & Beaned</h2>
-						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Created the logo of Bagged & Beaned, a startup which manufactures coffee bags.</p>
-							<p class='description'>Never heard of a coffee bag?</p>
-							<p class='description'>I don't blame you, it's a new concept which introduces convenient teabag-like packaging for coffee.</p>
-						</div>
-						
-						<div class='row segmentParentTop'>
-							<img class='logoLarge lazy' data-src='baggedandbeanedLogo.jpg'>
-						</div>
-					</div>
-				</div>
-				
-				<div class='row freelanceProjectSection'>
-					<div class='contentParent'>
-						<h4 class='smallTitle' style='margin-top: 0;'>Client</h4>
-						<h2 class='mediumTitle contentMediumTitle'>R.O.B.E.R.T</h2>
-						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>While taking a course in programming I was part of a team that developed the Robocode robot R.O.B.E.R.T.</p>
-							<p class='description'>I made a brochure that showcases the features and pricing of the robot while exuding a feeling of 1970s graphical design.</p>
-							<p class='description'>View the full brochure <a href='Robert.pdf' target='_blank'>here</a>.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-				
-			<div class='row segmentParentTop'>
-				<div class='filesSection'>
-					<img class='file marginFile lazy' style='border: none;' data-src='robert.jpg'>
-					<img class='file marginFile lazy' style='border: none;' data-src='robert2.jpg'>
-					<img class='file marginFile lazy' style='border: none;' data-src='robert3.jpg'>
-					<img class='file marginFile lazy' style='border: none;' data-src='robert4.jpg'>
-					<img class='file lazy' style='border: none;' data-src='robert5.jpg'>
-					<img class='file lazy' style='border: none;' data-src='robert6.jpg'>
-				</div>
-			</div>
-			
-			<div class='pageParent'>
-				<div class='row freelanceProjectSection' style='padding-bottom: 350px;'>
-					<div class='contentParent'>
-						<h4 class='smallTitle' style='margin-top: 0;'>Client</h4>
-						<h2 class='mediumTitle contentMediumTitle'>Medaljelelekommittén Datasektionen LTH</h2>
-						
-						<h4 class='smallTitle'>Description</h4>
-						<div class='descriptionParent'>
-							<p class='description'>Created the logo of the committee Medaljelelekommitén.</p>
-							<p class='description'>Part of the Computer Section of LTH (Lund University), the committee is responsible for all student medals at the section.</p>
-						</div>
-						
-						<div class='row segmentParentTop'>
-							<img class='logoLarge medaljelele lazy' data-src='medaljelele.jpg'>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			</div>
-			
-			</div>
-			</div>
-		
-		</div>
-		
-		</div>
-		
-	</body>
 	
-	<script>
+			<!-- Universal Intro -->
+				
+			<p-scaled-parent id='intro-height-applied'>
+				<p-scaled id='intro'>
+					<p-content-height id='intro-height'>
+						<img class='lazy' src='placeholder.png' data-src='intro.jpg'>
+						<p-row id='introContent'>
+							<p-content-small>
+								<h2 class='mediumTitle introMediumTitle' style='right: -50px; top: 440px;'>
+									Connect with<br>me on 
+									<a href='https://www.linkedin.com/in/jacoblundell/' target='_blank' class='introLink' style='color: #0274B3; border-bottom: 7px solid #0274B3; text-decoration: none;'>Linkedin</a>
+								</h2>
+								
+								<h2 class='mediumTitle introMediumTitle' id='hotmail' style='top: 1025px;'>
+									Send any inquiry<br>to my 
+									<a href='mailto:jacoblundell@hotmail.se' target='_blank' class='introLink' style='color: #E29800; border-bottom: 7px solid #E29800; text-decoration: none;'>Hotmail</a>
+								</h2>
+								
+								<h2 class='mediumTitle introMediumTitle pinterest' style='right: -25px; top: 1875px;'>
+									Browse my taste<br>on 
+									<a href='https://www.pinterest.se/jacoblundell/aesthetic/' target='_blank' class='introLink' style='color: #E60022; border-bottom: 7px solid #E60022; text-decoration: none;'>Pinterest</a>
+								</h2>
+								
+								<h2 class='mediumTitle introMediumTitle' style='left: 0; top: 2765px;'>
+									Discover more<br>of my taste on<br> 
+									<a href='https://dribbble.com/jacoblundell/likes' target='_blank' class='introLink' style='color: #EA4C89; border-bottom: 7px solid #EA4C89; text-decoration: none;'>Dribbble</a>
+								</h2>
+								
+								<h2 class='mediumTitle introMediumTitle' style='right: 0; top: 3450px;'>
+									Read my 
+									<a href='../cv' class='introLink' style='color: #999999; border-bottom: 7px solid #999999; text-decoration: none; padding-bottom: 3px;'>CV</a>
+								</h2>
+							</p-content-small>
+						</p-row>
+						
+					</p-content-height>
+				</p-scaled>
+			</p-scaled-parent>
 			
-			document.addEventListener("DOMContentLoaded", function() {
-			  var lazyloadImages = document.querySelectorAll("img.lazy");    
-			  var lazyloadThrottleTimeout;
-			  
-			  function lazyload () {
-			    if(lazyloadThrottleTimeout) {
-			      clearTimeout(lazyloadThrottleTimeout);
-			    }    
-			    
-			    lazyloadThrottleTimeout = setTimeout(function() {
-			        var scrollTop = window.pageYOffset;
-			        lazyloadImages.forEach(function(img) {
-			            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-			              img.src = img.dataset.src;
-			              img.classList.remove('lazy');
-			            }
-			        });
-			        if(lazyloadImages.length == 0) { 
-			          document.removeEventListener("scroll", lazyload);
-			          window.removeEventListener("resize", lazyload);
-			          window.removeEventListener("orientationChange", lazyload);
-			        }
-			    }, 20);
-			  }
-			  
-			  document.addEventListener("scroll", lazyload);
-			  window.addEventListener("resize", lazyload);
-			  window.addEventListener("orientationChange", lazyload);
-			});
+			<!-- Desktop Content -->
+			
+			<p-scaled-parent id='content-height-applied'>
+				<p-scaled>
+					<p-content-height id='content-height'>
+						
+						<!-- Homepal -->
+						
+						<p-project>
+							
+							<!-- Info -->
+						
+							<p-chapter>
+								<p-information>
+									<h1>Homepal Sverige</h1>
+									<h4>Position</h4>
+									<h2>Head of Design</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>Homepal is a platform that handles all inventory related data for real estate companies.</p>
+										<p>A wide selection of third party applications are integrable through a single click.</p>
+										<p>Our customers seem to never have experienced something like it.</p>
+									</p-description>
+									<h4>Assignments</h4>
+									<p-description>
+										<p><span>Brand Identity</span><br>Redesigned the logo and introduced a new brand identity.</p>
+										<p><span>Product Portfolio</span><br>Strategised and designed the entirety of the SaaS product portfolio.</p>
+										<p><span>Store Platform</span><br>Strategised and designed an intuitive store platform for third party integrations.</p>
+										<p><span>Design Language</span><br>Created an extensive design language for the product portfolio and designed the associated icons and UI components.</p>
+										<!-- 
+										<p><span>Iconography</span><br>Designed a set of coherent icons for usage across the product portfolio, website and marketing material.</p>
+										<p><span>Web Presence</span><br>Designed and developed a completely new website and all associated webpages such as product, support and marketing pages from the ground up.</p>
+										-->
+										<p><span>Sales Material</span><br>Designed new sales material for the sales team and captured complementing photos.</p>
+									</p-description>
+									<!--
+									<h4 class='smallTitle'>Website</h4>
+									<h2 class='mediumTitle contentMediumTitle'><a href='https://homepalsverige.se/'>homepalsverige.se</a></h2>
+									-->
+								</p-information>
+							</p-chapter>
+							
+							<!-- Brand Identity -->
+							
+							<p-chapter>
+								<p-information>
+									<h4>Brand Identity</h4>
+									<p-description>
+										<p>An irresistible company like Homepal deserves a brand identity to match.</p>
+									</p-description>
+								</p-information>
+									
+								<p-content-small>
+									<p-row><img class='logo lazy' src='placeholder.png' data-src='homepalLogo.jpg'></p-row>
+									<p-row><img class='branding lazy' src='placeholder.png' data-src='homepalBranding.jpg'></p-row>
+								</p-content-small>
+							</p-chapter>
+							
+							<!-- Product Portfolio -->
+							
+							<p-chapter>
+								<p-information>
+									<h4>Product Portfolio</h4>
+									<p-description>
+										<p>The product portfolio consists of a set of apps simple enough for anyone to use.</p>
+										<p>Previously all data management in the real estate business had to be conducted by specifically educated IT teams.</p>
+										<p>That is all about to change.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='homepalHem.jpg'></p-row>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='homepalUtforska.jpg'></p-row>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='homepalKarta.jpg'></p-row>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='homepalLäggTill.jpg'></p-row>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='homepalÖverför.jpg'></p-row>
+									<p-files>
+										<img class='lazy' src='placeholder.png' data-src='homepalRapport.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='homepalRapport2.jpg'>
+									</p-files>
+								</p-content>
+							</p-chapter>
+							
+							<!-- Store Platform -->
+							
+							<p-chapter>
+								<p-information>
+									<h4>Store Platform</h4>
+									<p-description>
+										<p>The idea of a store with an extensive supply of third party integrations was born while strategising the product portfolio.</p>
+										<p>Our customers keep telling us one thing.</p>
+										<p>Never have they experienced real estate integrations this convenient before.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='homepalIntegrationsbutik.jpg'></p-row>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='homepalIntegration.jpg'></p-row>
+								</p-content>
+							</p-chapter>
+							
+							<!-- Design Language -->
+							
+							<p-chapter>
+								<p-information>
+									<h4>Design Language</h4>
+									<p-description>
+										<p>Optimally, while using a product like this it should never even occur to the user that managing data is what they are doing.</p>
+										<p>This is were the design language of the product portfolio comes into play.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content-full style='background-color: #f0f0f0;'>
+									<img class='wallpaper lazy' id='homepal-design-language' style='margin-top: 0;' src='placeholder.png' data-src='homepalDesignLanguage.jpg'>
+								</p-content-full>
+							</p-chapter>
+							
+							<!-- Sales Material -->
+							
+							<p-chapter>
+								<p-information>
+									<h4>Sales Material</h4>
+									<p-description>
+										<p>The new branding, product portfolio, store platform, design language and website brought vast changes to the company.</p>
+										<p>A new set of sales material was created to  support the sales team in their mission of communicating the new company profile.</p>
+										<p>Below are a couple of photos from the sales material.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-row><img class='wallpaper lazy' src='placeholder.png' data-src='homepalWallpaper.jpg'></p-row>
+									<p-row><img class='wallpaper lazy' src='placeholder.png' data-src='homepalWallpaper2.jpg'></p-row>
+								</p-content>
+							</p-chapter>
+							
+						</p-project>
+							
+						<!-- Stiftelsen Falsterbo Strand -->
+						
+						<p-project>
+							
+							<!-- Info -->
+						
+							<p-chapter>
+								<p-information>
+									<h1>Stiftelsen Falsterbo Strand</h1>
+									<h4>Description</h4>
+									<p-description>
+										<p>Stiftelsen Falsterbo Strand is a foundation which manages a strip of land along the beach in Falsterbo in the south of Sweden.</p>
+										<p>Falsterbo is famous for its rich history and is still today a popular destination for people from all of Sweden during summertime.</p>
+										<p>The mission of the foundation is to put the valuable land to use by lending it to locals.</p>
+									</p-description>
+									<h4>Assignments</h4>
+									<p-description>
+										<p><span>Website</span><br>Designed and developed a website for the foundation from scratch.</p>
+										<!-- 
+										<p><span>Accessibility</span><br>Heavily emphasised accessibility in the design of the website with regard to its conceived user base.</p>
+										-->
+										<p><span>Photos</span><br>Captured photos of the area and used them for the website.</p>
+									</p-description>
+									<h4>Website</h4>
+									<h2><a href='https://stiftelsenfalsterbostrand.se/' target='_blank'>falsterbostrand.se</a></h2>
+								</p-information>
+							</p-chapter>
+							
+							<!-- Website -->
+							
+							<p-chapter>
+								<p-information>
+									<h4>Website</h4>
+									<p-description>
+										<p>Photos, a news feed, rules for borrowers, information about the foundation and a contact form are all gathered in one place.</p>
+										<p>Check it out over at <a href='https://stiftelsenfalsterbostrand.se' target='_blank'>falsterbostrand.se</a>.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content-full style='background-color: #f0f0f0;'>
+									<img class='website lazy' src='placeholder.png' data-src='stiftelsenHemsida.jpg'>
+								</p-content-full>
+							</p-chapter>
+							
+							<!-- Accessibility -->
+							
+							<!--
+							<p-chapter>
+								<p-information>
+									<h4>Accessibility</h4>
+									<p-description>
+										<p>From the evident menu to the consistently labeled titles on each page the navigation of the website is easy for anyone to use.</p>
+										<p>An interactive map, well sized text, clear layouts, action tips and conventional links all help make the content accessible as well.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-row><img class='wallpaper lazy' data-src='stiftelsenAccessibility.jpg'></p-row>
+								</p-content>
+							</p-chapter>
+							-->
+							
+							<!-- Photos -->
+							
+							<p-chapter>
+								<p-information>
+									<h4>Photos</h4>
+									<p-description>
+										<p>Conveying the beautiful characteristics of the area to all visitors of the website was one of the most important goals.</p>
+										<p>Subsequently a set of photos showcasing some of the most memorable places in the area were captured.</p>
+										<p>All photos are displayed <a href='stiftelsenPhotos.html'>here</a>.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-row><img class='wallpaper lazy' src='placeholder.png' data-src='stiftelsenWallpaper2.jpg'></p-row>
+									<p-row><img class='wallpaper lazy' src='placeholder.png' data-src='stiftelsenWallpaper3.jpg'></p-row>
+									<p-row><img class='wallpaper lazy' src='placeholder.png' data-src='stiftelsenWallpaper.jpg'></p-row>
+								</p-content>
+							</p-chapter>
+							
+						</p-project>
+						
+						<!-- Topping -->
+						
+						<p-project>
+							<p-chapter>
+								<p-information>
+									<p-row><img id='topping' class='lazy' src='placeholder.png' data-src='toppingLogo.png'></p-row>
+									<h4>Project</h4>
+									<h2>Topping</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>This project has been my main focus for little over a year now and it is by far my most ambitious piece of work yet.</p>
+										<p>Prepare for something special, after several product iterations and polishing it is soon going to launch.</p>
+									</p-description>
+									<!--
+									<h4>Website</h4>
+									<h2><a href='https://topping.app/' target='_blank'>topping.app</a></h2>
+									-->
+								</p-information>
+								
+								<p-content>
+									<p-phones>
+										<img class='lazy' src='placeholder.png' data-src='toppingMobileTeaser.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='toppingMobileTeaser2.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='toppingMobileTeaser3.jpg'>
+									</p-phones>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='toppingTeaser.jpg'></p-row>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='toppingTeaser2.jpg'></p-row>
+								</p-content>
+							</p-chapter>
+						</p-project>
+						
+						<!-- Tempo -->
+						
+						<p-project>
+							<p-chapter>
+								<p-information>
+									<p-row><img id='tempo' class='lazy' src='placeholder.png' data-src='tempoLogoNew.jpg'></p-row>
+									<h4>Project</h4>
+									<h2>Tempo</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>Tempo is a health app where you can plan and track all of your exercising in an incredibly simple feed.</p>
+										<p>I designed it as a concept for users who want their entire need of exercise tracking collected in one place.</p>
+										<!-- 
+										<p>Try interacting with it below.</p>
+										-->
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-phones>
+										<img class='lazy' src='placeholder.png' data-src='tempoMockup.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='tempoMockup2.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='tempoMockup3.jpg'>
+									</p-phones>
+								</p-content>
+							</p-chapter>
+						</p-project>
+						
+						<p-dark-section>
+						
+							<!-- Loudpastel -->
+							
+							<p-project>
+								
+								<!-- Info -->
+								
+								<p-chapter>
+									<p-information>
+										<h1>loudpastel</h1>
+										<h4>Position</h4>
+										<h2>Brand Director</h2>
+										<h4>Description</h4>
+										<p-description>
+											<p>The result of my time as Brand Director for the emerging indie rock band loudpastel.</p>
+											<p>Listening to them I knew that their brand identity should evoke a contemporary yet timelessly respectable feel.</p>
+										</p-description>
+										<h4>Assignments</h4>
+										<p-description>
+											<p><span>Logo</span><br>Designed a memorable wordmark in three different color variations.</p>
+											<p><span>Website</span><br>Designed and developed a simple website meant to support their presence on social media.</p>
+											<p><span>Cover Art</span><br>Created three album covers with photos that I captured and edited.</p>
+										</p-description>
+										<!--
+										<h4>Website</h4>
+										<h2><a href='https://loudpastel.com' target='_blank'>loudpastel.com</a></h2>
+										-->
+									</p-information>
+								</p-chapter>
+								
+								<!-- Logo -->
+								
+								<p-chapter>
+									<p-information>
+										<h4>Logo</h4>
+										<p-description>
+											<p>The foundation of the logos consists of a visually balanced yet daring white wordmark in a contemporary font.</p>
+											<p>Two more variations were created for marketing purposes, one in a shaded metal and the other in all of the rainbows colors.</p>
+										</p-description>
+									</p-information>
+									
+									<p-content-small>
+										<p-row><img class='wordmark lazy' src='placeholder.png' data-src='loudpastelLogo.jpg'></p-row>
+										<p-row><img class='wordmark lazy' src='placeholder.png' data-src='loudpastelLogo3.jpg'></p-row>
+										<p-row><img class='wordmark lazy' src='placeholder.png' data-src='loudpastelLogo2.jpg'></p-row>
+									</p-content-small>
+								</p-chapter>
+								
+								<!-- Website -->
+								
+								<p-chapter>
+									<p-information>
+										<h4>Website</h4>
+										<p-description>
+											<p>A simple website to complement the bands sociala media presence, visit it <a href='loudpastel/HTML/loudpastelHome.html' style='color: #ffffff;' target='_blank'>here</a>.</p>
+										</p-description>
+									</p-information>
+									
+									<p-content>
+										<p-phones>
+											<img class='lazy' src='placeholder.png' data-src='loudpastelWebsite.png'>
+											<img class='lazy' src='placeholder.png' data-src='loudpastelWebsite2.png'>
+											<img class='lazy' src='placeholder.png' data-src='loudpastelWebsite3.png'>
+										</p-phones>
+									</p-content>
+								</p-chapter>
+								
+								<!-- Cover Art -->
+								
+								<p-chapter>
+									<p-information>
+										<h4>Cover Art</h4>
+										<p-description>
+											<p>Captured a large set of photos in the bands studio and processed them to achieve these covers.</p>
+											<p>From six selected photos the three final album covers below were created.</p>
+										</p-description>
+									</p-information>
+									
+									<p-content>
+										<p-row><img class='wallpaper lazy' id='loudpastel-covers' src='placeholder.png' data-src='loudpastelCovers.jpg'></p-row>
+									</p-content>
+								</p-chapter>
+								
+							</p-project>
+							
+							
+							<!-- Tasteflow -->
+							
+							<!--
+							<p-project>
+								
+								<p-chapter>
+									<p-information>
+										<h1>TasteFlow</h1>
+										<h4>Position</h4>
+										<h2>Freelancer</h2>
+										<h4>Description</h4>
+										<p-description>
+											<p>Lägg till.</p>
+										</p-description>
+										<h4>Assignments</h4>
+										<p-description>
+											<p><span>Logo System</span><br>Lägg till.</p>
+											<p><span>Product Design</span><br>Lägg till.</p>
+										</p-description>
+									</p-information>
+								</p-chapter>
+								
+								<p-chapter>
+									<p-information>
+										<h4>Logo System</h4>
+										<p-description>
+											<p>Lägg till.</p>
+										</p-description>
+									</p-information>
+								</p-chapter>
+								
+								<p-chapter>
+									<p-information>
+										<h4>Product Design</h4>
+										<p-description>
+											<p>Lägg till.</p>
+										</p-description>
+									</p-information>
+									
+									<p-content>
+										<p-row><img class='ipad lazy' data-src='emptyIpad.png'></p-row>
+										<p-row><img class='ipad lazy' data-src='emptyIpad.png'></p-row>
+										<p-row><img class='ipad lazy' data-src='emptyIpad.png'></p-row>
+									</p-content>
+								</p-chapter>
+								
+							</p-project>
+							-->
+							
+							<!-- The Mountain -->
+							
+							<p-project>
+								<p-chapter>
+									<p-information>
+										<h4>Client</h4>
+										<h2>The Mountain</h2>
+										<h4>Description</h4>
+										<p-description>
+											<p>The Mountain is an arcade game currently in early development in which you play as a mountain climber.</p>
+											<p>I was asked to make a logo that would complement the modern lightweight visuals of the game.</p>
+										</p-description>
+									</p-information>
+									
+									<p-content-small>
+										<p-row><img class='logo lazy' id='the-mountain' src='placeholder.png' data-src='theMountain.jpg'></p-row>
+									</p-content-small>
+								</p-chapter>
+							</p-project>
+						
+						</p-dark-section>
+						
+						<!-- Broadwired -->
+						
+						<p-project>
+							<p-chapter>
+								<p-information>
+									<p-row><img id='broadwired' class='lazy' src='placeholder.png' data-src='broadwiredLogo.png'></p-row>
+									<h4>Project</h4>
+									<h2>Broadwired</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>Broadwired is a concept that compiles the most relevant news articles from across the web into a lightweight feed.</p>
+										<p>My goal was to invite users to this new way of news consumption by wrapping it with a familiar feeling aesthetic.</p>
+										<!--
+										<p>Check out the <a href='broadwired/WorldwideBroadwired.html' target='_blank'> prototype</a>.</p>
+										-->
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-row><img class='ipad lazy' src='placeholder.png' data-src='broadwiredForYou.jpg'></p-row>
+								</p-content>
+							</p-chapter>
+						</p-project>
+						
+						<!-- Pin -->
+						
+						<!-- Pappa CV -->
+						
+						<p-project>
+							<p-chapter>
+								<p-information>
+									<h4>Client</h4>
+									<h2>Johan Lundell</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>Designed and helped plan a CV.</p>
+										<p>Complemented the design with a series of photos, one of which was chosen as the cover image for the front.</p>
+										<p>View the full CV <a href='CV.pdf' target='_blank'>here</a>.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-files>
+										<img class='lazy' src='placeholder.png' data-src='pappa.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='pappa2.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='pappa3.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='pappa4.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='pappa5.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='pappa6.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='pappa7.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='pappa8.jpg'>
+									</p-files>
+								</p-content>
+							</p-chapter>
+						</p-project>
+						
+						<!-- Bagged & Beaned -->
+						
+						<p-project>
+							<p-chapter>
+								<p-information>
+									<h4>Client</h4>
+									<h2>Bagged & Beaned</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>Created the logo of Bagged & Beaned, a startup which manufactures coffee bags.</p>
+										<p>Never heard of a coffee bag?</p>
+										<p>I don't blame you, it's a new concept which introduces convenient teabag-like packaging for coffee.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content-small>
+									<p-row><img class='logo lazy' id='bagged-and-beaned' src='placeholder.png' data-src='baggedandbeanedLogo.jpg'></p-row>
+								</p-content-small>
+							</p-chapter>
+						</p-project>
+						
+						<!-- R.O.B.E.R.T -->
+						
+						<p-project>
+							<p-chapter>
+								<p-information>
+									<h4>Client</h4>
+									<h2>R.O.B.E.R.T</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>While taking a course in programming I was part of a team that developed the Robocode robot R.O.B.E.R.T.</p>
+										<p>I made a brochure that showcases the features and pricing of the robot while exuding a feeling of 1970s graphical design.</p>
+										<p>View the full brochure <a href='Robert.pdf' target='_blank'>here</a>.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content>
+									<p-files>
+										<img class='lazy' src='placeholder.png' data-src='robert.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='robert2.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='robert3.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='robert4.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='robert5.jpg'>
+										<img class='lazy' src='placeholder.png' data-src='robert6.jpg'>
+									</p-files>
+								</p-content>
+							</p-chapter>
+						</p-project>
+						
+						<!-- Medaljelelekommittén -->
+							
+						<p-project>
+							<p-chapter>
+								<p-information>
+									<h4>Client</h4>
+									<h2>Medaljelelekommittén Datasektionen LTH</h2>
+									<h4>Description</h4>
+									<p-description>
+										<p>Created the logo of the committee Medaljelelekommitén.</p>
+										<p>Part of the Computer Section of Lund University, the committee is responsible for all medals that are given to its students.</p>
+									</p-description>
+								</p-information>
+								
+								<p-content-small>
+									<p-row><img class='logo lazy' id='medaljelele' src='placeholder.png' data-src='medaljelele.jpg'></p-row>
+								</p-content-small>
+							</p-chapter>
+						</p-project>
+						
+					</p-content-height>
+				</p-scaled>
+			</p-scaled-parent>
+			
+		</p-page>
+	</body>
+	<script>
+		
+		document.addEventListener("DOMContentLoaded", function() {
+		  var lazyloadImages = document.querySelectorAll("img.lazy");    
+		  var lazyloadThrottleTimeout;
+		  
+		  function lazyload () {
+		    if(lazyloadThrottleTimeout) {
+		      clearTimeout(lazyloadThrottleTimeout);
+		    }    
+		    
+		    lazyloadThrottleTimeout = setTimeout(function() {
+		        var scrollTop = window.pageYOffset;
+		        lazyloadImages.forEach(function(img) {
+		            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+		              img.src = img.dataset.src;
+		              img.classList.remove('lazy');
+		            }
+		        });
+		        if(lazyloadImages.length == 0) { 
+		          document.removeEventListener("scroll", lazyload);
+		          window.removeEventListener("resize", lazyload);
+		          window.removeEventListener("orientationChange", lazyload);
+		        }
+		    }, 20);
+		  }
+		  
+		  document.addEventListener("scroll", lazyload);
+		  window.addEventListener("resize", lazyload);
+		  window.addEventListener("orientationChange", lazyload);
+		});
 			
 	</script>
+	
+	<script src='scaling.js'></script>
 </html>

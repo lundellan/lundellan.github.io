@@ -4,14 +4,396 @@ body	{
 	width: 100vw;
 }
 
-#pageWrapper	{
+img	{
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	object-fit: cover;
+	object-position: center;
+	pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, h6, p	{
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout Components */
+
+p-page	{
 	float: left;
 	width: 100vw;
 	overflow-x: hidden;
-	height: 100vh;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
 }
+
+p-scaled-parent	{
+	float: left;
+	width: 5000px;
+	margin-left: calc(-2500px + 50vw);
+	overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+p-scaled	{
+	width: 5000px;
+	margin: 0 auto;
+	display: table;
+	transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	-moz-transform: scale(.9);
+}
+
+p-content-height	{
+	float: left;
+	width: 100%;
+}
+
+p-row	{
+	float: left;
+	width: 100%;
+}
+
+/* Content Components */
+
+p-project	{
+	float: left;
+	width: 100%;
+	margin-top: 160px;
+}
+
+p-chapter	{
+	float: left;
+	width: 100%;
+	margin-top: 140px;
+}
+
+p-content	{
+	float: left;
+	width: 100%;
+	margin-top: -15px;
+}
+
+p-information, p-content-small	{
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	display: table;
+}
+
+p-content-full	{
+	float: left;
+	width: 100%;
+	margin-top: 125px;
+}
+
+p-files	{
+	width: 1200px;
+	margin: 0 auto;
+	display: table;
+}
+
+p-files img	{
+	width: 550px;
+	height: 778px;
+	margin: 125px 25px 0 25px;
+	float: left;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+p-phones	{
+	width: 1190px;
+	margin: 0 auto;
+	display: table;
+}
+
+p-phones img	{
+	width: calc((1190px / 3) - 40px);
+	margin: 125px 20px 0 20px;
+	float: left;
+	height: 730px;
+}
+
+p-information h1	{
+	font-size: 100px;
+	line-height: 126px;
+	font-weight: 600;
+	max-width: 600px;
+	padding-right: 300px;
+	width: 100%;
+}
+
+p-information h2	{
+	font-size: 52px;
+	line-height: 66px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 600;
+	max-width: 600px;
+	padding-right: 300px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+p-information h2 a	{
+	text-decoration: none;
+	color: #004dc9;
+	font-weight: 600;
+}
+
+p-information h4	{
+	color: #999999;
+	border-bottom: 5px solid #999999;
+	font-size: 36px;
+	line-height: 44px;
+	padding-bottom: 7px;
+	margin-top: 60px;
+	width: auto;
+	margin-bottom: 5px;
+}
+
+p-description	{
+	float: left;
+	width: 100%;
+	margin-top: 2px;
+}
+
+p-description p	{
+	margin-top: 30px;
+	max-width: 600px;
+	width: 100%;
+	font-size: 28px;
+	line-height: 40px;
+	color: #696969;
+	font-weight: 500;
+}
+
+p-description p span	{
+	width: 100%;
+	font-weight: 600;
+	color: #000000;
+	line-height: 44px;
+}
+
+p-information h2 a, p-description p a	{
+	text-decoration: none;
+	color: #004dc9;
+	font-weight: 600;
+}
+
+p-information h2 a:hover, p-information p a:hover	{
+	text-decoration: underline;
+}
+
+p-information img	{
+	height: 210px;
+	margin-bottom: 15px;
+}
+
+/* Dark Section */
+
+p-dark-section	{
+	float: left;
+	width: 100%;
+	background-color: #000000;
+	margin-top: 300px;
+	padding-bottom: 300px;
+}
+
+p-dark-section h1, p-dark-section h2, p-dark-section p-description p span, p-dark-section h2 a	{
+	color: #eeeeee;
+}
+
+p-dark-section h4	{
+	color: #666666;
+	border-bottom: 4px solid #666666;
+}
+
+p-dark-section p	{
+	color: #969696;
+}
+
+/* Universal Intro */
+
+#intro	{
+	transform: scale(.8);
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+	-moz-transform: scale(.8);
+}
+
+#intro img	{
+	margin: 0 auto;
+	display: table;
+	width: 1350px;
+	margin-top: 100px;
+	pointer-events: none;
+	height: 3633px;
+}
+
+#introContent	{
+	position: absolute;
+	top: 0;
+}
+
+/* Media */
+
+.logo	{
+	height: 200px;
+	width: 200px;
+	margin-top: 125px;
+}
+
+.wordmark	{
+	width: 650px;
+	margin-top: 125px;
+	height: 124px;
+}
+
+.branding	{
+	width: 675px;
+	margin-top: 125px;
+	height: 804px;
+}
+
+.ipad, .wallpaper	{
+	width: 1150px;
+	margin: 0 auto;
+	display: table;
+	margin-top: 125px;
+}
+
+.wallpaper	{
+	height: 765px;
+}
+
+.ipad	{
+	height: 881px;
+}
+
+.website	{
+	height: 2100px;
+	width: 2624px;
+	margin: 0 auto;
+	display: table;
+	margin-top: 125px;
+	margin-bottom: 125px;
+}
+
+/* Specific Content */
+
+#hotmail	{
+	left: -100px;
+}
+
+#content-height	{
+	padding-bottom: 350px;
+}
+
+#homepal-design-language	{
+	height: 3919px;
+}
+
+#topping	{
+	height: 260px;
+	margin-bottom: -5px;
+	width: 211px;
+}
+
+#tempo	{
+	height: 225px;
+	width: 225px;
+}
+
+#loudpastel-covers	{
+	height: 1209px;
+}
+
+#the-mountain	{
+	height: 290px;
+	width: 425px;
+}
+
+#broadwired	{
+	height: 210px;
+	padding-bottom: 15px;
+	width: 210px;
+}
+
+#bagged-and-beaned	{
+	width: 487px;
+	height: 275px;
+}
+
+#medaljelele	{
+	width: 334px;
+	height: 425px;
+}
+
+/* Tablet Scaling */
+
+@media screen and (max-width: 1190px) {
+	
+	#content-height-applied	{
+		display: none;
+	}
+	
+	#intro	{
+		transform: scale(.6);
+		-moz-transform: scale(.6);
+		-webkit-transform: scale(.6);
+		-ms-transform: scale(.6);
+	}
+	
+	#hotmail	{
+		left: -50px;
+	}
+
+}
+
+
+/* Mobile Scaling */
+
+@media screen and (max-width: 500px) {
+	
+	#intro-height-applied	{
+		display: none;
+	}
+	
+	#mobileContent	{
+		display: block;
+	}
+	
+	body	{
+		overflow-x: hidden !important;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #desktopContent	{
 	display: block;
@@ -29,15 +411,6 @@ body	{
 	float: left;
 	width: 100%;
 	overflow: hidden;
-}
-
-#intro	{
-	margin: 0 auto;
-	display: table;
-	width: 1350px;
-	margin-top: 100px;
-	pointer-events: none;
-	height: 3633px;
 }
 
 #introParent	{
@@ -85,32 +458,9 @@ body	{
 	-ms-transform: scale(.9);
 }
 
-img	{
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	object-fit: cover;
-	object-position: center;
-	pointer-events: none;
-}
-
 .row	{
 	float: left;
 	width: 100%;
-}
-
-.contentParent	{
-	width: 900px;
-	margin: 0 auto;
-	position: relative;
-}
-
-h1, h2, h3, h4, h5, h6, p	{
-	margin: 0;
-	padding: 0;
 }
 
 .mediumTitle, .largeTitle, .smallTitle	{
@@ -199,20 +549,12 @@ h1, h2, h3, h4, h5, h6, p	{
 	margin-top: 250px;
 }
 
-.projectSection	{
-	margin-top: 350px;
-}
-
 .freelanceProjectSection	{
 	margin-top: 200px;
 }
 
 .newBackground	{
 	padding-bottom: 350px;
-}
-
-.contentSection	{
-	margin-top: 140px;
 }
 
 .pageParent	{
@@ -222,46 +564,15 @@ h1, h2, h3, h4, h5, h6, p	{
 	background-color: #123456;
 }
 
-.filesSection	{
-	width: 1200px;
-	margin: 0 auto;
-}
-
-.file	{
-	width: 550px;
-	margin: 0 25px;
-	float: left;
-	border: 1px solid #cccccc;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-
 .marginFile	{
 	margin-bottom: 50px !important;
 }
 
 
 
-.descriptionIcon	{
-	height: 210px;
-	margin-bottom: 15px;
-}
-
 .descriptionWordmark	{
 	height: 125px;
 	margin-bottom: 15px;
-}
-
-.phoneSection	{
-	width: 1190px;
-	margin: 0 auto;
-}
-
-.phone	{
-	width: calc((1190px / 3) - 40px);
-	margin: 0 20px;
-	float: left;
 }
 
 .smallTitleDark	{
@@ -364,47 +675,16 @@ h1, h2, h3, h4, h5, h6, p	{
 	margin-top: 100px;
 }
 
-.logo	{
-	height: 200px;
-}
-
 .logoLarge	{
 	height: 275px;
-}
-
-.wordmark	{
-	width: 650px;
-	margin-bottom: 125px;
 }
 
 .branding	{
 	width: 675px;
 }
 
-.ipad, .wallpaper	{
-	width: 1150px;
-	margin: 0 auto;
-	display: table;
-}
-
-.toppingLogo	{
-	height: 260px;
-	margin-bottom: -5px;
-}
-
 .medaljelele	{
 	height: 425px;
-}
-
-.tempoLogo	{
-	height: 225px;
-}
-
-.wideBanner	{
-	width: 1150px;
-	margin: 0 auto;
-	display: table;
-	pointer-events: none;
 }
 
 #welcomeBack	{
@@ -471,12 +751,6 @@ h1, h2, h3, h4, h5, h6, p	{
 	height: 2100px;
 }
 
-.websitePreview	{
-	height: 2100px;
-	margin: 0 auto;
-	display: table;
-}
-
 
 
 .hotmail	{
@@ -499,7 +773,6 @@ h1, h2, h3, h4, h5, h6, p	{
 	.hotmail	{
 		left: -50px;
 	}
-	
 	
 
 }
