@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6, p	{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+a	{
+	font-family: 'Inter', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 /* Layout Components */
 
 p-page	{
@@ -163,6 +169,17 @@ p-information h4	{
 	margin-top: 60px;
 	width: auto;
 	margin-bottom: 5px;
+}
+
+p-description a	{
+	float: left;
+	text-decoration: none;
+	color: #004dc9;
+	font-weight: 600;
+	border-bottom: none !important;
+	font-size: 36px;
+	line-height: 44px;
+	margin-top: 32px;
 }
 
 p-description	{
