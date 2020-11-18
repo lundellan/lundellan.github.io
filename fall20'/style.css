@@ -130,7 +130,7 @@ p-phones img	{
 	width: calc((1190px / 3) - 40px);
 	margin: 125px 20px 0 20px;
 	float: left;
-	height: 730px;
+	height: 716px;
 }
 
 p-information h1	{
@@ -255,9 +255,9 @@ p-dark-section p	{
 	height: 3613px;
 }
 
-#introImage	{
-	height: 3613px;
+#introPlaceholder	{
 	width: 1350px;
+	height: 3613px;
 }
 
 #introContent	{
@@ -282,7 +282,7 @@ p-dark-section p	{
 .branding	{
 	width: 675px;
 	margin-top: 125px;
-	height: 804px;
+	height: 805px;
 }
 
 .ipad, .wallpaper	{
@@ -693,10 +693,6 @@ p-dark-section p	{
 
 .logoLarge	{
 	height: 275px;
-}
-
-.branding	{
-	width: 675px;
 }
 
 .medaljelele	{
