@@ -25,10 +25,7 @@
 		
 		<link rel='stylesheet' href='style.css'>
 		<link rel='stylesheet' href='fonts.css'>
-		
-		<script src='elements.js'></script>
 		<script src='yall.min.js'></script>
-		<script src='scaling.js'></script>
 		
 		<script>
 			document.addEventListener("DOMContentLoaded", yall);
@@ -703,6 +700,15 @@
 	</body>
 	<script>
 		
+		/* Content Scaling */
+		
+		function load()	{
+		  var parentHeight2 = (document.getElementById('content-height').clientHeight) * .9
+		  document.getElementById('content-height-applied').style.height = parentHeight2 + "px"
+		}
+		
+		/* Lazy Image Loading */
+		
 		document.addEventListener("DOMContentLoaded", function() {
 		  var lazyloadImages = document.querySelectorAll("img.lazy");    
 		  var lazyloadThrottleTimeout;
@@ -728,10 +734,20 @@
 		    }, 20);
 		  }
 		  
-		  document.addEventListener("scroll", lazyload);
-		  window.addEventListener("resize", lazyload);
-		  window.addEventListener("orientationChange", lazyload);
+		  	document.addEventListener("scroll", lazyload);
+		  	window.addEventListener("resize", lazyload);
+		  	window.addEventListener("orientationChange", lazyload);
 		});
+		
+		/* Viewport Placement */
+		
+		window.addEventListener('scroll', function () {
+		  localStorage.scrollX = window.scrollX;
+		  localStorage.scrollY = window.scrollY;
+		})
+		window.addEventListener('load',function () {
+		  window.scrollTo(localStorage.scrollX || 0, localStorage.scrollY || 0);
+		})
 			
 	</script>
 </html>
