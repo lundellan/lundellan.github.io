@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Design Prototype 3</title>
+	
+			<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+			
+			<meta charset="utf-8">
+			
+				<style type="text/css">
+				
+					/* Content Space */
+					
+						#contentSpace	{
+							float: left;
+							width: 14em;
+							background-color: #FFFFFF;
+							padding: 1em 0 .9em 0;
+						}
+				
+					/* Notification bar and Activity label */
+				
+						#actionBar	{
+							float: left;
+							width: 14em;
+							height: 2.45em;
+							position: fixed;
+							background-color: #FFFFFF;
+							text-align: center;
+							margin: 1.15em 0 0 0;
+						}
+				
+						#statusBar	{
+							float: left;
+							width: 14em;
+							height: 3.6em;
+							position: fixed;
+							background-color: #000000;
+						}
+						
+					/* Tab Selection */
+					
+						#tabSelection	{
+							float: left;
+							width: 100%;
+							margin: 4em 0 0 0;
+						}
+						
+						#tab	{
+							float: left;
+							width: 50%;
+							text-align: center;
+						}
+						
+						.tabSelection	{
+							margin: 0 auto;
+							font-family: 'Roboto', sans-serif;
+							font-size: .9em;
+							background: #efefef;
+							color: #ffffff;
+							
+						}
+						
+					/* Content */
+					
+						/* General Structures */
+						
+							#titleSection	{
+								float: left;
+								width: 100%;
+							}
+							
+							#cardSection	{
+								float: left;
+								width: calc(100% - 2.3em);
+								background-color: #FFFFFF;
+								margin: .5em 0 0 0;
+								padding: .8em 1.15em .15em 1.15em;
+								text-align: center;
+							}
+							
+							#cardSectionSeparator	{
+								float: left;
+								width: calc(100% - 2em);
+								border-bottom: 0.1em solid #F0F0F0;
+								margin: 1em 1em 0 1em;
+							}
+							
+							#row	{
+								float: left;
+								width: 100%;
+							}
+							
+							/* Progress Stats */
+							
+								#progressTitle	{
+									float: left;
+									width: 100%;
+								}
+								
+							/* Circle Progress Stats */
+							
+								#dailyStats	{
+									float: left;
+									width: 100%;
+									margin: .25em 0 .8em 0;
+								}
+								
+								#circleStat	{
+									float: left;
+									width: calc(100% / 3);
+									text-align: center;
+								}
+								
+								#progressCircle	{
+									width: 2.15em;
+									height: 2.15em;
+									border-radius: 1000em;
+									border: .6em solid #ebebeb;
+									margin: 0 auto;
+									margin-bottom: .5em;
+								}
+							
+							/* Activities */
+								
+								.more	{
+									float: left;
+									width: 100%;
+									font-family: 'Roboto', sans-serif;
+									font-size: .8em;
+									font-weight: bold;
+									color: #000000;
+									text-decoration: none;
+									padding: 0;
+									margin: .95em 0 0 0;
+									border-radius: 1000em;
+									letter-spacing: 0.035em;
+								}
+								
+								.moreLarge	{
+									float: left;
+									width: 4.65em;
+									font-family: 'Roboto', sans-serif;
+									font-size: .75em;
+									font-weight: bold;
+									color: #ffffff;
+									text-decoration: none;
+									padding: .8em 0;
+									margin: .9em 0 0 .5em;
+									border-radius: 1000em;
+									letter-spacing: 0.035em;
+								}
+								
+								.startActivityWide	{
+									float: left;
+									width: calc(100% - 5.15em);
+									text-align: center;
+									font-size: .75em;
+									font-weight: bold;
+									font-family: 'Roboto', sans-serif;
+									color: #FFFFFF;
+									padding: .8em 0;
+									margin: .9em 0 .5em 0;
+									background-color: #4abdac;
+									text-decoration: none;
+									border-radius: 1000em;
+									letter-spacing: 0.035em;
+								}
+					
+						/* Today's progress */
+						
+							#todayProgress	{
+								float: left;
+								width: calc(100% - 2.3em);
+								background-color: #FFFFFF;
+								margin: 0;
+								padding: 1em 1.15em .5em 1.15em;
+							}
+							
+							#generalProgressSection	{
+								float: left;
+								margin: 0;
+								width: 100%;
+							}
+							
+							#progressSection	{
+								float: left;
+							}
+							
+							#progressStat	{
+								float: left;
+								width: 20px;
+								margin: 13px 10px 0 0;
+							}
+							
+							#progressBar	{
+								float: left;
+								height: 75px;
+								width: 20px;
+								background-color: #eeeeee;
+								margin: 0 0 7px 0;
+								border-radius: 200em;
+								position: relative;
+							}
+							
+							#progress	{
+								float: left;
+								width: 100%;
+								height: 100%;
+								background-color: #85e6cd;
+								border-radius: 20em;
+								position: absolute;
+								bottom: 0;
+							}
+							
+							#progressSectionBorder	{
+								float: left;
+								width: 100%;
+								margin: .5em 0 .2em 0;
+							}
+							
+						/* Running stats */
+						
+							#runningSection	{
+								float: left;
+								width: calc(100% - 1em);
+								background-color: #FFFFFF;
+								margin: .55em .5em 0 .5em;
+								padding: 0 0 1em 0;
+							}
+							
+							#runningSectionBorder	{
+								float: left;
+								width: calc(100% - 2.2em);
+								margin: .5em 1.1em 0 1.1em;
+							}
+						
+						/* Remaining exercises */
+						
+							#remainingExercises {
+								float: left;
+								width: 100%;
+								background-color: #FFFFFF;
+								margin: .55em 0 0 0;
+								padding: 0 0 1em 0;
+								border-radius: .35em;
+							}
+							
+							#exerciseStat	{
+								float: left;
+								width: 100%;
+								margin: .25em 0 0 0;
+							}
+							
+							#exerciseProgress	{
+								float: left;
+								width: 40%;
+								height: .85em;
+								background-color: #339cff;
+								border-radius: 20em;
+							}
+							
+							#exerciseSectionBorder	{
+								float: left;
+								width: calc(100% - 2.2em);
+								margin: .5em 1.1em 0 1.1em;
+							}
+							
+							#exerciseSection	{
+								float: left;
+								width: 100%;
+								padding: 0;
+								margin: 0;
+							}
+							
+							#exercise	{
+								float: left;
+								width: 100%;
+							}
+						
+						/* Recommended exercises */
+						
+							#recommendedExercises	{
+								float: left;
+								width: calc(100% - 1em);
+								background-color: #FFFFFF;
+								margin: .55em .5em 0 .5em;
+								padding: 0 0 1em 0;
+								border-radius: .35em;
+							}
+						
+					/* HTML tags */
+				
+						body	{
+							margin: 0;
+							background-color: #E3E3E3;
+							zoom: 1.365; 
+						    -moz-transform: scale(1.365); 
+						    -moz-transform-origin: 0 0;
+						}
+						
+						/* Activity bar title */
+						
+							h1	{
+								font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+								font-size: .8em;
+								font-weight: 500;
+								color: #000000;
+								letter-spacing: .035em;
+								margin: .95em 0 0 0;
+							}
+							
+						/* Section titles */
+						
+							h2	{
+								float: left;
+								font-family: 'Roboto', sans-serif;
+								font-size: 1.3em;
+								font-weight: bold;
+								color: #FFFFFF;
+								margin: -.1em 0 0 0;
+								text-align: center;
+							}
+							
+						/* Section Title Icons */
+						
+							.activityIcon	{
+								float: left;
+								font-size: .75em;
+								font-weight: bold;
+								width: 1.65em;
+								height: 1.375em;
+								text-align: center;
+								border-radius: 1000em;
+								color: #FFFFFF;
+								font-family: 'Roboto', sans-serif;
+								margin: 0 6px 0 0;
+								padding: .25em 0 0 0;
+							}
+							
+						/* Progress bar titles */
+						
+							h3	{
+								float: left;
+								font-family: 'Roboto', sans-serif;
+								font-size: .8em;
+								font-weight: normal;
+								color: #000000;
+								margin: .5em 0 .25em 0;
+							}
+							
+						/* Progress circle title */
+						
+							h7	{
+								font-family: 'Roboto', sans-serif;
+								font-size: .8em;
+								font-weight: normal;
+								color: #000000;
+								margin: 0 auto;
+							}
+						
+						/* Info titles */
+							
+							h5	{
+								float: left;
+								font-family: 'Roboto', sans-serif;
+								font-size: .8em;
+								font-weight: normal;
+								color: #000000;
+								margin: 0 0 .35em 0;
+							}
+						
+						/* Progress numbers */
+							
+							h6	{
+								float: right;
+								font-family: 'Roboto', sans-serif;
+								font-size: .8em;
+								font-weight: normal;
+								color: #000000;
+								margin: .1em 0 0 0;
+							}
+							
+						/* Remaining exercise alternatives */
+						
+							h4	{
+								float: left;
+								font-family: 'Roboto', sans-serif;
+								font-size: .8em;
+								font-weight: normal;
+								color: #292929;
+								margin: .75em 0 0 0;
+							}
+							
+						
+							
+				</style>
+	</head>
+	
+	<body>
+		
+	<!-- Notification bar and Activity label -->
+			
+			<!-- Content Space -->
+				
+			<div id="contentSpace">
+			
+			
+				<!-- Content -->
+				
+					<!-- Today's progress -->
+					
+					
+					<div id="todayProgress">
+						
+						
+						<div id="titleSection">
+						<h2 style="color: #000000; font-size: 1.3em; float: left; text-align: left; margin-bottom: 5px; margin-top: -10px;">Summary</h2>
+						</div>
+						
+						<!-- <div id="dailyStats">
+						
+							<div id="row" style="margin: -.15em 0 .75em 0">
+								
+							</div>
+						
+							<div id="circleStat" style="width: 50%">
+								<div id="progressCircle" style="height: 3.25em; width: 3.25em;"></div>
+								
+								<h7>Time Active</h7>
+							</div>
+							
+							<div id="circleStat" style="width: 50%">
+								<div id="progressCircle" style="height: 3.25em; width: 3.25em;"></div>
+									
+								<h7>Burned Cals</h7>
+							</div>
+							
+						</div> -->
+						
+
+						<div id="generalProgressSection">
+							<!-- <div id="row">
+								<h5 style="margin: .5em 0 .25em 0"><b>Activities</b></h5>
+							</div> -->
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #ff5d5b; height: 80%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #ff5d5b; float: left;">W</a>
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #A452FF; height: 50%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #A452FF; float: left;">R</a>
+								
+								
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #6B81FF; height: 0%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #6B81FF; float: left;">C</a>
+								
+								
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #55d9b3; height: 70%;"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #55d9b3; float: left;">E</a>
+								
+								
+							</div>
+							
+							<div id="progressStat">
+								<div id="progressBar">
+									<div id="progress" style="background-color: #ffbe4a"></div>
+								</div>
+								
+								<a class="activityIcon" style="background-color: #ffbe4a; float: left;">S</a>
+								
+								
+							</div>
+						
+							<!-- <a class="more" style="text-align: center;" href="#">More</a> -->
+							
+						</div>
+						
+						
+						<!-- <div id="generalProgressSection">
+							<div id="row">
+								<h5 style="margin: 1.5em 0 .25em 0"><b>Lifestyle</b></h5>
+							</div>
+							
+							<div id="progressStat" style="margin: .45em 0 0 0">
+								<a class="activityIcon" style="background-color: #ff9500; float: left;">F</a>
+								
+								<div id="progressBar">
+									<div id="progress" style="background-color: #ff9500"></div>
+								</div>
+							</div>
+							
+							<div id="progressStat" style="margin: .75em 0 0 0">
+								<a class="activityIcon" style="background-color: #42C0FB; float: left;">W</a>
+								
+								<div id="progressBar">
+									<div id="progress" style="background-color: #42C0FB"></div>
+								</div>
+							</div>
+							
+							<div id="progressStat" style="margin: .75em 0 0 0">
+								<a class="activityIcon" style="background-color: #1d3d61; float: left;">S</a>
+								
+								<div id="progressBar">
+									<div id="progress" style="background-color: #1d3d61"></div>
+								</div>
+							</div>
+						
+							<a class="more" style="text-align: center;" href="#">More</a>
+							
+						</div> -->
+						
+					</div>
+					
+					<div id="cardSectionSeparator" style="margin-top: .65em"></div>
+						
+					
+					<!-- Walking stats -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #ff5d5b">W</a>
+							<h2 style="color: #ff5d5b">Walking</h2>
+							
+						</div>
+						
+						<div id="dailyStats">
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%; margin-bottom: -5px;">
+								<h7 style="font-size: 2.5em;"><b>11 768</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 0 0;">
+									<h7>Steps</h7>
+								</div>
+									
+							</div>
+						</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5></h5>
+							</div>
+							
+							<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>1 Week Marathon</h5>
+								<h6 style="margin: 0;">3 days left</h6>
+							</div>
+							
+							<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Yesterday</b></h5>
+								<h6>14 288</h6>
+							</div>
+							<div id="row">
+								<h5><b>Sunday</b></h5>
+								<h6>13 613</h6>
+							</div>
+							<div id="row">
+								<h5><b>Saturday</b></h5>
+								<h6>5 192</h6>
+							</div>
+						
+							<a class="startActivityWide" style="background-color: #ff5d5b" href="#">Continue Session</a>
+							
+							<a class="moreLarge" style="background-color: #ff5d5b" href="#">More</a>
+							
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Running stats -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #a463e4">R</a>
+							<h2 style="color: #a463e4">Running</h2>
+							
+						</div>
+						
+						<div id="dailyStats">
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%;">
+								<h7 style="font-size: 2.5em;"><b>3.2 km</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 0 0;">
+									<h7>Distance</h7>
+								</div>
+									
+							</div>
+						</div>
+							
+							<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>1 Week Marathon</h5>
+								<h6 style="margin: 0;">2 days left</h6>
+							</div>
+							
+							<div id="row">
+								<h5><b>Yesterday</b></h5>
+								<h6>4.9 km</h6>
+							</div>
+							<div id="row">
+								<h5><b>Sunday</b></h5>
+								<h6>3.2 km</h6>
+							</div>
+							<div id="row">
+								<h5><b>Saturday</b></h5>
+								<h6>6.4 km</h6>
+							</div>
+						
+							<a class="startActivityWide" style="background-color: #a463e4" href="#">Continue Session</a>
+							
+							<a class="moreLarge" style="background-color: #a463e4" href="#">More</a>
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Biking stats -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #536dfe">C</a>
+							<h2 style="color: #536dfe">Cycling</h2>
+							
+						</div>
+						
+						<div id="dailyStats">
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%;">
+								<h7 style="font-size: 2.5em;"><b>0 m</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 0 0;">
+									<h7>Distance</h7>
+								</div>
+									
+							</div>
+							
+						</div>
+							
+							<div id="row" style='margin-top: .25em;'>
+								<h5><b>Yesterday</b></h5>
+								<h6>0 m</h6>
+							</div>
+							<div id="row">
+								<h5><b>Sunday</b></h5>
+								<h6>7.3 km</h6>
+							</div>
+							<div id="row">
+								<h5><b>Saturday</b></h5>
+								<h6>0 m</h6>
+							</div>
+						
+							<a class="startActivityWide" style="background-color: #6B81FF" href="#">Start Session</a>
+
+							<a class="moreLarge" style="background-color: #6B81FF" href="#">More</a>
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Remaining exercises -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #55d9b3">E</a>
+							<h2 style="color: #55d9b3">Exercises</h2>
+							
+						</div>
+						
+						<div id="dailyStats">	
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>3</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Finished</h7>
+								</div>
+									
+							</div>
+							
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>4</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Remaining</h7>
+								</div>
+									
+							</div>
+						</div>
+						
+							
+						<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>The Rock's Workout</h5>
+								<h6 style="margin: 0;">1 week left</h6>
+							</div>
+							
+							
+						<div id="row">
+							<h5><b>Remaining<b></h5>
+						</div>		
+							
+						<div id="row">
+							<h5>Squats</h5>
+							<h6>10 reps &mdash; 3 sets</h6>
+						</div>
+						<div id="row">
+							<h5>Arm Curls</h5>
+							<h6>10 reps &mdash; 3 sets</h6>
+						</div>
+						<div id="row">
+							<h5>Crunches</h5>
+							<h6>10 reps &mdash; 3 sets</h6>
+						</div>	
+						<div id="row">
+							<h5>Plank</h5>
+							<h6>1 min &mdash; 2 times</h6>
+						</div>
+						
+						<a class="startActivityWide" style="background-color: #55d9b3" href="#">Check Off</a>
+						
+						<a class="moreLarge" style="background-color: #55d9b3" href="#">More</a>
+						
+					</div>
+					
+					<div id="cardSectionSeparator"></div>
+					
+					
+					<!-- Remaining gym activities -->
+					
+					<!-- <div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #55d9b3">Gym</h2>
+							<a class="activityIcon" style="background-color: #55d9b3">G</a>
+						</div>
+						
+						<div id="dailyStats">	
+						
+							<div id="row" style="margin: -.15em 0 .25em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>3</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Finished</h7>
+								</div>
+									
+							</div>
+							
+							<div id="exerciseStat" style="text-align: center; width: 50%;">
+								<h7 style="font-size: 2.5em;"><b>7</b></h7>
+							
+								<div id="row" style="text-align: center; margin: 0 0 .3em 0;">
+									<h7>Remaining</h7>
+								</div>
+									
+							</div>
+						</div>
+							
+							
+						<div id="row" style="margin: .25em 0 0 0">
+								<h5><b>Active Challenges</b></h5>
+							</div>
+							
+							<div id="row" style="margin: 0 0 .25em 0">
+								<h5>Exampel</h5>
+								<h6 style="margin: 0;">3 days left</h6>
+							</div>
+							
+							
+						<div id="row">
+							<h5><b>Remaining exercises<b></h5>
+						</div>	
+							
+						<div id="row">
+							<h5>Example</h5>
+							<h6>10 reps (3 sets)</h6>
+						</div>
+						<div id="row">
+							<h5>Example</h5>
+							<h6>10 reps (3 sets)</h6>
+						</div>
+						<div id="row">
+							<h5>Example</h5>
+							<h6>10 reps (3 sets)</h6>
+						</div>
+						
+						<a class="startActivityWide" style="background-color: #55d9b3" href="#">Check Off</a>
+						
+						<a class="moreLarge" style="background-color: #55d9b3" href="#">More</a>
+						
+					</div>
+					
+					<div id="cardSectionSeparator"></div> -->
+					
+					
+					<!-- Remaining stretching -->
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<a class="activityIcon" style="background-color: #fbc224">S</a>
+							<h2 style="color: #fbc224">Stretching</h2>
+							
+						</div>
+						
+						<div id="dailyStats">	
+						
+							<div id="row" style="margin: 5px 0 .5em 0">
+								<h5><b>Today<b></h5>
+							</div>
+						
+							<div id="exerciseStat" style="text-align: center; width: 100%; margin-bottom: 10px;">
+								<h7 style="font-size: 2.5em;"><b>Done</b></h7>
+									
+							</div>
+						</div>
+					
+						
+						
+						
+						<a class="moreLarge" style="background-color: #fbc224; margin: 0 auto; float: none; display: table; margin-bottom: 25px;" href="#">More</a>
+						
+					</div>
+					
+					<!-- <div id="cardSectionSeparator"></div> -->
+					
+					
+					<!-- Food Section -->
+					
+					<!-- <div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #ff9500">Food</h2>
+							<a class="activityIcon" style="background-color: #ff9500">F</a>
+						</div>
+							
+							
+							
+						<a class="startActivityWide" style="background-color: #ff9500" href="#">Update Plan</a>
+						
+						<a class="moreLarge" style="background-color: #ff9500" href="#">More</a>
+							
+					</div>
+						
+					<div id="cardSectionSeparator"></div>
+						
+					
+					
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #42C0FB">Water</h2>
+							<a class="activityIcon" style="background-color: #42C0FB">W</a>
+						</div>
+							
+							
+							
+						<a class="startActivityWide" style="background-color: #42C0FB" href="#">Check Off</a>
+						
+						<a class="moreLarge" style="background-color: #42C0FB" href="#">More</a>	
+							
+					</div>
+						
+					<div id="cardSectionSeparator"></div>
+						
+						
+					
+					
+					<div id="cardSection">
+						<div id="titleSection">
+							<h2 style="color: #1d3d61">Sleep</h2>
+							<a class="activityIcon" style="background-color: #1d3d61">S</a>
+						</div>
+							
+							
+							
+						<a class="startActivityWide" style="background-color: #1d3d61" href="#">Register</a>
+						
+						<a class="moreLarge" style="background-color: #1d3d61" href="#">More</a>
+							
+					</div>
+						
+					<div id="cardSectionSeparator"></div> -->
+			
+			</div>
+	
+	
+	</body>
+</html>

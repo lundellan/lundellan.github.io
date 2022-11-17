@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, 21.000000)">
+            <rect id="Rectangle" fill="#29A241" x="0" y="3" width="150" height="100"></rect>
+            <rect id="Rectangle-2" fill="#08440F" x="0" y="88" width="150" height="15"></rect>
+            <rect id="Rectangle-2" fill="#08440F" x="0" y="3" width="150" height="15"></rect>
+            <path d="M-42.5,45.5 L57.5,45.5 L57.5,45.5 C57.5,53.7842712 50.7842712,60.5 42.5,60.5 L-27.5,60.5 C-35.7842712,60.5 -42.5,53.7842712 -42.5,45.5 Z" id="Rectangle-2" fill="#08440F" transform="translate(7.500000, 53.000000) rotate(90.000000) translate(-7.500000, -53.000000) "></path>
+            <path d="M150,18 L150,88 C150,96.2842712 143.284271,103 135,103 L135,3 L135,3 C143.284271,3 150,9.71572875 150,18 Z" id="Rectangle-2" fill="#08440F"></path>
+            <circle id="Oval" fill="#08440F" cx="75.5" cy="53.5" r="37.5"></circle>
+            <circle id="Oval" fill="#08440F" cx="15" cy="55" r="15"></circle>
+            <circle id="Oval" fill="#08440F" cx="135" cy="55" r="15"></circle>
+            <text id="$" font-family="NeueHaasUnicaW1G-Medium, Neue Haas Unica W1G" font-size="64" font-weight="400" fill="#FFFFFF">
+                <tspan x="56" y="75">$</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

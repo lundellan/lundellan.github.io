@@ -1,0 +1,753 @@
+a:-webkit-any-link{
+text-decoration:none !important;
+}
+
+.titleLarge, .titleLargeProject, .titleLargeWallpaper, .titleLargeHandwritten	{
+	float: left;
+	width: 100%;
+	font-family: titling-gothic-fb-narrow, sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	font-style: normal;
+	margin-top: 0;
+}
+
+#largeText	{
+	float: left;
+	font-size: 160px;
+	line-height: 170px;
+	margin-top: 5px;
+}
+
+#introTextRow	{
+	margin-bottom: 20px;
+	margin-top: 100px; 
+	padding-top: calc(17vh - 100px);
+	max-width: 500px;
+	margin-right: calc(100% - 500px);
+}
+
+.titleLargeWallpaper	{
+	position: relative;
+	z-index: 1;
+	font-size: 160px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 170px;
+	margin: 0 auto;
+	display: table;
+	max-width: 1300px;
+	width: calc(100% - 200px);
+	padding: 100px 100px 0 100px;
+	margin-bottom: -10000px;
+}
+
+.titleLargeHandwritten	{
+	font-family: gooddog-new, sans-serif;
+}
+
+.titleSmallText	{
+	float: left;
+	font-family: calibri, sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+}
+
+.textNormal, .textNormalLink, .textNormalProject	{
+	float: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 26px;
+}
+
+.textNormalLink, .textNormalLinkDark	{
+	width: auto; 
+	margin: 2px 0 10px 15px; 
+	color: #000000;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	border-bottom: 3px solid #dbdbdb;
+	padding-bottom: 6px;
+	
+	text-decoration: none;
+}
+
+.textNormalLinkDark	{
+	color: #e0e0e0;
+	border-bottom: 3px solid #383838;
+}
+
+#largeTextSection	{
+	padding-top: 25px;
+	max-width: 900px;
+	color: #555555;
+	font-weight: 600;
+	font-size: 32px;
+	width: 100%;
+}
+
+.linkArrow	{
+	float: left;
+	height: 14px;
+	margin-top: 8px;
+	margin-left: 6px;
+}
+
+.socialMediaIcon	{
+	float: left;
+	height: 45px;
+}
+
+.socialMediaAnchor	{
+	float: left; 
+	text-decoration: none!important;
+}
+
+.socialMediaAnchor:hover .textNormalLink	{
+	border-bottom: 3px solid #bdbdbd;
+}
+
+.socialMediaAnchor:hover .textNormalLinkDark	{
+	border-bottom: 3px solid #858585;
+}
+
+.textNormalTitle	{
+	float: left;
+	font-family: titling-gothic-fb-narrow, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	font-style: normal;
+}
+
+.image	{
+	float: left;
+	width: 450px;
+	margin-left: -55px;
+}
+
+.arrowDown	{
+	float: left;
+	width: 80px;
+}
+
+#socialRowTop	{
+	margin-top: 40px;
+}
+
+/* Projects */
+
+.projectLogo, .projectLogoStacked	{
+	float: left;
+	height: 75px;
+}
+
+.projectLogoStacked	{
+	padding: 0 50px 40px 0;
+	height: 190px;
+}
+
+.projectTitle	{
+	float: left;
+	width: 100%;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	font-family: 'inter', sans-serif;
+	color: #000000;
+}
+
+.titleLargeProject	{
+	font-size: 30px;
+	margin-top: 12px;
+	width: 100%;
+	font-family: calibri, sans-serif;
+	font-weight: 700;
+}
+
+.textNormalProject	{
+	width: 100%;
+	color: #555555;
+}
+
+#rowStackSocialProject	{
+	padding: 0;
+}
+
+#topIphoneIpad	{
+	width: calc(100% + 25px);
+	overflow-x: hidden;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+.iphoneIpadSection	{
+	padding-left: 5vw;
+	width: 1800px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+
+.iphoneSection	{
+	float: left;
+	margin-top: 510px;
+	margin-left: -10px;
+	width: 350px;
+}
+
+.iphone	{
+	float: left;
+	width: 350px;
+	pointer-events: none;
+	position: relative;
+	z-index: 100;
+}
+
+.iphoneContentParent	{
+	width: 305px;
+	height: 632px;
+	margin: 52px 0 0 -327px;
+	border-radius: 0 0 27px 27px;
+	float: left;
+	overflow: hidden;
+}
+
+.iphoneContentParentHidden	{
+	float: left;
+	width: calc(100% + 50px);
+	height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.iphoneContent	{
+	float: left;
+	border: 0;
+	position: relative;
+	z-index: 10;
+	width: 305px;
+	padding-right: 50px;
+}
+
+.ipadSection	{
+	float: left;
+}
+
+.ipad	{
+	float: left;
+	width: 1400px;
+	pointer-events: none;
+}
+
+.ipadContent	{
+	float: left;
+	margin: 89px 0 0 -1311px;
+	width: 1222px;
+	border: 0;
+	border-radius: 16px;
+	height: 916px;
+	background-color: #ffffff;
+}
+
+.ipadContentPortrait	{
+	margin: 89px 0 0 -1311px;
+	height: 1222px;
+	width: 916px;
+}
+
+#mediumSizeIphoneSection	{
+	float: left;
+	width: auto;
+	display: none;
+	padding-bottom: 0;
+}
+
+#smallIphonePositioning	{
+	float: left;
+	margin-left: 35px;
+	width: 350px;
+}
+
+#phoneSmall	{
+	display: none;
+}
+
+/* Sections */
+
+#toppingSection	{
+	padding-top: 120px;
+	padding-bottom: 150px;
+}
+
+#logoSectionParent	{
+	padding-top: 25px;
+	padding-bottom: 40px;
+}
+
+#darkSection	{
+	padding-top: 25px;
+	padding-bottom: 150px;
+}
+
+#logoSectionTasteflow	{
+	margin-top: 137px;
+}
+
+/* Projects */
+
+#tempoBroadwiredSection	{
+	padding-bottom: 125px;
+	margin-top: 90px;
+}
+
+#broadwired	{
+	margin-top: -250px;
+}
+
+#broadwiredLink	{
+	margin-top: 70px;
+	margin-left: 0px;
+}
+
+#broadwiredSmall	{
+	display: none;
+}
+
+.projectImage, .projectImageDark	{
+	margin: 0 25px;
+    box-shadow: #c8c8c8 0 0 20px;
+}
+
+.projectImageDark	{
+	box-shadow: none;
+}
+
+.rowProjectContentParent, .rowProjectContentParentSmall	{
+	height: 800px;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+	margin: 50px 0 50px 0;
+}
+
+.rowProjectContentParentSmall	{
+	height: 625px;
+}
+
+.rowProjectContent, .rowProjectContentSmall	{
+	width: auto;
+    height: auto;
+    display: inline-block;
+    overflow:hidden;
+    display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox; 
+	display: -webkit-flex;
+	display: flex; 
+	padding: 25px 75px 25px 25px;
+}
+
+.rowProjectContentSmall	{
+	padding: 0 25px;
+}
+
+#swipe	{
+	display: none;
+}
+
+#scrollMedium	{
+	display: none;
+}
+
+#contentBritkit	{
+	width: 1697px;
+}
+
+#contentLoudpastel	{
+	width: 1625px;
+}
+
+#tempoLink	{
+	display: none;
+}
+
+#loudpastelScaling	{
+	margin-bottom: 45px;
+	height: 110px;
+}
+
+@media screen and (min-width: 1650px)	{	
+	.rowProjectContent	{
+		margin-left: calc(((50% - 800px) / 2) + (400px - 325px + 25));
+	}
+}
+
+.rowProjectImage	{
+	position: relative;
+	height: 100%;
+	width: auto;
+	vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+/* Mobile */
+
+	#topIphoneIpadMobile	{
+		display: none;
+		float: left;
+		width: 100%;
+	}
+
+/* Logotypes */
+
+#logotypeSection	{
+	max-width: 1500px;
+	width: 100%;
+}
+
+#introTextRowLogotypes	{
+	position: relative;
+	z-index: 1000;
+	max-width: 1310px;
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+	float: none;
+	padding: 0 65px;
+}
+
+#penImage	{
+	top: 70px;
+}
+
+#penRulerRow	{
+	position: relative;
+	z-index: 10000;
+	width: calc(100% + 50px);
+	margin-left: -25px;
+}
+
+/* Scaling */
+
+@media screen and (max-width: 1600px)	{
+	#swipe	{
+		display: block;
+	}
+	
+	#logoSectionParent	{
+		padding-bottom: 100px;
+	}
+}
+
+@media screen and (max-width: 1400px)	{
+	.rowHalf	{
+		width: 100%;
+		margin: 50px 0;
+	}
+	
+	#broadwired	{
+		margin-top: 75px;
+	}
+	
+	#penRulerRow	{
+		display: none; 
+	}
+	
+	.iphoneSection	{
+		margin-top: 263px;
+	}
+	
+	#tempoBroadwiredSection	{
+		margin-top: 25px;
+		padding-bottom: 90px;
+	}
+	
+	.textNormal, .textNormalProject	{
+		font-size: 32px;
+	}
+	
+	.rowHalfContent	{
+		max-width: 800px;
+	}
+	
+	#logoSectionTasteflow	{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 1150px)	{
+	#topIphoneIpad	{
+		display: none;
+	}
+	
+	#tempoLink	{
+		display: block;
+	}
+	
+	#broadwiredLinkCircle	{
+		display: none;
+	}
+	
+	#tempoBroadwiredSection	{
+		margin-top: 0;
+		padding-bottom: 20px;
+	}
+	
+	#broadwired	{
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	
+	#broadwiredSmall	{
+		display: block;
+		height: 1050px;
+		
+	}
+	
+	#broadwiredLink	{
+		margin-bottom: 110px;
+		margin-top: 25px;
+	}
+	
+	.smallContentSectionSmallest	{
+		padding: 0 50px;
+		width: calc(100% - 100px);
+	}
+	
+	#ipadMedium	{
+		width: 1300px;
+		margin-left: -20px;
+	}
+	
+	#tempo	{
+		margin-bottom: 10px;
+	}
+	
+	#mobileScaling	{
+		margin-top: 50px;
+	}
+	
+	#logoSection	{
+		margin-top: 125px;
+	}
+	
+	/* App Preview */
+	
+		#phoneSmall	{
+			display: block;
+			background-color: #ffffff;
+			width: calc(100% + 50px);
+			margin: -50px -25px 60px -25px;
+			position: relative;
+			overflow: hidden;
+			padding-top: 40px;
+		}
+		
+		/* #phoneSmallBg	{
+			position: absolute;
+			left: -25px;
+			top: -25px;
+			height: calc(100% + 50px);
+			width: calc(100% + 50px);
+			z-index: 1;
+			background-image: url(running.jpg);
+			background-position: center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			filter: blur(5px);
+			-webkit-filter: blur(5px);
+		} */
+	
+		#tempoPreview	{
+			float: left;
+			width: 500px;
+			margin-left: 50px;
+			position: relative;
+			z-index: 10;
+		}
+		
+		#contentTransition	{
+			background-image: linear-gradient(#ffffff, #ffffff);
+		}
+		
+		/* Content */
+		
+			.rowHalfContent	{
+				float: left;
+				max-width: 735px;
+			}
+}
+
+@media screen and (max-width: 750px)	{
+	#tempoBroadwiredSection	{
+		padding-bottom: 100px;
+	}
+	
+	#broadwired	{
+		margin-top: 40px;
+	}
+	
+	#tempo	{
+		margin-bottom: -40px;
+	}
+	
+	#phoneSmall	{
+		margin-top: -75px;
+	}
+	
+	#toppingSection	{
+		padding-bottom: 100px;
+		padding-top: 125px;
+	}
+	
+	#tempoPreview	{
+		width: 400px;
+		margin-left: 25px;
+	}
+	
+	#ipadMedium	{
+		width: 900px;
+		margin-left: -30px;
+	}
+	
+	#broadwiredSmall	{
+		height: 740px;
+	}
+	
+	.rowHalfContent	{
+		padding: 0;
+		width: 100%;
+	}
+	
+	.smallContentSectionSmallest	{
+		padding: 0 25px;
+		width: calc(100% - 50px);
+	}
+	
+	#largeTextSection	{
+		font-size: 26px;
+	}
+	
+	#introTextRow	{
+		padding-top: calc(30vh - 100px);
+	}
+	
+	.titleScaling1, .titleScaling2	{
+		transform: scale(0.75);
+		float: left;
+		width: 500px;
+		margin: -80px 0 -80px -63px;
+	}
+	
+	.titleScaling2	{
+		transform: scale(0.75);
+		margin: -125px 0 -85px -60px;
+	}
+	
+	#logoSection	{
+		margin-top: 50px;
+		margin-bottom: 0;
+	}
+	
+	#logoSectionTasteflow	{
+		margin-top: 10px;
+	}
+	
+	.projectImage, .projectImageDark	{
+		margin: 0 12px;
+	}
+	
+	.rowProjectContent	{
+		padding: 25px 0 25px 12px;
+	}
+	
+	.rowProjectContentSmall	{
+		padding: 0 0 0 12px;
+	}
+	
+	#contentBritkit	{
+		width: 1679px;
+	}
+	
+	#contentLoudpastel	{
+		width: 1560px;
+	}
+	
+	/* Links */
+	
+		#socialRowTop	{
+			margin-top: 25px;
+			margin-bottom: -25px;
+		}
+		
+		#broadwiredLink	{
+			display: none;
+		}
+		
+		.rowStackSocial	{
+			padding: 15px 0 5px 0;
+			width: 100%;
+		}
+	
+	/* Content */
+	
+	.textNormal, .textNormalProject	{
+		font-size: 26px;
+	}
+	
+	/* Logos */
+	
+	.projectLogo, .projectLogoStacked	{
+		transform: scale(0.8);
+	}
+	
+	#toppingScaling	{
+		transform: scale(1);
+	}
+	
+	#tempoScaling	{
+		margin: -30px 0 -25px -15px;
+	}
+	
+	#broadwiredScaling	{
+		margin: -15px 0 -15px -45px;
+	}
+	
+	
+	#baggedScaling	{
+		margin: 0px 0 -25px -40px;
+	}
+	
+	#logoSectionTasteflow	{
+		margin-top: 50px;
+	}
+	
+	#tasteflowScaling	{
+		margin: -30px 0 -25px -50px;
+	}
+	
+	#britkitScaling	{
+		margin: -10px 0 -25px -30px;
+	}
+	
+	#loudpastelScaling	{
+		margin: 10px 0 20px -50px;
+		width: 525px;
+	}
+	
+	#logoSectionParent	{
+		padding-bottom: 50px;
+	}
+	
+	#darkSection	{
+		padding-bottom: 75px;
+	}
+	
+}
