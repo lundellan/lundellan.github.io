@@ -296,10 +296,14 @@ p-dark-section p	{
 	margin-top: 125px;
 }
 
+.logoShadow	{
+	box-shadow: 0 0 100px 25px rgba(0, 0, 0, 0.2);
+}
+
 .logoBig	{
 	float: left;
-	height: 280px;
-	width: 280px;
+	height: 250px;
+	width: 250px;
 	margin-top: 125px;
 }
 
