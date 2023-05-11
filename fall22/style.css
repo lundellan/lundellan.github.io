@@ -5,13 +5,88 @@ body	{
 	overflow-x: hidden;
 }
 
+html	{
+	scroll-behavior: smooth;
+}
+
 @media only screen and (max-width: 999px) {
 	body	{
 		margin: 0;
 		padding: 0;
 		width: 100vw;
 		overflow-x: scroll;
+		-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	}
+}
+
+@media only screen and (min-width: 1200px) {
+	p-scaled	{
+		padding-right: 380px;
+	}
+}
+
+#leftNavigation, .pageNavigation	{
+	position: fixed;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	z-index: 1;
+}
+
+#leftNavigation	{
+	left: 0;
+	top: 0;
+}
+
+#leftNavigation a, .pageNavigation a	{
+	font-family: Syne !important;
+	color: #858585;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#leftNavigation a:hover, .pageNavigation a:hover	{
+	text-decoration: underline;
+	color: #494949;
+}
+
+.pageNavigation	{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	flex-direction: column;
+	gap: 5px;
+	z-index: 1;
+}
+
+#leftNavigation span	{
+	font-family: Inter Tight, sans-serif;
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	color: #828ca3;
+	font-weight: 600;
+	font-style: italic;
+}
+
+#leftNavigation span:hover	{
+	text-decoration: underline;
+	color: #666e81;
+}
+
+.pageNavigation span	{
+	font-family: Inter Tight, sans-serif;
+	float: left;
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 16px;
+	color: #828ca3;
+	font-weight: 600;
+	font-style: italic;
+	border-bottom: 1px solid rgba(183, 183, 183, .35);
 }
 
 img	{
@@ -30,14 +105,14 @@ h1, h2, p, p-title	{
 	float: left;
 	margin: 0;
 	padding: 0;
-	font-family: 'Inter Tight', sans-serif;
+	font-family: Syne, sans-serif;
 	color: #000000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 a	{
-	font-family: 'Inter Tight', sans-serif;
+	font-family: Syne, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -99,7 +174,7 @@ p-content	{
 }
 
 p-information, p-content-small	{
-	width: 900px;
+	width: 1150px;
 	margin: 0 auto;
 	position: relative;
 	display: table;
@@ -111,10 +186,11 @@ p-content-full	{
 	margin-left: -27%;
 	margin-top: 125px;
 	position: relative;
-	background-color: #F0F0F0;
+	background-color: rgba(237, 237, 237, .84);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 10;
 }
 
 p-files	{
@@ -151,7 +227,7 @@ p-information h1	{
 	font-size: 80px;
 	line-height: 104px;
 	font-weight: 600;
-	max-width: 600px;
+	max-width: 900px;
 	padding-right: 300px;
 	width: 100%;
 	margin-top: 30px;
@@ -163,7 +239,7 @@ p-information h2	{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-weight: 600;
-	max-width: 600px;
+	max-width: 900px;
 	padding-right: 300px;
 	width: 100%;
 	margin-top: 30px;
@@ -175,9 +251,10 @@ p-information p-title	{
 	font-size: 36px;
 	line-height: 44px;
 	padding-bottom: 7px;
-	margin-top: 60px;
+	margin-top: 50px;
 	margin-bottom: 5px;
 	font-weight: 600;
+	font-family: 'Inter Tight', sans-serif;
 }
 
 p-description p-row a	{
@@ -231,13 +308,14 @@ p-information img	{
 
 /* Dark Section */
 
-p-dark-section	{
+p-dark-section, p-color-section	{
 	float: left;
 	width: 154%;
 	margin-left: -27%;
 	background-color: #000000;
 	margin-top: 300px;
 	padding-bottom: 250px;
+	position: relative;
 }
 
 p-dark-section h1, p-dark-section h2, p-dark-section p-description p span, p-dark-section h2 a	{
@@ -369,7 +447,7 @@ p-dark-section p	{
 	width: 211px;
 }
 
-#tempo	{
+#tempo-logo	{
 	height: 225px;
 	width: 225px;
 }
@@ -378,23 +456,23 @@ p-dark-section p	{
 	height: 1209px;
 }
 
-#the-mountain	{
+#the-mountain-logo	{
 	height: 290px;
 	width: 425px;
 }
 
-#broadwired	{
+#broadwired-logo	{
 	height: 210px;
 	padding-bottom: 15px;
 	width: 210px;
 }
 
-#bagged-and-beaned	{
+#bagged-and-beaned-logo	{
 	width: 487px;
 	height: 275px;
 }
 
-#medaljelele	{
+#medaljelele-logo	{
 	width: 334px;
 	height: 425px;
 }
